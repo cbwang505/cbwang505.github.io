@@ -1,0 +1,272 @@
+﻿
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- saved from url=(0014)about:internet -->
+<html>
+    <head>
+        <meta content="Innovasys Document! X (http://www.innovasys.com)" name=GENERATOR>
+        <!--DXMETADATA start type="MetaCharset" --><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"><!--DXMETADATA end-->
+        <!--DXMETADATA start type="PageItemTitle" format="<title>AddShortcut Method</title>" --><title>AddShortcut Method</title><!--DXMETADATA end-->
+        <link href="stylesheets/axstylesheet.css" type=text/css rel=stylesheet>
+        <script src="script/ax.js" type=text/javascript>
+    </script>
+
+    
+
+
+<style>
+html,div { margin: 0; padding: 0;}
+
+body {
+	padding: 0px;
+	margin: 0px;
+	overflow: auto;
+	height: 100%;
+}
+
+#winchm_template_button{
+	float: right;
+	width: 93px;
+	top: 7px;
+	position: relative;
+	text-align: right;
+	right: 5px;
+	height: auto;
+}
+
+#winchm_template_top{
+	padding: 0px;
+	margin: 0px;
+	border-bottom: 1px solid #9B9B9B;
+	background-color: #B1CEFE;
+}
+
+#winchm_template_navigation{
+	margin: 0px;
+	padding-top: 7px;
+	padding-left: 7px;
+	padding-bottom: 3px;
+	padding-right: 0px;
+	font-size: 8.5pt;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	color: #585858;
+}
+
+#winchm_template_title{
+	margin: 0px;
+	padding-top: 4px;
+	padding-left: 7px;
+	padding-bottom: 7px;
+	padding-right: 0px;
+	font-size: 18px; 
+	font-family: Verdana, Geneva, sans-serif;
+	color: #363636;
+}
+
+#winchm_template_content{
+	margin-top: 20px;
+	margin-left: 15px;
+	margin-bottom: 20px;
+	margin-right: 15px;
+	width: auto  !important;
+	width: 100%;
+}
+
+#winchm_template_footer{
+	border-width: 1px;
+	border-color: #B1CEFE;
+	border-top-style: solid;
+	margin-top: 15px;
+	margin-left: 15px;
+	margin-bottom: 20px;
+	margin-right: 15px;
+	padding-top: 7px;
+	padding-left: 0px;
+	padding-bottom: 0px;
+	padding-right: 0px;
+	font-family: arial, helvetica, sans-serif;
+	font-size: 8.5pt;
+	color: #696969;
+	width: auto;
+	text-align: left;
+}
+
+
+#winchm_template_container{
+	margin: 0px;
+	padding: 0px;
+	position: static;
+	padding-bottom: 3px;
+	overflow: auto;
+	background-color: #FFFFFF;
+}
+
+
+@media print
+{
+#winchm_template_container{
+	position: static;	
+	margin: 0px;
+	padding: 5px;
+	
+	width: auto;
+	height: auto;
+	overflow: auto;
+}
+#winchm_template_button{
+visibility:hidden;
+}
+}
+
+#winchm_template_navigation A:link	{text-decoration: none; color:#004080}
+#winchm_template_navigation A:visited  {text-decoration: none; color: #004080}
+#winchm_template_navigation A:active {text-decoration: none; color: #004080 }
+#winchm_template_navigation A:hover {text-decoration: none;color: #0080FF}
+
+A:link	{text-decoration: underline; color:#0033CC}
+A:visited  {text-decoration: underline; color: #0033CC}
+A:active {text-decoration: underline; color: #0033CC }
+A:hover {text-decoration: underline;color: #FF0000;}
+</style>
+<script type="text/javascript">
+function isMobile(){
+Agent = window.navigator.userAgent;
+if (Agent.indexOf("iPhone")>=1 || Agent.indexOf("iPad")>=1 || Agent.indexOf("iPod")>=1 || Agent.indexOf("Android")>=1){
+return true;
+}else{
+return false;	
+}
+
+}
+function d_onresize(){
+if (window.navigator.userAgent.indexOf("MSIE")>=1){
+document.getElementById('winchm_template_container').style.pixelWidth = document.body.offsetWidth - 3;
+document.getElementById('winchm_template_container').style.pixelHeight = document.body.offsetHeight - document.getElementById('winchm_template_top').offsetHeight - 4;
+}
+document.getElementById('winchm_template_container').style.top = document.getElementById('winchm_template_top').offsetHeight + 'px';
+}
+
+function d_onbeforeprint(){
+document.getElementById('winchm_template_container').style.width = 'auto';
+document.getElementById('winchm_template_container').style.height = 'auto';
+}
+
+function d_onafterprint(){
+d_onresize();
+}
+
+if(!isMobile()){
+
+window.onload = d_onresize;
+window.onresize = d_onresize;
+window.onbeforeprint = d_onbeforeprint;
+window.onafterprint = d_onafterprint;
+
+document.write("<style>\n");
+document.write("body {overflow: hidden;}\n");
+document.write("#winchm_template_container {position: absolute;overflow: auto;top : 0px;right: 0px;bottom: 0px;left: 0px;}\n");
+document.write("</style>\n");
+}
+
+</script>
+</head>
+    <body><script language="JavaScript" type="text/JavaScript">
+function syn(){
+if(parent.nav.tree){
+ if(parent.nav.tree.loaded){
+  parent.nav.tree.selectNode(5945);
+ }else{
+  setTimeout("syn()",500);
+}
+  }else{
+  setTimeout("syn()",500);
+  }}
+if(parent!=self){
+  setTimeout("syn()",100);
+}else{
+  parent.location.href = "../index.htm?page=XtremeCommandBars~KeyBindings~AddShortcut.html";
+}
+originalOnload = window.onload;
+if(originalOnload==null){
+window.onload = function(){parent.contentLoaded = true;};
+}else{
+window.onload = function(){originalOnload();parent.contentLoaded = true;};
+}
+</script> 
+
+
+<div id="winchm_template_top">
+	<div id="winchm_template_button"><A href="XtremeCommandBars~CommandBarGalleryItems~AddSeparator.html" title="Previous topic"><img id="winchm_template_prev" alt="Previous topic" src="template2/btn_prev_n.gif" border="0"></a><A href="XtremeCommandBars~StatusBar~AddSliderPane.html" title="Next topic"><img id="winchm_template_next" alt="Next topic" src="template2/btn_next_n.gif" border="0"></a></div>
+	<div id="winchm_template_navigation">Help &gt; 
+<A href="welcome_screen.htm">Codejock ActiveX Controls v15.3</A> &gt; <A href="XtremeCommandBars_P.html">Xtreme Command Bars</A> &gt; Methods &gt; </div>
+	<div id="winchm_template_title">AddShortcut Method</div>
+</div>
+<div id="winchm_template_container">
+	<div id="winchm_template_content"><!--DXMETADATA start type="FilteredItemList" scrap="PARAMETERS_BUBBLES" namespace="parameter" source="Item" -->
+<!--DXMETADATA end --> 
+        <div id=pagetop>
+            <div id=projectnamebanner>
+                <table class=projectnametable cellspacing=0>
+                    <tbody>
+                        <tr>
+                            <!--DXMETADATA start type="Literal" condition="childitems:itemtype=seealso" value="<td class='button'><a href='' id='seealsobutton' onclick='showSeeAlsoBox()'><img alt='See Also' border='0' src='axImages/seealso.gif' width=14 height=14></a></td>" --><td class='button'><a href='' id='seealsobutton' onclick='showSeeAlsoBox()'><img alt='See Also' border='0' src='axImages/seealso.gif' width=14 height=14></a></td><!--DXMETADATA end -->
+                            <td>
+                                <!--DXMETADATA start type="Phrase" Name="Product_Header" -->Xtreme Command Bars ActiveX Control v15.3<!--DXMETADATA end --> 
+                            </td>
+                            <td align=right>
+                                <!--DXMETADATA start type="Variable" name="FeedbackLink" format="" --><!--DXMETADATA end -->
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id=pagetitlebanner>
+                <h1 class=dxh1>
+                <!--DXMETADATA start type="PageItemTitle" -->AddShortcut Method<!--DXMETADATA end --></h1>
+            </div>
+        </div>
+        <div id=pagebody valign="bottom">
+            <!--DXMETADATA start type="IsNew" format="<script>document.all.pagebody.className = 'newTopic'</script>" --><!--DXMETADATA end --> 
+            <!--DXMETADATA start type="Description" source="Item" format="<h4 class=dxh4>$$Description$$</h4><p>%%description%%</p>" --><h4 class=dxh4>Description</h4><p>Adds a key binding ( accelerator key ) for a command.&nbsp; Allows keys in String format.</p><!--DXMETADATA end --> 
+            <!--DXMETADATA start type="Syntax" lang="VB" format="<div Class=LanguageSpecific Name=Syntax_VB><h4 class=dxh4>$$Syntax$$</h4><p>%%Syntax%%</p></div>" --><div Class=LanguageSpecific Name=Syntax_VB><h4 class=dxh4>Syntax</h4><p><PRE CLASS="syntax" LANG="VB"><strong>Public Sub AddShortcut</strong>( _
+&nbsp;&nbsp;&nbsp;<strong>ByVal </strong><i><a class="parameter" id="Command" href="#" onclick="javascript:showParamBox();">Command</a></i></strong> <strong>As</strong> <b>Long</b>, _
+&nbsp;&nbsp;&nbsp;<strong>ByVal </strong><i><a class="parameter" id="Shortcut" href="#" onclick="javascript:showParamBox();">Shortcut</a></i></strong> <strong>As</strong> <b>String</b> _
+)<strong> </strong></PRE></p></div><!--DXMETADATA end --> 
+            <!--DXMETADATA start type="FilteredItemList" scrap="PARAMETERS_LIST" namespace="parameter" source="Item" filter="" format="<h4 class=dxh4>$$ParameterList$$</h4>%%filtereditemlist%%" --><h4 class=dxh4>Parameters</h4><DL>
+<DT><I>Command</I></DT>
+<DD>The command ID which will be invoked when the accelerator is used.</DD>
+<DT><I>Shortcut</I></DT>
+<DD>String containing shortcut key(s) for the specified command.</DD>
+</DL><!--DXMETADATA end --> 
+            <!--DXMETADATA start type="TaggedComment" source="Item" id="##RETURNS" format="<h4 class=dxh4>$$Return_Type$$</h4><p>%%comment%%</p>" --><!--DXMETADATA end --> 
+            <!--DXMETADATA start type="TaggedComment" source="Item" id="##REMARKS" format="<h4 class=dxh4>$$Remarks$$</h4><p>%%comment%%</p>" --><h4 class=dxh4>Remarks</h4><p><P><STRONG>AddShortcut</STRONG>&nbsp;provides an easier method to add shortcuts (key bindings) for commands by allowing them to be entered in String format rather than needing ASCII codes as with the <A href="#Bookmark5108">Add</A>&nbsp;method.</P>
+<P>&nbsp;</P>
+<P>The format for the Shortcut string must not include any spaces if used&nbsp;in combination with a key like "Ctrl".&nbsp; If&nbsp;allowing<A href="#Bookmark5115"> DoubleKeyShortcuts</A>&nbsp;a comma "," must be placed between shortcuts.&nbsp; Reference the code sample below for the correct formatting.</P>
+<P>&nbsp;</P>
+<P>Here is a list of all the "String" names for various key mappings (Use the name between quotes and see the samples below):</P>
+<P><BR>VK_LBUTTON = "Left Button"<BR>VK_RBUTTON = "Right Button"<BR>VK_CANCEL = "Ctrl+Break"<BR>VK_MBUTTON = "Middle Button"<BR>VK_BACK = "Backspace"<BR>VK_TAB = "Tab"<BR>VK_CLEAR = "Clear"<BR>VK_RETURN = "Enter"<BR>VK_SHIFT = "Shift"<BR>VK_CONTROL = "Ctrl"<BR>VK_MENU = "Alt"<BR>VK_PAUSE = "Pause"<BR>VK_CAPITAL = "Caps Lock"<BR>VK_ESCAPE = "Esc"<BR>VK_SPACE = "Space"<BR>VK_PRIOR = "Page Up"<BR>VK_NEXT = "Page Down"<BR>VK_END = "End"<BR>VK_HOME = "Home"<BR>VK_LEFT = "Left Arrow"<BR>VK_UP = "Up Arrow"<BR>VK_RIGHT = "Right Arrow"<BR>VK_DOWN = "Down Arrow"<BR>VK_SELECT = "Select"<BR>VK_PRINT = "Print"<BR>VK_EXECUTE = "Execute"<BR>VK_SNAPSHOT = "Snapshot"<BR>VK_INSERT = "Ins"<BR>VK_DELETE = "Del"<BR>VK_HELP = "Help"<BR>VK_LWIN&nbsp; = "Win"<BR>VK_RWIN = "Win"<BR>VK_APPS = "Application"<BR>VK_MULTIPLY = "Num *"<BR>VK_ADD = "Num +"<BR>VK_SEPARATOR = "Separator"<BR>VK_SUBTRACT = "Num -"<BR>VK_DECIMAL = "Num ."<BR>VK_DIVIDE = "Num /"<BR>VK_F1 = "F1"<BR>VK_F2 = "F2"<BR>VK_F3 = "F3"<BR>VK_F4 = "F4"<BR>VK_F5 = "F5"<BR>VK_F6 = "F6"<BR>VK_F7 = "F7"<BR>VK_F8 = "F8"<BR>VK_F9 = "F9"<BR>VK_F10 = "F10"<BR>VK_F11 = "F11"<BR>VK_F12 = "F12"<BR>VK_NUMPAD0 = "Num 0"<BR>VK_NUMPAD1 = "Num 1"<BR>VK_NUMPAD2 = "Num 2"<BR>VK_NUMPAD3 = "Num 3"<BR>VK_NUMPAD4 = "Num 4"<BR>VK_NUMPAD5 = "Num 5"<BR>VK_NUMPAD6 = "Num 6"<BR>VK_NUMPAD7 = "Num 7"<BR>VK_NUMPAD8 = "Num 8"<BR>VK_NUMPAD9 = "Num 9"<BR>VK_NUMLOCK = "Num Lock"<BR>VK_SCROLL = "Scrl Lock"<BR>VK_ATTN = "Attn"<BR>VK_CRSEL = "Crsel"<BR>VK_EXSEL = "Exsel"<BR>VK_EREOF = "Ereof"<BR>VK_PLAY = "Play"<BR>VK_ZOOM = "Zoom"<BR>VK_NONAME = "No Name"<BR>VK_PA1 = "Pa1"<BR>VK_OEM_CLEAR = "Oem Clear"</P></p><!--DXMETADATA end --> 
+            <!--DXMETADATA start type="sourcecode" format="<h4 class=dxh4>$$Source_Code$$</h4><table border=0 cellpadding=0 cellspacing=0 class=sourcecode><tr><td nowrap>%%sourcecode%%</td></tr></table>" --><!--DXMETADATA end --> 
+            <!--DXMETADATA start type="TaggedComment" source="Item" id="##EXAMPLEINTRO" format="<h4 class=dxh4>$$Example$$</h4><p>%%comment%%</p>" --><!--DXMETADATA end --> 
+            <!--DXMETADATA start type="FilteredItemList" scrap="INLINE_EXAMPLE" namespace="Example" source="Item" filter="type=inline" NoHeader="True" NoFooter="True" format="<h4 class=dxh4>$$Example$$</h4>,format= %%%%filtereditemlist%%" --><h4 class=dxh4>Example</h4><DIV Class=LanguageSpecific Name=Example_VB><p><SPAN class="lang">[Visual Basic]</SPAN>&nbsp;</p><DIV Class=LanguageSpecific Name=Code_VB><TABLE Class="CodeContainerTable" CellPadding="0" CellSpacing="0" Border="0"><TR><TD NOWRAP><CODE Class="VB">&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Set</font> KeyBindings = CommandBars.KeyBindings<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;KeyBindings.AddShortcut ID_FILE_NEW, <font class='string'>&quot;Ctrl+N&quot;</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;KeyBindings.AddShortcut ID_FILE_OPEN, <font class='string'>&quot;Ctrl+O&quot;</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;KeyBindings.AddShortcut ID_FILE_SAVE, <font class='string'>&quot;Ctrl+S&quot;</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;KeyBindings.AddShortcut ID_EDIT_CUT, <font class='string'>&quot;Ctrl+X&quot;</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;KeyBindings.AddShortcut ID_EDIT_COPY, <font class='string'>&quot;Ctrl+C&quot;</font><BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;KeyBindings.AllowDoubleKeyShortcuts = <font class='keyword'>True</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='comment'>'Example of a double shortcut key</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;KeyBindings.AddShortcut ID_EDIT_PASTE, <font class='string'>&quot;Ctrl+V, Ctrl+P&quot;</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;KeyBindings.AddShortcut ID_FILE_OPEN, <font class='string'>&quot;Ctrl+K, Ctrl+Page Up&quot;</font></CODE></TD></TR></TABLE></DIV></DIV>
+<!--DXMETADATA end --> 
+            <!--DXMETADATA start type="FilteredItemList" scrap="MENU_LINK" namespace="seealso" source="Item" filter="" NoHeader="True" NoFooter="True" format="<h4 class=dxh4>$$See_Also$$</h4><p id=dxseealsocontent>%%filtereditemlist%%</p>" --><h4 class=dxh4>See Also</h4><p id=dxseealsocontent><a href="#Bookmark5104">KeyBindings Collection</a>
+&nbsp;|&nbsp;<a href="#Bookmark5108">Add Method</a>
+&nbsp;|&nbsp;<a href="#Bookmark5115">AllowDoubleKeyShortcuts Property</a>
+</p><!--DXMETADATA end --><!--DXMETADATA start type="FilteredItemList" scrap="MENU_LINK" namespace="example" source="Item" filter="type=linked" NoHeader="True" NoFooter="True" format="><!--DXMETADATA end --><!--DXMETADATA start type="Variable" name="CopyrightNotice" format="><!--DXMETADATA end --></div></div>	
+	<div id="winchm_template_footer">Copyright &copy; 2018. All rights 
+reserved. (To change the copyright info, just edit it in template.)</div>
+</div>
+
+</body>
+</html>
+

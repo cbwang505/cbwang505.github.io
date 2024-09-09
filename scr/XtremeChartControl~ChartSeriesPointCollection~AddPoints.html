@@ -1,0 +1,274 @@
+﻿
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- saved from url=(0014)about:internet -->
+<html>
+    <head>
+        <meta content="Innovasys Document! X (http://www.innovasys.com)" name=GENERATOR>
+        <!--DXMETADATA start type="MetaCharset" --><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"><!--DXMETADATA end-->
+        <!--DXMETADATA start type="PageItemTitle" format="<title>AddPoints Method</title>" --><title>AddPoints Method</title><!--DXMETADATA end-->
+        <link href="stylesheets/axstylesheet.css" type=text/css rel=stylesheet>
+        <script src="script/ax.js" type=text/javascript>
+    </script>
+
+    
+
+
+<style>
+html,div { margin: 0; padding: 0;}
+
+body {
+	padding: 0px;
+	margin: 0px;
+	overflow: auto;
+	height: 100%;
+}
+
+#winchm_template_button{
+	float: right;
+	width: 93px;
+	top: 7px;
+	position: relative;
+	text-align: right;
+	right: 5px;
+	height: auto;
+}
+
+#winchm_template_top{
+	padding: 0px;
+	margin: 0px;
+	border-bottom: 1px solid #9B9B9B;
+	background-color: #B1CEFE;
+}
+
+#winchm_template_navigation{
+	margin: 0px;
+	padding-top: 7px;
+	padding-left: 7px;
+	padding-bottom: 3px;
+	padding-right: 0px;
+	font-size: 8.5pt;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	color: #585858;
+}
+
+#winchm_template_title{
+	margin: 0px;
+	padding-top: 4px;
+	padding-left: 7px;
+	padding-bottom: 7px;
+	padding-right: 0px;
+	font-size: 18px; 
+	font-family: Verdana, Geneva, sans-serif;
+	color: #363636;
+}
+
+#winchm_template_content{
+	margin-top: 20px;
+	margin-left: 15px;
+	margin-bottom: 20px;
+	margin-right: 15px;
+	width: auto  !important;
+	width: 100%;
+}
+
+#winchm_template_footer{
+	border-width: 1px;
+	border-color: #B1CEFE;
+	border-top-style: solid;
+	margin-top: 15px;
+	margin-left: 15px;
+	margin-bottom: 20px;
+	margin-right: 15px;
+	padding-top: 7px;
+	padding-left: 0px;
+	padding-bottom: 0px;
+	padding-right: 0px;
+	font-family: arial, helvetica, sans-serif;
+	font-size: 8.5pt;
+	color: #696969;
+	width: auto;
+	text-align: left;
+}
+
+
+#winchm_template_container{
+	margin: 0px;
+	padding: 0px;
+	position: static;
+	padding-bottom: 3px;
+	overflow: auto;
+	background-color: #FFFFFF;
+}
+
+
+@media print
+{
+#winchm_template_container{
+	position: static;	
+	margin: 0px;
+	padding: 5px;
+	
+	width: auto;
+	height: auto;
+	overflow: auto;
+}
+#winchm_template_button{
+visibility:hidden;
+}
+}
+
+#winchm_template_navigation A:link	{text-decoration: none; color:#004080}
+#winchm_template_navigation A:visited  {text-decoration: none; color: #004080}
+#winchm_template_navigation A:active {text-decoration: none; color: #004080 }
+#winchm_template_navigation A:hover {text-decoration: none;color: #0080FF}
+
+A:link	{text-decoration: underline; color:#0033CC}
+A:visited  {text-decoration: underline; color: #0033CC}
+A:active {text-decoration: underline; color: #0033CC }
+A:hover {text-decoration: underline;color: #FF0000;}
+</style>
+<script type="text/javascript">
+function isMobile(){
+Agent = window.navigator.userAgent;
+if (Agent.indexOf("iPhone")>=1 || Agent.indexOf("iPad")>=1 || Agent.indexOf("iPod")>=1 || Agent.indexOf("Android")>=1){
+return true;
+}else{
+return false;	
+}
+
+}
+function d_onresize(){
+if (window.navigator.userAgent.indexOf("MSIE")>=1){
+document.getElementById('winchm_template_container').style.pixelWidth = document.body.offsetWidth - 3;
+document.getElementById('winchm_template_container').style.pixelHeight = document.body.offsetHeight - document.getElementById('winchm_template_top').offsetHeight - 4;
+}
+document.getElementById('winchm_template_container').style.top = document.getElementById('winchm_template_top').offsetHeight + 'px';
+}
+
+function d_onbeforeprint(){
+document.getElementById('winchm_template_container').style.width = 'auto';
+document.getElementById('winchm_template_container').style.height = 'auto';
+}
+
+function d_onafterprint(){
+d_onresize();
+}
+
+if(!isMobile()){
+
+window.onload = d_onresize;
+window.onresize = d_onresize;
+window.onbeforeprint = d_onbeforeprint;
+window.onafterprint = d_onafterprint;
+
+document.write("<style>\n");
+document.write("body {overflow: hidden;}\n");
+document.write("#winchm_template_container {position: absolute;overflow: auto;top : 0px;right: 0px;bottom: 0px;left: 0px;}\n");
+document.write("</style>\n");
+}
+
+</script>
+</head>
+    <body><script language="JavaScript" type="text/JavaScript">
+function syn(){
+if(parent.nav.tree){
+ if(parent.nav.tree.loaded){
+  parent.nav.tree.selectNode(3344);
+ }else{
+  setTimeout("syn()",500);
+}
+  }else{
+  setTimeout("syn()",500);
+  }}
+if(parent!=self){
+  setTimeout("syn()",100);
+}else{
+  parent.location.href = "../index.htm?page=XtremeChartControl~ChartSeriesPointCollection~AddPoints.html";
+}
+originalOnload = window.onload;
+if(originalOnload==null){
+window.onload = function(){parent.contentLoaded = true;};
+}else{
+window.onload = function(){originalOnload();parent.contentLoaded = true;};
+}
+</script> 
+
+
+<div id="winchm_template_top">
+	<div id="winchm_template_button"><A href="XtremeChartControl~ChartPalette~AddEntry.html" title="Previous topic"><img id="winchm_template_prev" alt="Previous topic" src="template2/btn_prev_n.gif" border="0"></a><A href="XtremeChartControl~ChartControl~CreateElement.html" title="Next topic"><img id="winchm_template_next" alt="Next topic" src="template2/btn_next_n.gif" border="0"></a></div>
+	<div id="winchm_template_navigation">Help &gt; 
+<A href="welcome_screen.htm">Codejock ActiveX Controls v15.3</A> &gt; <A href="XtremeChartControl_P.html">Xtreme Chart Pro</A> &gt; Methods &gt; </div>
+	<div id="winchm_template_title">AddPoints Method</div>
+</div>
+<div id="winchm_template_container">
+	<div id="winchm_template_content"><div class=popupbubble id=dxseealsomenu><p id=dxseealsocontent><a href="#Bookmark3177">ChartSeriesPointCollection Collection</a>
+</p><!--DXMETADATA end --> 
+        </div>
+        <!--DXMETADATA start type="FilteredItemList" scrap="PARAMETERS_BUBBLES" namespace="parameter" source="Item" -->
+<div id="Count_box" class="popupbubble">
+<DL><DT class="popupbubble"><I>Count</I></DT>
+<DD class="popupbubble">Number of points to add.</DD></DL>
+</div>
+<!--DXMETADATA end --> 
+        <div id=pagetop>
+            <div id=projectnamebanner>
+                <table class=projectnametable cellspacing=0>
+                    <tbody>
+                        <tr>
+                            <!--DXMETADATA start type="Literal" condition="childitems:itemtype=seealso" value="<td class='button'><a href='' id='seealsobutton' onclick='showSeeAlsoBox()'><img alt='See Also' border='0' src='axImages/seealso.gif' width=14 height=14></a></td>" --><td class='button'><a href='' id='seealsobutton' onclick='showSeeAlsoBox()'><img alt='See Also' border='0' src='axImages/seealso.gif' width=14 height=14></a></td><!--DXMETADATA end -->
+                            <td>
+                                <!--DXMETADATA start type="Phrase" Name="Product_Header" -->Xtreme Chart Pro ActiveX Control v15.3<!--DXMETADATA end --> 
+                            </td>
+                            <td align=right>
+                                <!--DXMETADATA start type="Variable" name="FeedbackLink" format="" --><!--DXMETADATA end -->
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id=pagetitlebanner>
+                <h1 class=dxh1>
+                <!--DXMETADATA start type="PageItemTitle" -->AddPoints Method<!--DXMETADATA end --></h1>
+            </div>
+        </div>
+        <div id=pagebody valign="bottom">
+            <!--DXMETADATA start type="IsNew" format="<script>document.all.pagebody.className = 'newTopic'</script>" --><!--DXMETADATA end --> 
+            <!--DXMETADATA start type="Description" source="Item" format="<h4 class=dxh4>$$Description$$</h4><p>%%description%%</p>" --><h4 class=dxh4>Description</h4><p>Adds a batch of points.&nbsp; (Use to allocate memory for a very large number of points)</p><!--DXMETADATA end --> 
+            <!--DXMETADATA start type="Syntax" lang="VB" format="<div Class=LanguageSpecific Name=Syntax_VB><h4 class=dxh4>$$Syntax$$</h4><p>%%Syntax%%</p></div>" --><div Class=LanguageSpecific Name=Syntax_VB><h4 class=dxh4>Syntax</h4><p><PRE CLASS="syntax" LANG="VB"><strong>Public Sub AddPoints</strong>( _
+&nbsp;&nbsp;&nbsp;<strong>ByVal </strong><i><a class="parameter" id="Count" href="#" onclick="javascript:showParamBox();">Count</a></i></strong> <strong>As</strong> <b>Long</b> _
+)<strong> </strong></PRE></p></div><!--DXMETADATA end --> 
+            <!--DXMETADATA start type="FilteredItemList" scrap="PARAMETERS_LIST" namespace="parameter" source="Item" filter="" format="<h4 class=dxh4>$$ParameterList$$</h4>%%filtereditemlist%%" --><h4 class=dxh4>Parameters</h4><DL>
+<DT><I>Count</I></DT>
+<DD>Number of points to add.</DD>
+</DL><!--DXMETADATA end --> 
+            <!--DXMETADATA start type="TaggedComment" source="Item" id="##RETURNS" format="<h4 class=dxh4>$$Return_Type$$</h4><p>%%comment%%</p>" --><!--DXMETADATA end --> 
+            <!--DXMETADATA start type="TaggedComment" source="Item" id="##REMARKS" format="<h4 class=dxh4>$$Remarks$$</h4><p>%%comment%%</p>" --><h4 class=dxh4>Remarks</h4><p><P><STRONG>AddPoints</STRONG> is a way to optimize adding a large number of points. Memory will be allocated once for the specified number of points. This will dramatically increase the speed at which the points are added when adding a large number of points.&nbsp; You can both <STRONG>AddPoints</STRONG> using Addpoints and any other "Add" method for the same series.</P>
+<P></P>
+<P>You will have to manually add values to the points after they have been added. Below you will find a few samples.</P></p><!--DXMETADATA end --> 
+            <!--DXMETADATA start type="sourcecode" format="<h4 class=dxh4>$$Source_Code$$</h4><table border=0 cellpadding=0 cellspacing=0 class=sourcecode><tr><td nowrap>%%sourcecode%%</td></tr></table>" --><!--DXMETADATA end --> 
+            <!--DXMETADATA start type="TaggedComment" source="Item" id="##EXAMPLEINTRO" format="<h4 class=dxh4>$$Example$$</h4><p>%%comment%%</p>" --><h4 class=dxh4>Example</h4><p><P>'********************************************************</P>
+<P>'Area chart with 1 series added using AddPoints.&nbsp; </P>
+<P>'********************************************************</P>
+<P>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<BR>&nbsp;&nbsp;&nbsp; ChartControl.Content.Legend.Visible = True<BR>&nbsp;&nbsp;&nbsp; ChartControl.Content.Legend.HorizontalAlignment = xtpChartLegendNearOutside<BR>&nbsp;&nbsp;&nbsp; <BR>&nbsp;&nbsp;&nbsp; Dim Series As ChartSeries<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <BR>&nbsp;&nbsp;&nbsp; Set Series = ChartControl.Content.Series.Add("New York")<BR>&nbsp;&nbsp;&nbsp; <BR>&nbsp;&nbsp;&nbsp; 'Sample usage of Batch Allocation using AddPoints.&nbsp; This should be used when adding<BR>&nbsp;&nbsp;&nbsp; 'many points in a chart and performance starts to suffer.<BR>&nbsp;&nbsp;&nbsp; Series.Points.AddPoints 5</P>
+<P>&nbsp;&nbsp;&nbsp; Series.Points(0).ArgumentValueString = 1900<BR>&nbsp;&nbsp;&nbsp; Series.Points(0).Value(0) = 7268<BR>&nbsp;&nbsp;&nbsp; Series.Points(1).ArgumentValueString = 1950<BR>&nbsp;&nbsp;&nbsp; Series.Points(1).Value(0) = 14830<BR>&nbsp;&nbsp;&nbsp; Series.Points(2).ArgumentValueString = 1990<BR>&nbsp;&nbsp;&nbsp; Series.Points(2).Value(0) = 17990<BR>&nbsp;&nbsp;&nbsp; Series.Points(3).ArgumentValueString = 2000<BR>&nbsp;&nbsp;&nbsp; Series.Points(3).Value(0) = 18976<BR>&nbsp;&nbsp;&nbsp; Series.Points(4).ArgumentValueString = 2008<BR>&nbsp;&nbsp;&nbsp; Series.Points(4).Value(0) = 20323<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <BR>&nbsp;&nbsp;&nbsp; Set Series = ChartControl.Content.Series.Add("California")<BR>&nbsp;&nbsp;&nbsp; <BR>&nbsp;&nbsp;&nbsp; Series.Points.Add 1900, 1485<BR>&nbsp;&nbsp;&nbsp; Series.Points.Add 1950, 10586<BR>&nbsp;&nbsp;&nbsp; Series.Points.Add 1990, 29760<BR>&nbsp;&nbsp;&nbsp; Series.Points.Add 2000, 33871<BR>&nbsp;&nbsp;&nbsp; Series.Points.Add 2008, 36756<BR>&nbsp;&nbsp;&nbsp; <BR>&nbsp;&nbsp;&nbsp; Set Series = ChartControl.Content.Series.Add("Florida")</P>
+<P>&nbsp;&nbsp;&nbsp; Series.Points.Add 1900, 528<BR>&nbsp;&nbsp;&nbsp; Series.Points.Add 1950, 2771<BR>&nbsp;&nbsp;&nbsp; Series.Points.Add 1990, 12937<BR>&nbsp;&nbsp;&nbsp; Series.Points.Add 2000, 15982<BR>&nbsp;&nbsp;&nbsp; Series.Points.Add 2008, 18328<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <BR>&nbsp;&nbsp;&nbsp; Set Series = ChartControl.Content.Series.Add("Texas")</P>
+<P>&nbsp;&nbsp;&nbsp; Series.Points.Add 1900, 3048<BR>&nbsp;&nbsp;&nbsp; Series.Points.Add 1950, 7711<BR>&nbsp;&nbsp;&nbsp; Series.Points.Add 1990, 14986<BR>&nbsp;&nbsp;&nbsp; Series.Points.Add 2000, 20851<BR>&nbsp;&nbsp;&nbsp; Series.Points.Add 2008, 24326<BR>&nbsp;&nbsp;&nbsp;&nbsp;<BR>&nbsp;&nbsp;&nbsp; ChartControl.Content.Titles.Add "Population by U.S. State"<BR>&nbsp;&nbsp;&nbsp; ChartControl.Content.Legend.Visible = True<BR>&nbsp;&nbsp;&nbsp; <BR>&nbsp;&nbsp;&nbsp; Set ChartControl.Content.Series(3).Style = New ChartAreaSeriesStyle<BR>&nbsp;&nbsp;&nbsp; Set ChartControl.Content.Series(2).Style = New ChartAreaSeriesStyle<BR>&nbsp;&nbsp;&nbsp; Set ChartControl.Content.Series(1).Style = New ChartAreaSeriesStyle<BR>&nbsp;&nbsp;&nbsp; Set ChartControl.Content.Series(0).Style = New ChartAreaSeriesStyle<BR>&nbsp;&nbsp;&nbsp; <BR>&nbsp;&nbsp;&nbsp; Dim Diagram As ChartDiagram2D<BR>&nbsp;&nbsp;&nbsp; Set Diagram = ChartControl.Content.Series(0).Diagram<BR>&nbsp;&nbsp;&nbsp; Diagram.AxisY.Title = "Population Growth (Millions)"<BR>&nbsp;&nbsp;&nbsp; Diagram.AxisY.Title.Visible = True<BR>&nbsp;&nbsp;&nbsp; Diagram.AxisX.Title = "Decade / Year"<BR>&nbsp;&nbsp;&nbsp; Diagram.AxisX.Title.Visible = True<BR>&nbsp;&nbsp;&nbsp; <BR>&nbsp;&nbsp;&nbsp; Diagram.AxisY.Range.SideMargins = False<BR>&nbsp;&nbsp;&nbsp; Diagram.AxisX.Range.SideMargins = False</P>
+<P>&nbsp;</P>
+<P>'********************************************************</P>
+<P>'Point chart with 1 series added using AddPoints.</P>
+<P>'********************************************************</P>
+<P>&nbsp;</P>
+<P>&nbsp;&nbsp;&nbsp; ChartControl.Content.Titles(0).Text = "Point Chart"<BR>&nbsp;&nbsp;&nbsp; ChartControl.Content.Legend.Visible = True<BR>&nbsp;&nbsp;&nbsp; ChartControl.Content.Legend.HorizontalAlignment = xtpChartLegendFar<BR>&nbsp;&nbsp;&nbsp; <BR>&nbsp;&nbsp;&nbsp; Dim Series As ChartSeries<BR>&nbsp;&nbsp;&nbsp; Set Series = ChartControl.Content.Series.Add("Series 1")<BR>&nbsp;&nbsp;&nbsp; <BR>&nbsp;&nbsp;&nbsp; Series.ArgumentScaleType = xtpChartScaleNumerical<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <BR>&nbsp;&nbsp;&nbsp; Series.Points.Add 1, 67<BR>&nbsp;&nbsp;&nbsp; Series.Points.Add 14, 50<BR>&nbsp;&nbsp;&nbsp; Series.Points.Add 9, 74<BR>&nbsp;&nbsp;&nbsp; Series.Points.Add 38, 58<BR>&nbsp;&nbsp;&nbsp; Series.Points.Add 2, 64<BR>&nbsp;&nbsp;&nbsp; Series.Points.Add 25, 95<BR>&nbsp;&nbsp;&nbsp; Series.Points.Add 1, 77<BR>&nbsp;&nbsp;&nbsp; Series.Points.Add 1, 91<BR>&nbsp;&nbsp;&nbsp; Series.Points.Add 35, 92<BR>&nbsp;&nbsp;&nbsp; Series.Points.Add 27, 86<BR>&nbsp;&nbsp;&nbsp; Series.Points.Add 31, 54<BR>&nbsp;&nbsp;&nbsp; Series.Points.Add 22, 53<BR>&nbsp;&nbsp;&nbsp; Series.Points.Add 12, 82<BR>&nbsp;&nbsp;&nbsp; Series.Points.Add 21, 66<BR>&nbsp;&nbsp;&nbsp; Series.Points.Add 38, 95<BR>&nbsp;&nbsp;&nbsp; Series.Points.Add 7, 76<BR>&nbsp;&nbsp;&nbsp; Series.Points.Add 11, 88<BR>&nbsp;&nbsp;&nbsp; Series.Points.Add 29, 62<BR>&nbsp;&nbsp;&nbsp; Series.Points.Add 27, 99<BR>&nbsp;&nbsp;&nbsp; Series.Points.Add 35, 94<BR>&nbsp;&nbsp;&nbsp; <BR>&nbsp;&nbsp;&nbsp; Set Series = ChartControl.Content.Series.Add("Series 2")<BR>&nbsp;&nbsp;&nbsp; <BR>&nbsp;&nbsp;&nbsp; 'Sample usage of Batch Allocation using AddPoints.&nbsp; This should be used when adding<BR>&nbsp;&nbsp;&nbsp; 'many points in a chart and performance starts to suffer.<BR>&nbsp;&nbsp;&nbsp; Series.Points.AddPoints 20</P>
+<P>&nbsp;&nbsp;&nbsp; Series.Points(0).ArgumentValue = 63<BR>&nbsp;&nbsp;&nbsp; Series.Points(0).Value(0) = 11<BR>&nbsp;&nbsp;&nbsp; Series.Points(1).ArgumentValue = 42<BR>&nbsp;&nbsp;&nbsp; Series.Points(1).Value(0) = 33<BR>&nbsp;&nbsp;&nbsp; Series.Points(2).ArgumentValue = 73<BR>&nbsp;&nbsp;&nbsp; Series.Points(2).Value(0) = 14<BR>&nbsp;&nbsp;&nbsp; Series.Points(3).ArgumentValue = 61<BR>&nbsp;&nbsp;&nbsp; Series.Points(3).Value(0) = 11<BR>&nbsp;&nbsp;&nbsp; Series.Points(4).ArgumentValue = 53<BR>&nbsp;&nbsp;&nbsp; Series.Points(4).Value(0) = 18<BR>&nbsp;&nbsp;&nbsp; Series.Points(5).ArgumentValue = 67<BR>&nbsp;&nbsp;&nbsp; Series.Points(5).Value(0) = 44<BR>&nbsp;&nbsp;&nbsp; Series.Points(6).ArgumentValue = 62<BR>&nbsp;&nbsp;&nbsp; Series.Points(6).Value(0) = 7<BR>&nbsp;&nbsp;&nbsp; Series.Points(7).ArgumentValue = 77<BR>&nbsp;&nbsp;&nbsp; Series.Points(7).Value(0) = 9<BR>&nbsp;&nbsp;&nbsp; Series.Points(8).ArgumentValue = 43<BR>&nbsp;&nbsp;&nbsp; Series.Points(8).Value(0) = 41<BR>&nbsp;&nbsp;&nbsp; Series.Points(9).ArgumentValue = 49<BR>&nbsp;&nbsp;&nbsp; Series.Points(9).Value(0) = 28<BR>&nbsp;&nbsp;&nbsp; Series.Points(10).ArgumentValue = 76<BR>&nbsp;&nbsp;&nbsp; Series.Points(10).Value(0) = 35<BR>&nbsp;&nbsp;&nbsp; Series.Points(11).ArgumentValue = 70<BR>&nbsp;&nbsp;&nbsp; Series.Points(11).Value(0) = 42<BR>&nbsp;&nbsp;&nbsp; Series.Points(12).ArgumentValue = 48<BR>&nbsp;&nbsp;&nbsp; Series.Points(12).Value(0) = 6<BR>&nbsp;&nbsp;&nbsp; Series.Points(13).ArgumentValue = 40<BR>&nbsp;&nbsp;&nbsp; Series.Points(13).Value(0) = 42<BR>&nbsp;&nbsp;&nbsp; Series.Points(14).ArgumentValue = 64<BR>&nbsp;&nbsp;&nbsp; Series.Points(14).Value(0) = 48<BR>&nbsp;&nbsp;&nbsp; Series.Points(15).ArgumentValue = 46<BR>&nbsp;&nbsp;&nbsp; Series.Points(15).Value(0) = 5<BR>&nbsp;&nbsp;&nbsp; Series.Points(16).ArgumentValue = 50<BR>&nbsp;&nbsp;&nbsp; Series.Points(16).Value(0) = 29<BR>&nbsp;&nbsp;&nbsp; Series.Points(17).ArgumentValue = 50<BR>&nbsp;&nbsp;&nbsp; Series.Points(17).Value(0) = 0<BR>&nbsp;&nbsp;&nbsp; Series.Points(18).ArgumentValue = 46<BR>&nbsp;&nbsp;&nbsp; Series.Points(18).Value(0) = 1<BR>&nbsp;&nbsp;&nbsp; Series.Points(19).ArgumentValue = 73<BR>&nbsp;&nbsp;&nbsp; Series.Points(19).Value(0) = 48</P>
+<P>&nbsp;&nbsp;&nbsp; Set ChartControl.Content.Series(0).Style = New ChartPointSeriesStyle<BR>&nbsp;&nbsp;&nbsp; Set ChartControl.Content.Series(1).Style = New ChartPointSeriesStyle<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <BR>&nbsp;&nbsp;&nbsp; Dim Diagram As ChartDiagram2D<BR>&nbsp;&nbsp;&nbsp; Set Diagram = ChartControl.Content.Series(0).Diagram<BR>&nbsp;&nbsp;&nbsp; <BR>&nbsp;&nbsp;&nbsp; Diagram.AxisY.Visible = True<BR>&nbsp;&nbsp;&nbsp; Diagram.AxisY.Alignment = xtpChartAxisNear<BR>&nbsp;&nbsp;&nbsp; Diagram.AxisY.Interlaced = True<BR>&nbsp;&nbsp;&nbsp; Diagram.AxisY.MinorCount = 1<BR>&nbsp;&nbsp;&nbsp; Diagram.AxisY.Thickness = 1<BR>&nbsp;&nbsp;&nbsp; Diagram.AxisX.Thickness = 1<BR>&nbsp;&nbsp;&nbsp; <BR>&nbsp;&nbsp;&nbsp; Diagram.AxisX.Label.Visible = True<BR>&nbsp;&nbsp;&nbsp; 'Diagram.AxisX.Title.Visible = True<BR>&nbsp;&nbsp;&nbsp; Diagram.AxisX.Title.Text = "Axis Title"<BR>&nbsp;&nbsp;&nbsp; <BR>&nbsp;&nbsp;&nbsp; Diagram.AxisY.Label.Angle = -45<BR>&nbsp;&nbsp;&nbsp; Diagram.AxisY.Label.Antialiasing = True<BR>&nbsp;&nbsp;&nbsp; <BR>&nbsp;&nbsp;&nbsp; Diagram.AxisX.TickMarks.CrossAxis = True<BR>&nbsp;&nbsp;&nbsp; Diagram.AxisX.TickMarks.Length = 5<BR>&nbsp;&nbsp;&nbsp; Diagram.AxisX.TickMarks.Thickness = 1<BR>&nbsp;&nbsp;&nbsp; Diagram.AxisX.TickMarks.MinorLength = 1<BR>&nbsp;&nbsp;&nbsp; Diagram.AxisX.TickMarks.MinorThickness = 1<BR>&nbsp;&nbsp;&nbsp; Diagram.AxisX.TickMarks.MinorVisible = True<BR>&nbsp;&nbsp;&nbsp; Diagram.AxisX.TickMarks.Visible = True<BR>&nbsp;&nbsp;&nbsp; <BR>&nbsp;&nbsp;&nbsp; Diagram.AxisX.GridLines.Visible = True<BR>&nbsp;&nbsp;&nbsp; Diagram.AxisX.GridLines.MinorVisible = True<BR>&nbsp;&nbsp;&nbsp; Diagram.AxisX.Interlaced = False<BR>&nbsp;&nbsp;&nbsp; <BR>&nbsp;&nbsp;&nbsp; Diagram.AxisY.GridLines.Visible = True<BR>&nbsp;&nbsp;&nbsp; Diagram.AxisY.GridLines.MinorVisible = True<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <BR>&nbsp;&nbsp;&nbsp; Diagram.AxisX.GridLines.LineStyle.DashStyle = xtpChartDashStyleSolid<BR>&nbsp;&nbsp;&nbsp; Diagram.AxisX.GridLines.MinorLineStyle.DashStyle = xtpChartDashStyleSolid</P></p><!--DXMETADATA end --> 
+            <!--DXMETADATA start type="FilteredItemList" scrap="INLINE_EXAMPLE" namespace="Example" source="Item" filter="type=inline" NoHeader="True" NoFooter="True" format="<h4 class=dxh4>$$Example$$</h4>,format= %%%%filtereditemlist%%" --><!--DXMETADATA end --> 
+            <!--DXMETADATA start type="FilteredItemList" scrap="MENU_LINK" namespace="seealso" source="Item" filter="" NoHeader="True" NoFooter="True" format="<h4 class=dxh4>$$See_Also$$</h4><p id=dxseealsocontent>%%filtereditemlist%%</p>" --><h4 class=dxh4>See Also</h4><p id=dxseealsocontent><a href="#Bookmark3177">ChartSeriesPointCollection Collection</a>
+</p><!--DXMETADATA end --><!--DXMETADATA start type="FilteredItemList" scrap="MENU_LINK" namespace="example" source="Item" filter="type=linked" NoHeader="True" NoFooter="True" format="><!--DXMETADATA end --><!--DXMETADATA start type="Variable" name="CopyrightNotice" format="><!--DXMETADATA end --></div></div>	
+	<div id="winchm_template_footer">Copyright &copy; 2018. All rights 
+reserved. (To change the copyright info, just edit it in template.)</div>
+</div>
+
+</body>
+</html>
+

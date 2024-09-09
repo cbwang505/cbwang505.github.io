@@ -1,0 +1,577 @@
+﻿
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- saved from url=(0014)about:internet -->
+<html>
+    <head>
+        <meta content="Innovasys Document! X (http://www.innovasys.com)" name=GENERATOR>
+        <!--DXMETADATA start type="MetaCharset" --><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"><!--DXMETADATA end-->
+        <!--DXMETADATA start type="PageItemTitle" format="<title>OLEDragDrop Event (XtremeReportControl)</title>" --><title>OLEDragDrop Event</title><!--DXMETADATA end-->
+        <link href="stylesheets/axstylesheet.css" type=text/css rel=stylesheet>
+        <script src="script/ax.js" type=text/javascript>
+    </script>
+
+    
+
+
+<style>
+html,div { margin: 0; padding: 0;}
+
+body {
+	padding: 0px;
+	margin: 0px;
+	overflow: auto;
+	height: 100%;
+}
+
+#winchm_template_button{
+	float: right;
+	width: 93px;
+	top: 7px;
+	position: relative;
+	text-align: right;
+	right: 5px;
+	height: auto;
+}
+
+#winchm_template_top{
+	padding: 0px;
+	margin: 0px;
+	border-bottom: 1px solid #9B9B9B;
+	background-color: #B1CEFE;
+}
+
+#winchm_template_navigation{
+	margin: 0px;
+	padding-top: 7px;
+	padding-left: 7px;
+	padding-bottom: 3px;
+	padding-right: 0px;
+	font-size: 8.5pt;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	color: #585858;
+}
+
+#winchm_template_title{
+	margin: 0px;
+	padding-top: 4px;
+	padding-left: 7px;
+	padding-bottom: 7px;
+	padding-right: 0px;
+	font-size: 18px; 
+	font-family: Verdana, Geneva, sans-serif;
+	color: #363636;
+}
+
+#winchm_template_content{
+	margin-top: 20px;
+	margin-left: 15px;
+	margin-bottom: 20px;
+	margin-right: 15px;
+	width: auto  !important;
+	width: 100%;
+}
+
+#winchm_template_footer{
+	border-width: 1px;
+	border-color: #B1CEFE;
+	border-top-style: solid;
+	margin-top: 15px;
+	margin-left: 15px;
+	margin-bottom: 20px;
+	margin-right: 15px;
+	padding-top: 7px;
+	padding-left: 0px;
+	padding-bottom: 0px;
+	padding-right: 0px;
+	font-family: arial, helvetica, sans-serif;
+	font-size: 8.5pt;
+	color: #696969;
+	width: auto;
+	text-align: left;
+}
+
+
+#winchm_template_container{
+	margin: 0px;
+	padding: 0px;
+	position: static;
+	padding-bottom: 3px;
+	overflow: auto;
+	background-color: #FFFFFF;
+}
+
+
+@media print
+{
+#winchm_template_container{
+	position: static;	
+	margin: 0px;
+	padding: 5px;
+	
+	width: auto;
+	height: auto;
+	overflow: auto;
+}
+#winchm_template_button{
+visibility:hidden;
+}
+}
+
+#winchm_template_navigation A:link	{text-decoration: none; color:#004080}
+#winchm_template_navigation A:visited  {text-decoration: none; color: #004080}
+#winchm_template_navigation A:active {text-decoration: none; color: #004080 }
+#winchm_template_navigation A:hover {text-decoration: none;color: #0080FF}
+
+A:link	{text-decoration: underline; color:#0033CC}
+A:visited  {text-decoration: underline; color: #0033CC}
+A:active {text-decoration: underline; color: #0033CC }
+A:hover {text-decoration: underline;color: #FF0000;}
+</style>
+<script type="text/javascript">
+function isMobile(){
+Agent = window.navigator.userAgent;
+if (Agent.indexOf("iPhone")>=1 || Agent.indexOf("iPad")>=1 || Agent.indexOf("iPod")>=1 || Agent.indexOf("Android")>=1){
+return true;
+}else{
+return false;	
+}
+
+}
+function d_onresize(){
+if (window.navigator.userAgent.indexOf("MSIE")>=1){
+document.getElementById('winchm_template_container').style.pixelWidth = document.body.offsetWidth - 3;
+document.getElementById('winchm_template_container').style.pixelHeight = document.body.offsetHeight - document.getElementById('winchm_template_top').offsetHeight - 4;
+}
+document.getElementById('winchm_template_container').style.top = document.getElementById('winchm_template_top').offsetHeight + 'px';
+}
+
+function d_onbeforeprint(){
+document.getElementById('winchm_template_container').style.width = 'auto';
+document.getElementById('winchm_template_container').style.height = 'auto';
+}
+
+function d_onafterprint(){
+d_onresize();
+}
+
+if(!isMobile()){
+
+window.onload = d_onresize;
+window.onresize = d_onresize;
+window.onbeforeprint = d_onbeforeprint;
+window.onafterprint = d_onafterprint;
+
+document.write("<style>\n");
+document.write("body {overflow: hidden;}\n");
+document.write("#winchm_template_container {position: absolute;overflow: auto;top : 0px;right: 0px;bottom: 0px;left: 0px;}\n");
+document.write("</style>\n");
+}
+
+</script>
+</head>
+    <body><script language="JavaScript" type="text/JavaScript">
+function syn(){
+if(parent.nav.tree){
+ if(parent.nav.tree.loaded){
+  parent.nav.tree.selectNode(15697);
+ }else{
+  setTimeout("syn()",500);
+}
+  }else{
+  setTimeout("syn()",500);
+  }}
+if(parent!=self){
+  setTimeout("syn()",100);
+}else{
+  parent.location.href = "../index.htm?page=XtremeReportControl~ReportControl~OLEDragDrop_EV.html";
+}
+originalOnload = window.onload;
+if(originalOnload==null){
+window.onload = function(){parent.contentLoaded = true;};
+}else{
+window.onload = function(){originalOnload();parent.contentLoaded = true;};
+}
+</script> 
+
+
+<div id="winchm_template_top">
+	<div id="winchm_template_button"><A href="XtremeReportControl~TrackControl~OLEDragDrop_EV.html" title="Previous topic"><img id="winchm_template_prev" alt="Previous topic" src="template2/btn_prev_n.gif" border="0"></a><A href="XtremeReportControl~ReportControl~OLEDragOver_EV.html" title="Next topic"><img id="winchm_template_next" alt="Next topic" src="template2/btn_next_n.gif" border="0"></a></div>
+	<div id="winchm_template_navigation">Help &gt; 
+<A href="welcome_screen.htm">Codejock ActiveX Controls v15.3</A> &gt; <A href="XtremeReportControl_P.html">Xtreme Report Control</A> &gt; Events &gt; </div>
+	<div id="winchm_template_title">OLEDragDrop Event (XtremeReportControl)</div>
+</div>
+<div id="winchm_template_container">
+	<div id="winchm_template_content"><div class=popupbubble id=dxseealsomenu><p id=dxseealsocontent><a href="#Bookmark13516">ReportControl Control</a>
+&nbsp;|&nbsp;<a href="#Bookmark13721">OLEDragOver Event</a>
+&nbsp;|&nbsp;<a href="#Bookmark13646">OLEDropMode Property</a>
+&nbsp;|&nbsp;<a href="#Bookmark13645">OLEDropAbove Property</a>
+</p><!--DXMETADATA end --> 
+        </div>
+        <!--DXMETADATA start type="FilteredItemList" scrap="PARAMETERS_BUBBLES" namespace="parameter" source="Item" -->
+<div id="Data_box" class="popupbubble">
+<DL><DT class="popupbubble"><I>Data</I></DT>
+<DD class="popupbubble">A <B>DataObject</B> object containing formats that the source will provide and, in addition, possibly the data for those formats. If no data is contained in the <B>DataObject</B>, it is provided when the control calls the <B>GetData</B> method.</DD></DL>
+</div>
+<div id="Effect_box" class="popupbubble">
+<DL><DT class="popupbubble"><I>Effect</I></DT>
+<DD class="popupbubble">A long integer set by the target component identifying the action that has been performed (if any), thus allowing the source to take appropriate action if the component was moved (such as the source deleting the data).</DD></DL>
+</div>
+<div id="Button_box" class="popupbubble">
+<DL><DT class="popupbubble"><I>Button</I></DT>
+<DD class="popupbubble">An integer which acts as a bit field corresponding to the state of a mouse button when it is depressed. The left button is bit 0, the right button is bit 1, and the middle button is bit 2. These bits correspond to the values 1, 2, and 4, respectively. It indicates the state of the mouse buttons; some, all, or none of these three bits can be set, indicating that some, all, or none of the buttons are depressed.</DD></DL>
+</div>
+<div id="Shift_box" class="popupbubble">
+<DL><DT class="popupbubble"><I>Shift</I></DT>
+<DD class="popupbubble">An integer which acts as a bit field corresponding to the state of the shift, ctrl, and alt keys when they are depressed. The shift key is bit 0, the ctrl key is bit 1, and the alt key is bit 2. These bits correspond to the values 1, 2, and 4, respectively. The shift parameter indicates the state of these keys; some, all, or none of the bits can be set, indicating that some, all, or none of the keys are depressed. For example, if both the ctrl and alt keys were depressed, the value of shift would be 6.</DD></DL>
+</div>
+<div id="x_box" class="popupbubble">
+<DL><DT class="popupbubble"><I>x</I></DT>
+<DD class="popupbubble">A number which specifies the current location of the mouse pointer. The <I>x</I> and <I>y</I> values are always expressed in terms of the coordinate system set by the <B>ScaleHeight</B>, <B>ScaleWidth</B>, <B>ScaleLeft</B>, and <B>ScaleTop</B> properties of the object.</DD></DL>
+</div>
+<div id="y_box" class="popupbubble">
+<DL><DT class="popupbubble"><I>y</I></DT>
+<DD class="popupbubble">A number which specifies the current location of the mouse pointer. The <I>x</I> and <I>y</I> values are always expressed in terms of the coordinate system set by the <B>ScaleHeight</B>, <B>ScaleWidth</B>, <B>ScaleLeft</B>, and <B>ScaleTop</B> properties of the object.</DD></DL>
+</div>
+<!--DXMETADATA end --> 
+        <div id=pagetop>
+            <div id=projectnamebanner>
+                <table class=projectnametable cellspacing=0>
+                    <tbody>
+                        <tr>
+                            <!--DXMETADATA start type="Literal" condition="childitems:itemtype=seealso" value="<td class='button'><a href='' id='seealsobutton' onclick='showSeeAlsoBox()'><img alt='See Also' border='0' src='axImages/seealso.gif' width=14 height=14></a></td>" --><td class='button'><a href='' id='seealsobutton' onclick='showSeeAlsoBox()'><img alt='See Also' border='0' src='axImages/seealso.gif' width=14 height=14></a></td><!--DXMETADATA end -->
+                            <td>
+                                <!--DXMETADATA start type="Phrase" Name="Product_Header" -->Xtreme Report Control ActiveX Control v15.3<!--DXMETADATA end --> 
+                            </td>
+                            <td align=right>
+                                <!--DXMETADATA start type="Variable" name="FeedbackLink" format="" --><!--DXMETADATA end --> 
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id=pagetitlebanner>
+                <h1 class=dxh1>
+                <!--DXMETADATA start type="PageItemTitle" -->OLEDragDrop Event<!--DXMETADATA end --></h1>
+            </div>
+        </div>
+        <div id=pagebody valign="bottom">
+            <!--DXMETADATA start type="IsNew" format="<script>document.all.pagebody.className = 'newTopic'</script>" --><!--DXMETADATA end --> 
+            <!--DXMETADATA start type="Description" source="Item" format="<h4 class=dxh4>$$Description$$</h4><p>%%description%%</p>" --><h4 class=dxh4>Description</h4><p>Occurs when a source component is dropped onto a target component when the source component determines that a drop can occur.</p><!--DXMETADATA end --> 
+            <!--DXMETADATA start type="Syntax" lang="VB" format="<div Class=LanguageSpecific Name=Syntax_VB><h4 class=dxh4>$$Syntax$$</h4><p>%%Syntax%%</p></div>" --><div Class=LanguageSpecific Name=Syntax_VB><h4 class=dxh4>Syntax</h4><p><PRE CLASS="syntax" LANG="VB"><strong>Public Event OLEDragDrop</strong>( _
+&nbsp;&nbsp;&nbsp;<strong>ByVal </strong><i><a class="parameter" id="Data" href="#" onclick="javascript:showParamBox();">Data</a></i></strong> <strong>As</strong> <a href="#Bookmark5005">DataObject</a>, _
+&nbsp;&nbsp;&nbsp;<strong>ByRef </strong><i><a class="parameter" id="Effect" href="#" onclick="javascript:showParamBox();">Effect</a></i></strong> <strong>As</strong> <b>Long</b>, _
+&nbsp;&nbsp;&nbsp;<strong>ByVal </strong><i><a class="parameter" id="Button" href="#" onclick="javascript:showParamBox();">Button</a></i></strong> <strong>As</strong> <b>Integer</b>, _
+&nbsp;&nbsp;&nbsp;<strong>ByVal </strong><i><a class="parameter" id="Shift" href="#" onclick="javascript:showParamBox();">Shift</a></i></strong> <strong>As</strong> <b>Integer</b>, _
+&nbsp;&nbsp;&nbsp;<strong>ByVal </strong><i><a class="parameter" id="x" href="#" onclick="javascript:showParamBox();">x</a></i></strong> <strong>As</strong> <b>Long</b>, _
+&nbsp;&nbsp;&nbsp;<strong>ByVal </strong><i><a class="parameter" id="y" href="#" onclick="javascript:showParamBox();">y</a></i></strong> <strong>As</strong> <b>Long</b> _
+)</PRE></p></div><!--DXMETADATA end --> 
+            <!--DXMETADATA start type="FilteredItemList" scrap="PARAMETERS_LIST" namespace="parameter" source="Item" filter="" format="<h4 class=dxh4>$$ParameterList$$</h4>%%filtereditemlist%%" --><h4 class=dxh4>Parameters</h4><DL>
+<DT><I>Data</I></DT>
+<DD>A <B>DataObject</B> object containing formats that the source will provide and, in addition, possibly the data for those formats. If no data is contained in the <B>DataObject</B>, it is provided when the control calls the <B>GetData</B> method.</DD>
+<DT><I>Effect</I></DT>
+<DD>A long integer set by the target component identifying the action that has been performed (if any), thus allowing the source to take appropriate action if the component was moved (such as the source deleting the data).</DD>
+<DT><I>Button</I></DT>
+<DD>An integer which acts as a bit field corresponding to the state of a mouse button when it is depressed. The left button is bit 0, the right button is bit 1, and the middle button is bit 2. These bits correspond to the values 1, 2, and 4, respectively. It indicates the state of the mouse buttons; some, all, or none of these three bits can be set, indicating that some, all, or none of the buttons are depressed.</DD>
+<DT><I>Shift</I></DT>
+<DD>An integer which acts as a bit field corresponding to the state of the shift, ctrl, and alt keys when they are depressed. The shift key is bit 0, the ctrl key is bit 1, and the alt key is bit 2. These bits correspond to the values 1, 2, and 4, respectively. The shift parameter indicates the state of these keys; some, all, or none of the bits can be set, indicating that some, all, or none of the keys are depressed. For example, if both the ctrl and alt keys were depressed, the value of shift would be 6.</DD>
+<DT><I>x</I></DT>
+<DD>A number which specifies the current location of the mouse pointer. The <I>x</I> and <I>y</I> values are always expressed in terms of the coordinate system set by the <B>ScaleHeight</B>, <B>ScaleWidth</B>, <B>ScaleLeft</B>, and <B>ScaleTop</B> properties of the object.</DD>
+<DT><I>y</I></DT>
+<DD>A number which specifies the current location of the mouse pointer. The <I>x</I> and <I>y</I> values are always expressed in terms of the coordinate system set by the <B>ScaleHeight</B>, <B>ScaleWidth</B>, <B>ScaleLeft</B>, and <B>ScaleTop</B> properties of the object.</DD>
+</DL><!--DXMETADATA end --> 
+            <!--DXMETADATA start type="TaggedComment" source="Item" id="##REMARKS" format="<h4 class=dxh4>$$Remarks$$</h4><p>%%comment%%</p>" --><!--DXMETADATA end --> 
+            <!--DXMETADATA start type="TaggedComment" source="Item" id="##EXAMPLEINTRO" format="<h4 class=dxh4>$$Example$$</h4><p>%%comment%%</p>" --><!--DXMETADATA end --> 
+            <!--DXMETADATA start type="FilteredItemList" scrap="INLINE_EXAMPLE" namespace="Example" source="Item" filter="type=inline" NoHeader="True" NoFooter="True" format="<h4 class=dxh4>$$Example$$</h4>,format= %%%%filtereditemlist%%" --><h4 class=dxh4>Example</h4><DIV Class=LanguageSpecific Name=Example_VB><p><SPAN class="lang">[Drag and Drop from and external source (Visual Basic)]</SPAN>&nbsp;This sample illustrates how to drag and drop custom items into the report control. This sample assume this is a List View named wndListView.</p><DIV Class=LanguageSpecific Name=Code_VB><TABLE Class="CodeContainerTable" CellPadding="0" CellSpacing="0" Border="0"><TR><TD NOWRAP><CODE Class="VB"><font class='keyword'>Dim</font> DragListItem <font class='keyword'>As</font> ListItem<BR/>
+<BR/>
+<font class='keyword'>Private</font> <font class='keyword'>Sub</font> Form_Load()<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;wndReportControl.Columns.Add 0, <font class='string'>&quot;Files&quot;</font>, 100, <font class='keyword'>True</font><BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;wndListView.ListItems.Add , , <font class='string'>&quot;File 1&quot;</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;wndListView.ListItems.Add , , <font class='string'>&quot;File 2&quot;</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;wndListView.ListItems.Add , , <font class='string'>&quot;File 3&quot;</font><BR/>
+<font class='keyword'>End</font> <font class='keyword'>Sub</font><BR/>
+<BR/>
+<font class='keyword'>Private</font> <font class='keyword'>Sub</font> wndListView_MouseMove(Button <font class='keyword'>As</font> <font class='keyword'>Integer</font>, Shift <font class='keyword'>As</font> <font class='keyword'>Integer</font>, x <font class='keyword'>As</font> <font class='keyword'>Single</font>, y <font class='keyword'>As</font> <font class='keyword'>Single</font>)<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>If</font> (Button = vbLeftButton) <font class='keyword'>Then</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Dim</font> Item <font class='keyword'>As</font> ListItem<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Set</font> Item = wndListView.HitTest(x, y)<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>If</font> (<font class='keyword'>Not</font> Item <font class='keyword'>Is</font> <font class='keyword'>Nothing</font>) <font class='keyword'>Then</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Set</font> DragListItem = Item<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wndListView.OLEDrag<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Set</font> DragListItem = <font class='keyword'>Nothing</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>End</font> <font class='keyword'>If</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>End</font> <font class='keyword'>If</font><BR/>
+<BR/>
+<font class='keyword'>End</font> <font class='keyword'>Sub</font><BR/>
+<BR/>
+<font class='keyword'>Private</font> <font class='keyword'>Sub</font> wndListView_OLEStartDrag(Data <font class='keyword'>As</font> MSComctlLib.DataObject, AllowedEffects <font class='keyword'>As</font> <font class='keyword'>Long</font>)<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>If</font> <font class='keyword'>Not</font> DragListItem <font class='keyword'>Is</font> <font class='keyword'>Nothing</font> <font class='keyword'>Then</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;AllowedEffects = vbDropEffectCopy<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Data.SetData DragListItem.Text, vbCFText<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>End</font> <font class='keyword'>If</font><BR/>
+<font class='keyword'>End</font> <font class='keyword'>Sub</font><BR/>
+<BR/>
+<font class='keyword'>Private</font> <font class='keyword'>Sub</font> wndListView_OLEDragDrop(Data <font class='keyword'>As</font> MSComctlLib.DataObject, Effect <font class='keyword'>As</font> <font class='keyword'>Long</font>, Button <font class='keyword'>As</font> <font class='keyword'>Integer</font>, Shift <font class='keyword'>As</font> <font class='keyword'>Integer</font>, x <font class='keyword'>As</font> <font class='keyword'>Single</font>, y <font class='keyword'>As</font> <font class='keyword'>Single</font>)<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>If</font> (Data.GetFormat(vbCFText)) <font class='keyword'>Then</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Effect = vbDropEffectCopy<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Dim</font> Text <font class='keyword'>As</font> <font class='keyword'>String</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Text = Data.GetData(vbCFText)<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>ElseIf</font> Data.GetFormat(vbCFFiles) <font class='keyword'>Then</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Effect = vbDropEffectCopy<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>For</font> <font class='keyword'>Each</font> File <font class='keyword'>In</font> Data.Files<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wndListView.ListItems.Add , , File<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Next</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Else</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Effect = vbDropEffectNone<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>End</font> <font class='keyword'>If</font><BR/>
+<font class='keyword'>End</font> <font class='keyword'>Sub</font><BR/>
+<BR/>
+<font class='keyword'>Private</font> <font class='keyword'>Sub</font> wndListView_OLEDragOver(Data <font class='keyword'>As</font> MSComctlLib.DataObject, Effect <font class='keyword'>As</font> <font class='keyword'>Long</font>, Button <font class='keyword'>As</font> <font class='keyword'>Integer</font>, Shift <font class='keyword'>As</font> <font class='keyword'>Integer</font>, x <font class='keyword'>As</font> <font class='keyword'>Single</font>, y <font class='keyword'>As</font> <font class='keyword'>Single</font>, state <font class='keyword'>As</font> <font class='keyword'>Integer</font>)<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>If</font> (Data.GetFormat(vbCFText)) <font class='keyword'>Then</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Effect = vbDropEffectCopy<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>ElseIf</font> Data.GetFormat(vbCFFiles) <font class='keyword'>Then</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Effect = vbDropEffectCopy<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Else</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Effect = vbDropEffectNone<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>End</font> <font class='keyword'>If</font><BR/>
+<font class='keyword'>End</font> <font class='keyword'>Sub</font><BR/>
+<BR/>
+<font class='keyword'>Private</font> <font class='keyword'>Sub</font> wndReportControl_OLEDragDrop(<font class='keyword'>ByVal</font> Data <font class='keyword'>As</font> XtremeReportControl.DataObject, Effect <font class='keyword'>As</font> <font class='keyword'>Long</font>, <font class='keyword'>ByVal</font> Button <font class='keyword'>As</font> <font class='keyword'>Integer</font>, <font class='keyword'>ByVal</font> Shift <font class='keyword'>As</font> <font class='keyword'>Integer</font>, <font class='keyword'>ByVal</font> x <font class='keyword'>As</font> <font class='keyword'>Single</font>, <font class='keyword'>ByVal</font> y <font class='keyword'>As</font> <font class='keyword'>Single</font>)<BR/>
+<font class='keyword'>Dim</font> Record <font class='keyword'>As</font> ReportRecord<BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>If</font> Data.GetFormat(vbCFText) <font class='keyword'>Then</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Effect = vbDropEffectCopy<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Dim</font> Text <font class='keyword'>As</font> <font class='keyword'>String</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Text = Data.GetData(vbCFText)<BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Dim</font> ht <font class='keyword'>As</font> ReportHitTestInfo<BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Set</font> ht = wndReportControl.HitTest(x / Screen.TwipsPerPixelX, y / Screen.TwipsPerPixelY)<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Dim</font> Index <font class='keyword'>As</font> <font class='keyword'>Long</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Index = wndReportControl.Records.Count<BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>If</font> (<font class='keyword'>Not</font> ht.Row <font class='keyword'>Is</font> <font class='keyword'>Nothing</font>) <font class='keyword'>Then</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>If</font> (<font class='keyword'>Not</font> ht.Row.Record <font class='keyword'>Is</font> <font class='keyword'>Nothing</font>) <font class='keyword'>Then</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Index = ht.Row.Record.Index<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Dim</font> RowLeft <font class='keyword'>As</font> <font class='keyword'>Long</font>, RowTop <font class='keyword'>As</font> <font class='keyword'>Long</font>, RowRight <font class='keyword'>As</font> <font class='keyword'>Long</font>, RowBottom <font class='keyword'>As</font> <font class='keyword'>Long</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ht.Row.GetRect RowLeft, RowTop, RowRight, RowBottom<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>If</font> (RowTop + RowBottom) / 2 &lt; y / Screen.TwipsPerPixelY <font class='keyword'>Then</font> Index = Index + 1<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>End</font> <font class='keyword'>If</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>End</font> <font class='keyword'>If</font><BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Set</font> Record = wndReportControl.Records.Insert(Index)<BR/>
+<BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Record.AddItem Text<BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wndReportControl.Populate<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>ElseIf</font> Data.GetFormat(vbCFFiles) <font class='keyword'>Then</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>For</font> <font class='keyword'>Each</font> File <font class='keyword'>In</font> Data.Files<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Set</font> Record = wndReportControl.Records.Add<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Record.AddItem File<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Next</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wndReportControl.Populate<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Else</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Effect = vbDropEffectNone<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>End</font> <font class='keyword'>If</font><BR/>
+<font class='keyword'>End</font> <font class='keyword'>Sub</font><BR/>
+<BR/>
+<font class='keyword'>Private</font> <font class='keyword'>Sub</font> wndReportControl_OLEDragOver(<font class='keyword'>ByVal</font> Data <font class='keyword'>As</font> XtremeReportControl.DataObject, Effect <font class='keyword'>As</font> <font class='keyword'>Long</font>, <font class='keyword'>ByVal</font> Button <font class='keyword'>As</font> <font class='keyword'>Integer</font>, <font class='keyword'>ByVal</font> Shift <font class='keyword'>As</font> <font class='keyword'>Integer</font>, <font class='keyword'>ByVal</font> x <font class='keyword'>As</font> <font class='keyword'>Single</font>, <font class='keyword'>ByVal</font> y <font class='keyword'>As</font> <font class='keyword'>Single</font>, <font class='keyword'>ByVal</font> state <font class='keyword'>As</font> <font class='keyword'>Integer</font>)<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>If</font> (Data.GetFormat(vbCFText)) <font class='keyword'>Then</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Effect = vbDropEffectCopy<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>ElseIf</font> Data.GetFormat(vbCFFiles) <font class='keyword'>Then</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Effect = vbDropEffectCopy<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Else</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Effect = vbDropEffectNone<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>End</font> <font class='keyword'>If</font><BR/>
+<font class='keyword'>End</font> <font class='keyword'>Sub</font><BR/>
+</CODE></TD></TR></TABLE></DIV></DIV>
+<DIV Class=LanguageSpecific Name=Example_VB><p><SPAN class="lang">[Drop file names from windows explorer using  ReportControl_OLEDragDrop (Visual Basic)]</SPAN>&nbsp;This sample illustrates how to drag and drop file names from a Windows Explorer window into the Report using the ReportControl_OLEDragDrop event.</p><DIV Class=LanguageSpecific Name=Code_VB><TABLE Class="CodeContainerTable" CellPadding="0" CellSpacing="0" Border="0"><TR><TD NOWRAP><CODE Class="VB"><font class='comment'>'Credits: to Karl E. Peterson (http://www.mvps.org/vb) for the FileInfo classes used.</font><BR/>
+<font class='comment'>'Credits: to Peter59 in Codejock Forums for the base sample we modified</font><BR/>
+<BR/>
+<font class='keyword'>Option</font> <font class='keyword'>Explicit</font><BR/>
+<BR/>
+<font class='keyword'>Private</font> <font class='keyword'>Const</font> Modulname = <font class='string'>&quot;frmMain&quot;</font><BR/>
+<font class='keyword'>Dim</font> xX <font class='keyword'>As</font> <font class='keyword'>Integer</font>, yY <font class='keyword'>As</font> <font class='keyword'>Integer</font><BR/>
+<font class='keyword'>Dim</font> bAbove <font class='keyword'>As</font> <font class='keyword'>Boolean</font><BR/>
+<BR/>
+<BR/>
+<font class='keyword'>Private</font> <font class='keyword'>Sub</font> Form_Load()<BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;InitReportControl<BR/>
+<BR/>
+<font class='keyword'>End</font> <font class='keyword'>Sub</font> <font class='comment'>'Form_Load()</font><BR/>
+<BR/>
+<font class='keyword'>Private</font> <font class='keyword'>Sub</font> Form_Resize()<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;wndReportControl.Move 0, 0, <font class='keyword'>Me</font>.ScaleWidth, <font class='keyword'>Me</font>.ScaleHeight<BR/>
+<font class='keyword'>End</font> <font class='keyword'>Sub</font> <font class='comment'>'Form_Resize()</font><BR/>
+<BR/>
+<font class='keyword'>Private</font> <font class='keyword'>Sub</font> InitReportControl()<BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>With</font> wndReportControl<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.PaintManager.ColumnStyle = xtpColumnResource<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.PaintManager.NoItemsText = <font class='string'>&quot;Drop files here...&quot;</font><BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.OLEDropMode = xtpOLEDropManual<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.EnableDragDrop <font class='string'>&quot;AUselessString&quot;</font>, xtpReportAllowDrop<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>End</font> <font class='keyword'>With</font><BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>With</font> wndReportControl.Columns<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.Add 0, <font class='string'>&quot;FileNo&quot;</font>, 30, <font class='keyword'>True</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.Add 1, <font class='string'>&quot;Fullname&quot;</font>, 150, <font class='keyword'>True</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.Add 2, <font class='string'>&quot;Path&quot;</font>, 150, <font class='keyword'>True</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.Add 3, <font class='string'>&quot;Name&quot;</font>, 150, <font class='keyword'>True</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>End</font> <font class='keyword'>With</font><BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;bAbove = <font class='keyword'>True</font><BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;wndReportControl.SortedDragDrop = <font class='keyword'>True</font><BR/>
+<BR/>
+<font class='keyword'>End</font> <font class='keyword'>Sub</font> <font class='comment'>'InitReportControl()</font><BR/>
+<BR/>
+<font class='keyword'>Private</font> <font class='keyword'>Sub</font> wndReportControl_MouseMove(Button <font class='keyword'>As</font> <font class='keyword'>Integer</font>, Shift <font class='keyword'>As</font> <font class='keyword'>Integer</font>, x <font class='keyword'>As</font> <font class='keyword'>Long</font>, y <font class='keyword'>As</font> <font class='keyword'>Long</font>)<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;xX = x<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;yY = y<BR/>
+<font class='keyword'>End</font> <font class='keyword'>Sub</font><BR/>
+<BR/>
+<font class='keyword'>Private</font> <font class='keyword'>Sub</font> wndReportControl_OLEDragDrop(<font class='keyword'>ByVal</font> Data <font class='keyword'>As</font> XtremeReportControl.DataObject, Effect <font class='keyword'>As</font> <font class='keyword'>Long</font>, <font class='keyword'>ByVal</font> Button <font class='keyword'>As</font> <font class='keyword'>Integer</font>, <font class='keyword'>ByVal</font> Shift <font class='keyword'>As</font> <font class='keyword'>Integer</font>, <font class='keyword'>ByVal</font> x <font class='keyword'>As</font> <font class='keyword'>Single</font>, <font class='keyword'>ByVal</font> y <font class='keyword'>As</font> <font class='keyword'>Single</font>)<BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;Debug.<font class='keyword'>Print</font> <font class='string'>&quot;wndReportControl_OLEDragDrop...&quot;</font><BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>If</font> Data.GetFormat(vbCFFiles) <font class='keyword'>Then</font><BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Dim</font> DroppedFiles <font class='keyword'>As</font> XtremeReportControl.DataObjectFiles<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Dim</font> rptRec <font class='keyword'>As</font> XtremeReportControl.ReportRecord<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Dim</font> rptRowDrop <font class='keyword'>As</font> XtremeReportControl.ReportRow<BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Dim</font> i <font class='keyword'>As</font> <font class='keyword'>Integer</font>, offset <font class='keyword'>As</font> <font class='keyword'>Integer</font><BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;offset = 0<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Set</font> rptRowDrop = <font class='keyword'>Nothing</font><BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>If</font> <font class='keyword'>Not</font> wndReportControl.HitTest(xX, yY).Row <font class='keyword'>Is</font> <font class='keyword'>Nothing</font> <font class='keyword'>Then</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Set</font> rptRowDrop = wndReportControl.HitTest(xX, yY).Row<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bAbove = <font class='keyword'>False</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Else</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Select</font> <font class='keyword'>Case</font> wndReportControl.HitTest(xX, yY).ht<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Case</font> xtpHitTestReportArea:<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bAbove = <font class='keyword'>False</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Case</font> xtpHitTestGroupBox, xtpHitTestHeader:<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bAbove = <font class='keyword'>True</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Case</font> Default:<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;bAbove = <font class='keyword'>False</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>End</font> <font class='keyword'>Select</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>End</font> <font class='keyword'>If</font><BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Set</font> DroppedFiles = Data.Files<BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>If</font> (DroppedFiles <font class='keyword'>Is</font> <font class='keyword'>Nothing</font>) <font class='keyword'>Then</font> <font class='keyword'>Exit</font> <font class='keyword'>Sub</font><BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>If</font> <font class='keyword'>Not</font> rptRowDrop <font class='keyword'>Is</font> <font class='keyword'>Nothing</font> <font class='keyword'>Then</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;offset = rptRowDrop.Record.Index<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>End</font> <font class='keyword'>If</font><BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wndReportControl.SelectedRows.DeleteAll<BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>For</font> i = 0 <font class='keyword'>To</font> DroppedFiles.Count - 1<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='comment'>'-- add a new ReportRecord to the collection of records</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Set</font> rptRec = <font class='keyword'>New</font> ReportRecord<BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>With</font> rptRec<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.AddItem i + 1 + offset<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.AddItem DroppedFiles(i + 1)<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.AddItem GetPathPart(DroppedFiles(i + 1))<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;.AddItem GetNamePart(DroppedFiles(i + 1))<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>End</font> <font class='keyword'>With</font><BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>If</font> wndReportControl.Records.Count = 0 <font class='keyword'>Or</font> bAbove = <font class='keyword'>True</font> <font class='keyword'>Then</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wndReportControl.Records.InsertAt 0, rptRec<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>ElseIf</font> bAbove = <font class='keyword'>False</font> <font class='keyword'>Then</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>If</font> rptRowDrop <font class='keyword'>Is</font> <font class='keyword'>Nothing</font> <font class='keyword'>Then</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wndReportControl.Records.InsertAt wndReportControl.Records.Count, rptRec<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Else</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>If</font> wndReportControl.OLEDropAbove <font class='keyword'>Then</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wndReportControl.Records.InsertAt (offset), rptRec<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Else</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wndReportControl.Records.InsertAt (offset + 1), rptRec<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>End</font> <font class='keyword'>If</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>End</font> <font class='keyword'>If</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>End</font> <font class='keyword'>If</font><BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Next</font> i<BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wndReportControl.Populate<BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>End</font> <font class='keyword'>If</font><BR/>
+<BR/>
+<font class='keyword'>End</font> <font class='keyword'>Sub</font> <font class='comment'>'wndReportControl_OLEDragDrop()</font><BR/>
+<BR/>
+<font class='keyword'>Private</font> <font class='keyword'>Sub</font> wndReportControl_OLEDragOver(<font class='keyword'>ByVal</font> Data <font class='keyword'>As</font> XtremeReportControl.DataObject, Effect <font class='keyword'>As</font> <font class='keyword'>Long</font>, <font class='keyword'>ByVal</font> Button <font class='keyword'>As</font> <font class='keyword'>Integer</font>, <font class='keyword'>ByVal</font> Shift <font class='keyword'>As</font> <font class='keyword'>Integer</font>, <font class='keyword'>ByVal</font> x <font class='keyword'>As</font> <font class='keyword'>Single</font>, <font class='keyword'>ByVal</font> y <font class='keyword'>As</font> <font class='keyword'>Single</font>, <font class='keyword'>ByVal</font> state <font class='keyword'>As</font> <font class='keyword'>Integer</font>)<BR/>
+<BR/>
+<font class='keyword'>End</font> <font class='keyword'>Sub</font> <font class='comment'>'wndReportControl_OLEDragOver()</font><BR/>
+<BR/>
+<font class='keyword'>Public</font> <font class='keyword'>Function</font> GetNamePart(sFile <font class='keyword'>As</font> <font class='keyword'>String</font>) <font class='keyword'>As</font> <font class='keyword'>String</font><BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Dim</font> iPos <font class='keyword'>As</font> <font class='keyword'>Long</font><BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>On</font> <font class='keyword'>Error</font> <font class='keyword'>Goto</font> Err_GetNamePart<BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='comment'>'-- search last backslash</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;iPos = InStrRev(sFile, <font class='string'>&quot;\&quot;</font>, -1, vbBinaryCompare)<BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>If</font> iPos &gt; 0 <font class='keyword'>Then</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GetNamePart = Mid$(sFile, iPos + 1)<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Else</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GetNamePart = sFile<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>End</font> <font class='keyword'>If</font><BR/>
+<BR/>
+Exit_GetNamePart:<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Exit</font> <font class='keyword'>Function</font><BR/>
+<BR/>
+Err_GetNamePart:<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;MsgBox <font class='string'>&quot;Error: &quot;</font> & Err.Number & <font class='string'>&quot;. &quot;</font> & Err.Description, , Modulname & <font class='string'>&quot;_GetNamePart&quot;</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Resume</font> Exit_GetNamePart<BR/>
+<BR/>
+<font class='keyword'>End</font> <font class='keyword'>Function</font> <font class='comment'>'GetNamePart()</font><BR/>
+<BR/>
+<font class='keyword'>Public</font> <font class='keyword'>Function</font> GetPathPart(sFile <font class='keyword'>As</font> <font class='keyword'>String</font>) <font class='keyword'>As</font> <font class='keyword'>String</font><BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Dim</font> iPos <font class='keyword'>As</font> <font class='keyword'>Long</font><BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>On</font> <font class='keyword'>Error</font> <font class='keyword'>Goto</font> Err_GetPathPart<BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='comment'>'-- search last backslash</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;iPos = InStrRev(sFile, <font class='string'>&quot;\&quot;</font>, -1, vbBinaryCompare)<BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>If</font> iPos &gt; 0 <font class='keyword'>Then</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GetPathPart = Left$(sFile, iPos)<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Else</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GetPathPart = sFile<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>End</font> <font class='keyword'>If</font><BR/>
+<BR/>
+Exit_GetPathPart:<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Exit</font> <font class='keyword'>Function</font><BR/>
+<BR/>
+Err_GetPathPart:<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;MsgBox <font class='string'>&quot;Error: &quot;</font> & Err.Number & <font class='string'>&quot;. &quot;</font> & Err.Description, , Modulname & <font class='string'>&quot;_GetPathPart&quot;</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Resume</font> Exit_GetPathPart<BR/>
+<BR/>
+<font class='keyword'>End</font> <font class='keyword'>Function</font> <font class='comment'>'GetPathPart()</font><BR/>
+<BR/>
+<BR/>
+<BR/>
+</CODE></TD></TR></TABLE></DIV></DIV>
+<!--DXMETADATA end --> 
+            <!--DXMETADATA start type="FilteredItemList" scrap="MENU_LINK" namespace="seealso" source="Item" filter="" NoHeader="True" NoFooter="True" format="<h4 class=dxh4>$$See_Also$$</h4><p id=dxseealsocontent>%%filtereditemlist%%</p>" --><h4 class=dxh4>See Also</h4><p id=dxseealsocontent><a href="#Bookmark13516">ReportControl Control</a>
+&nbsp;|&nbsp;<a href="#Bookmark13721">OLEDragOver Event</a>
+&nbsp;|&nbsp;<a href="#Bookmark13646">OLEDropMode Property</a>
+&nbsp;|&nbsp;<a href="#Bookmark13645">OLEDropAbove Property</a>
+</p><!--DXMETADATA end --><!--DXMETADATA start type="FilteredItemList" scrap="MENU_LINK" namespace="example" source="Item" filter="type=linked" NoHeader="True" NoFooter="True" format="><!--DXMETADATA end --><!--DXMETADATA start type="Variable" name="CopyrightNotice" format="><!--DXMETADATA end --></div></div>	
+	<div id="winchm_template_footer">Copyright &copy; 2018. All rights 
+reserved. (To change the copyright info, just edit it in template.)</div>
+</div>
+
+</body>
+</html>
+

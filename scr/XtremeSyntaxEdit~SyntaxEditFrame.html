@@ -1,0 +1,274 @@
+﻿
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- saved from url=(0014)about:internet -->
+<html>
+    <head>
+        <meta content="Innovasys Document! X (http://www.innovasys.com)" name=GENERATOR>
+        <!--DXMETADATA start type="MetaCharset" --><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"><!--DXMETADATA end-->
+        <!--DXMETADATA start type="PageItemTitle" format="<title>Overview</title>" --><title>SyntaxEditFrame Control</title><!--DXMETADATA end-->
+        <link href="stylesheets/axstylesheet.css" type=text/css rel=stylesheet>
+        <script src="script/ax.js" type=text/javascript>
+    </script>
+
+    
+
+
+<style>
+html,div { margin: 0; padding: 0;}
+
+body {
+	padding: 0px;
+	margin: 0px;
+	overflow: auto;
+	height: 100%;
+}
+
+#winchm_template_button{
+	float: right;
+	width: 93px;
+	top: 7px;
+	position: relative;
+	text-align: right;
+	right: 5px;
+	height: auto;
+}
+
+#winchm_template_top{
+	padding: 0px;
+	margin: 0px;
+	border-bottom: 1px solid #9B9B9B;
+	background-color: #B1CEFE;
+}
+
+#winchm_template_navigation{
+	margin: 0px;
+	padding-top: 7px;
+	padding-left: 7px;
+	padding-bottom: 3px;
+	padding-right: 0px;
+	font-size: 8.5pt;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	color: #585858;
+}
+
+#winchm_template_title{
+	margin: 0px;
+	padding-top: 4px;
+	padding-left: 7px;
+	padding-bottom: 7px;
+	padding-right: 0px;
+	font-size: 18px; 
+	font-family: Verdana, Geneva, sans-serif;
+	color: #363636;
+}
+
+#winchm_template_content{
+	margin-top: 20px;
+	margin-left: 15px;
+	margin-bottom: 20px;
+	margin-right: 15px;
+	width: auto  !important;
+	width: 100%;
+}
+
+#winchm_template_footer{
+	border-width: 1px;
+	border-color: #B1CEFE;
+	border-top-style: solid;
+	margin-top: 15px;
+	margin-left: 15px;
+	margin-bottom: 20px;
+	margin-right: 15px;
+	padding-top: 7px;
+	padding-left: 0px;
+	padding-bottom: 0px;
+	padding-right: 0px;
+	font-family: arial, helvetica, sans-serif;
+	font-size: 8.5pt;
+	color: #696969;
+	width: auto;
+	text-align: left;
+}
+
+
+#winchm_template_container{
+	margin: 0px;
+	padding: 0px;
+	position: static;
+	padding-bottom: 3px;
+	overflow: auto;
+	background-color: #FFFFFF;
+}
+
+
+@media print
+{
+#winchm_template_container{
+	position: static;	
+	margin: 0px;
+	padding: 5px;
+	
+	width: auto;
+	height: auto;
+	overflow: auto;
+}
+#winchm_template_button{
+visibility:hidden;
+}
+}
+
+#winchm_template_navigation A:link	{text-decoration: none; color:#004080}
+#winchm_template_navigation A:visited  {text-decoration: none; color: #004080}
+#winchm_template_navigation A:active {text-decoration: none; color: #004080 }
+#winchm_template_navigation A:hover {text-decoration: none;color: #0080FF}
+
+A:link	{text-decoration: underline; color:#0033CC}
+A:visited  {text-decoration: underline; color: #0033CC}
+A:active {text-decoration: underline; color: #0033CC }
+A:hover {text-decoration: underline;color: #FF0000;}
+</style>
+<script type="text/javascript">
+function isMobile(){
+Agent = window.navigator.userAgent;
+if (Agent.indexOf("iPhone")>=1 || Agent.indexOf("iPad")>=1 || Agent.indexOf("iPod")>=1 || Agent.indexOf("Android")>=1){
+return true;
+}else{
+return false;	
+}
+
+}
+function d_onresize(){
+if (window.navigator.userAgent.indexOf("MSIE")>=1){
+document.getElementById('winchm_template_container').style.pixelWidth = document.body.offsetWidth - 3;
+document.getElementById('winchm_template_container').style.pixelHeight = document.body.offsetHeight - document.getElementById('winchm_template_top').offsetHeight - 4;
+}
+document.getElementById('winchm_template_container').style.top = document.getElementById('winchm_template_top').offsetHeight + 'px';
+}
+
+function d_onbeforeprint(){
+document.getElementById('winchm_template_container').style.width = 'auto';
+document.getElementById('winchm_template_container').style.height = 'auto';
+}
+
+function d_onafterprint(){
+d_onresize();
+}
+
+if(!isMobile()){
+
+window.onload = d_onresize;
+window.onresize = d_onresize;
+window.onbeforeprint = d_onbeforeprint;
+window.onafterprint = d_onafterprint;
+
+document.write("<style>\n");
+document.write("body {overflow: hidden;}\n");
+document.write("#winchm_template_container {position: absolute;overflow: auto;top : 0px;right: 0px;bottom: 0px;left: 0px;}\n");
+document.write("</style>\n");
+}
+
+</script>
+</head>
+    <body><script language="JavaScript" type="text/JavaScript">
+function syn(){
+if(parent.nav.tree){
+ if(parent.nav.tree.loaded){
+  parent.nav.tree.selectNode(19079);
+ }else{
+  setTimeout("syn()",500);
+}
+  }else{
+  setTimeout("syn()",500);
+  }}
+if(parent!=self){
+  setTimeout("syn()",100);
+}else{
+  parent.location.href = "../index.htm?page=XtremeSyntaxEdit~SyntaxEditFrame.html";
+}
+originalOnload = window.onload;
+if(originalOnload==null){
+window.onload = function(){parent.contentLoaded = true;};
+}else{
+window.onload = function(){originalOnload();parent.contentLoaded = true;};
+}
+</script> 
+
+
+<div id="winchm_template_top">
+	<div id="winchm_template_button"><A href="XtremeSyntaxEdit~SyntaxEditFrame.html" title="Previous topic"><img id="winchm_template_prev" alt="Previous topic" src="template2/btn_prev_n.gif" border="0"></a><A href="XtremeSyntaxEdit~SyntaxEditFrame_members.html" title="Next topic"><img id="winchm_template_next" alt="Next topic" src="template2/btn_next_n.gif" border="0"></a></div>
+	<div id="winchm_template_navigation">Help &gt; 
+<A href="welcome_screen.htm">Codejock ActiveX Controls v15.3</A> &gt; <A href="XtremeSyntaxEdit_P.html">Xtreme SyntaxEdit</A> &gt; Objects &gt; <A href="XtremeSyntaxEdit~SyntaxEditFrame.html">SyntaxEditFrame Control</A> &gt; </div>
+	<div id="winchm_template_title">Overview</div>
+</div>
+<div id="winchm_template_container">
+	<div id="winchm_template_content"><div class=popupbubble id=dxseealsomenu><p id=dxseealsocontent><a href="#Bookmark19080">SyntaxEditFrame Members</a>
+</p><!--DXMETADATA end --> 
+        </div>
+        <div id=pagetop>
+            <div id=projectnamebanner>
+                <table class=projectnametable cellspacing=0>
+                    <tbody>
+                        <tr>
+                            <!--DXMETADATA start type="Literal" condition="childitems:itemtype=seealso" value="<td class='button'><a href='' id='seealsobutton' onclick='showSeeAlsoBox()'><img alt='See Also' border='0' src='axImages/seealso.gif' width=14 height=14></a></td>" --><td class='button'><a href='' id='seealsobutton' onclick='showSeeAlsoBox()'><img alt='See Also' border='0' src='axImages/seealso.gif' width=14 height=14></a></td><!--DXMETADATA end -->
+                            <td>
+                                <!--DXMETADATA start type="Phrase" Name="Product_Header" -->Xtreme SyntaxEdit ActiveX Control v15.3<!--DXMETADATA end --> 
+                            </td>
+                            <td align=right>
+                                <!--DXMETADATA start type="Variable" name="FeedbackLink" format="" --><!--DXMETADATA end -->
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id=pagetitlebanner>
+                <h1 class=dxh1>
+                <!--DXMETADATA start type="PageItemTitle" -->SyntaxEditFrame Control<!--DXMETADATA end --></h1>
+            </div>
+        </div>
+        <div id=pagebody valign="bottom">
+            <!--DXMETADATA start type="IsNew" format="<script>document.all.pagebody.className = 'newTopic'</script>" --><!--DXMETADATA end --> 
+            <!--DXMETADATA start type="Description" source="Item" format="<h4 class=dxh4>$$Description$$</h4><p>%%description%%</p>" --><h4 class=dxh4>Description</h4><p><p>Syntax Editor control.</p></p><!--DXMETADATA end --> 
+            <!--DXMETADATA start type="Scrap" name="_MEMBERS_LINK" format="<p>%%scrap%%</p>" --><p>For a list of all members defined in this module, see <a href="#Bookmark19080">SyntaxEditFrame members</a>.</p><!--DXMETADATA end --> 
+            <!--DXMETADATA start type="Diagram" source="item" format="<h4 class=dxh4>$$OBJECT_MODEL$$</h4><p>%%Diagram%%</p>" --><h4 class=dxh4>Object Model</h4><p><TABLE CELLSPACING=0 CELLPADDING=0 BORDER=0><TR><TD NOWRAP>
+<a href="#Bookmark19078"><img src="cDiagramImages/XtremeSyntaxEdit~SyntaxEditFrame~293.gif" border=0></a><br><img src="cDiagramImages/parmult.gif" border=0><a href="#Bookmark19073"><img src="cDiagramImages/XtremeSyntaxEdit~DataManager_(SyntaxEditDataManager)~293.gif" border=0></a><br><img src="cDiagramImages/parmult.gif" border=0><a href="#Bookmark19170"><img src="cDiagramImages/XtremeSyntaxEdit~GlobalSettings_(SyntaxEditGlobalSettings)~293.gif" border=0></a><br><img src="cDiagramImages/parmult.gif" border=0><a href="#Bookmark19207"><img src="cDiagramImages/XtremeSyntaxEdit~CurrPos_(SyntaxEditTextPosition)~293.gif" border=0></a><br><img src="cDiagramImages/parmult.gif" border=0><a href="#Bookmark19217"><img src="cDiagramImages/XtremeSyntaxEdit~Selection_(SyntaxEditTextSelection)~293.gif" border=0></a><br><img src="cDiagramImages/parmult.gif" border=0><a href="#Bookmark19192"><img src="cDiagramImages/XtremeSyntaxEdit~PrintOptions_(SyntaxEditPrintOptions)~293.gif" border=0></a><br><img src="cDiagramImages/parmult.gif" border=0><a href="#Bookmark19236"><img src="cDiagramImages/XtremeSyntaxEdit~PrintPreviewOptions_(XtremePrintPreviewOptions)~293.gif" border=0></a><br><img src="cDiagramImages/parchild.gif" border=0><a href="#Bookmark19181"><img src="cDiagramImages/XtremeSyntaxEdit~PaintManager_(SyntaxEditPaintManager)~293.gif" border=0></a>
+</TD></TABLE>
+</p><!--DXMETADATA end --> 
+            <!--DXMETADATA start type="TaggedComment" source="Item" id="##MODULE_REMARKS" format="<h4 class=dxh4>$$Remarks$$</h4><p>%%comment%%</p>" --><h4 class=dxh4>Remarks</h4><p><P>The SyntaxEdit control is a Visual Studio .NET style Syntax Editor Control which&nbsp;is a highly sophisticated text editor control that supports advanced&nbsp;features such as text block grouping, syntax colorization, line numbers, font type, pre-defined color schemes, book marks, break points and many more advanced features.</P>
+<P>&nbsp;</P>
+<P>Intellisense:&nbsp; Using the configuration files described below you can add intellisense to the syntax editor.&nbsp; To active intellisense press Ctrl + Space anytime during editing.</P>
+<P><IMG border=0 src="Pictures/intellisense.png"></P>
+<P>&nbsp;</P>
+<P>Syntax Colorization:&nbsp; INI file based syntax colorization allows you to specify specific colorization rules for your text documents. For example, you can specify a different set of colors to be used for cpp, h, html, asp, etc files. Color rules can be applied to specific words or groups of words and phrases.</P>
+<P><IMG border=0 src="Pictures/tour_3t.png"></P>
+<P>&nbsp;</P>
+<P>The syntax editor control is&nbsp;capable of enhance text coloring for a number of specific input file types, I.e. C/C++ source files, HTML files, etc.&nbsp; User can create and customize&nbsp;their own text files schemes - they are independent of source files.&nbsp; The control contains the main configuration file, which can contain references to any specific configuration files. By default, this<BR>file is placed in the same folder as the application executable and is called SyntaxEditor.ini.&nbsp; The main configuration file contains 2 blocks with references to input file lexicographic schemes in the specific format (see below) and color themes for the editor, which could be applied to the control editing any file type.&nbsp; The format of the main configuration file is the following:</P>
+<P>&nbsp;</P>
+<BLOCKQUOTE style="MARGIN-RIGHT: 0px" dir=ltr>
+<P>[Schemes]<BR>CPP=Schemas/_cpp.schclass&nbsp;&nbsp;; Visual C++<BR>HTML=Schemas/_HTML_ASP.schclass&nbsp;&nbsp;; HTML and ASP<BR>schclass=Schemas/_schclass.schclass&nbsp;; Codejock Schema<BR>NSI=Schemas/_nsi.schclass&nbsp;&nbsp;; Nullsoft Installer<BR>Pascal=Schemas/_pascal.schclass&nbsp;&nbsp;; Pascal<BR>INI=Schemas/_ini.schclass&nbsp;&nbsp;; INI Files<BR>SQL=Schemas/_sql.schclass&nbsp;&nbsp;; SQL Query</P>
+<P>[Themes]<BR>Default=Themes/colorSchema0.ini<BR>Alternative=Themes/colorSchema1.ini</P></BLOCKQUOTE>
+<P>&nbsp;</P>
+<P>Text block grouping:&nbsp; Visual Studio .NET style text block grouping allows you to organize a document of text into blocks of text that can be hidden with the click of a button. Hidden blocks of text can have a message stating what has been hidden for view. This allows you to minimize the clutter of vary large text documents.</P>
+<P><IMG border=0 src="Pictures/tour_2t.png"></P>
+<P>&nbsp;</P>
+<P>Bookmarks allow you to place a "bookmark" at any position in your text document. You can later cycle through all of your bookmarks to easily return to positions of interest in your document.</P>
+<P>&nbsp;</P>
+<P><IMG border=0 src="Pictures/tour_4t.png"></P>
+<P>&nbsp;</P>
+<P>Visual Studio style breakpoints allow you to place a "breakpoint" at any position in your text document. This can be used for many different reasons, for example, if you have a code compiler you could use these breakpoints to indicate where code execution will "break" and wait for user interaction.</P>
+<P><IMG border=0 src="Pictures/tour_5t.png"></P>
+<P>&nbsp;</P>
+<P>Visual Studio style splitter windows can be used when using the <A href="#Bookmark19078">SyntaxEditFrame</A> version of the editor.&nbsp; Splitter windows allow multiple versions of the same file to be displayed in up to 4 views at the same time.</P>
+<P><IMG border=0 src="Pictures/splitterwindow.png"></P></p><!--DXMETADATA end --> 
+            <!--DXMETADATA start type="FilteredItemList" scrap="ITEM_LIST_WITH_HEADER" namespace="implemented interface" source="Item" filter="" format="<h4 class=dxh4>$$Interfaces$$</h4>%%filtereditemlist%%" --><!--DXMETADATA end --> 
+            <!--DXMETADATA start type="TaggedComment" source="Item" id="##MODULE_EXAMPLEINTRO" format="<h4 class=dxh4>$$Example$$</h4><p>%%comment%%</p>" --><!--DXMETADATA end --> 
+            <!--DXMETADATA start type="FilteredItemList" scrap="INLINE_EXAMPLE" namespace="Example" source="Item" filter="type=inline" NoHeader="True" NoFooter="True" format="<h4 class=dxh4>$$Example$$</h4>,format= %%%%filtereditemlist%%" --><!--DXMETADATA end --> 
+            <!--DXMETADATA start type="FilteredItemList" scrap="MENU_LINK" namespace="seealso" source="Item" filter="" NoHeader="True" NoFooter="True" format="<h4 class=dxh4>$$See_Also$$</h4><p id=dxseealsocontent>%%filtereditemlist%%</p>" --><h4 class=dxh4>See Also</h4><p id=dxseealsocontent><a href="#Bookmark19080">SyntaxEditFrame Members</a>
+</p><!--DXMETADATA end --><!--DXMETADATA start type="FilteredItemList" scrap="MENU_LINK" namespace="example" source="Item" filter="type=linked" NoHeader="True" NoFooter="True" format="><!--DXMETADATA end --><!--DXMETADATA start type="Variable" name="CopyrightNotice" format="><!--DXMETADATA end --></div></div>	
+	<div id="winchm_template_footer">Copyright &copy; 2018. All rights 
+reserved. (To change the copyright info, just edit it in template.)</div>
+</div>
+
+</body>
+</html>
+

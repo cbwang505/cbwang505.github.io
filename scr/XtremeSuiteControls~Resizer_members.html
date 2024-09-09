@@ -1,0 +1,276 @@
+﻿
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- saved from url=(0014)about:internet -->
+<html>
+    <head>
+        <meta content="Innovasys Document! X (http://www.innovasys.com)" name=GENERATOR>
+        <!--DXMETADATA start type="MetaCharset" --><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"><!--DXMETADATA end-->
+        <!--DXMETADATA start type="PageItemTitle" format="<title>Members</title>" --><title>Resizer Control Members</title><!--DXMETADATA end-->
+        <link href="stylesheets/axstylesheet.css" type=text/css rel=stylesheet>
+        <script src="script/ax.js" type=text/javascript>
+    </script>
+
+    
+
+
+<style>
+html,div { margin: 0; padding: 0;}
+
+body {
+	padding: 0px;
+	margin: 0px;
+	overflow: auto;
+	height: 100%;
+}
+
+#winchm_template_button{
+	float: right;
+	width: 93px;
+	top: 7px;
+	position: relative;
+	text-align: right;
+	right: 5px;
+	height: auto;
+}
+
+#winchm_template_top{
+	padding: 0px;
+	margin: 0px;
+	border-bottom: 1px solid #9B9B9B;
+	background-color: #B1CEFE;
+}
+
+#winchm_template_navigation{
+	margin: 0px;
+	padding-top: 7px;
+	padding-left: 7px;
+	padding-bottom: 3px;
+	padding-right: 0px;
+	font-size: 8.5pt;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	color: #585858;
+}
+
+#winchm_template_title{
+	margin: 0px;
+	padding-top: 4px;
+	padding-left: 7px;
+	padding-bottom: 7px;
+	padding-right: 0px;
+	font-size: 18px; 
+	font-family: Verdana, Geneva, sans-serif;
+	color: #363636;
+}
+
+#winchm_template_content{
+	margin-top: 20px;
+	margin-left: 15px;
+	margin-bottom: 20px;
+	margin-right: 15px;
+	width: auto  !important;
+	width: 100%;
+}
+
+#winchm_template_footer{
+	border-width: 1px;
+	border-color: #B1CEFE;
+	border-top-style: solid;
+	margin-top: 15px;
+	margin-left: 15px;
+	margin-bottom: 20px;
+	margin-right: 15px;
+	padding-top: 7px;
+	padding-left: 0px;
+	padding-bottom: 0px;
+	padding-right: 0px;
+	font-family: arial, helvetica, sans-serif;
+	font-size: 8.5pt;
+	color: #696969;
+	width: auto;
+	text-align: left;
+}
+
+
+#winchm_template_container{
+	margin: 0px;
+	padding: 0px;
+	position: static;
+	padding-bottom: 3px;
+	overflow: auto;
+	background-color: #FFFFFF;
+}
+
+
+@media print
+{
+#winchm_template_container{
+	position: static;	
+	margin: 0px;
+	padding: 5px;
+	
+	width: auto;
+	height: auto;
+	overflow: auto;
+}
+#winchm_template_button{
+visibility:hidden;
+}
+}
+
+#winchm_template_navigation A:link	{text-decoration: none; color:#004080}
+#winchm_template_navigation A:visited  {text-decoration: none; color: #004080}
+#winchm_template_navigation A:active {text-decoration: none; color: #004080 }
+#winchm_template_navigation A:hover {text-decoration: none;color: #0080FF}
+
+A:link	{text-decoration: underline; color:#0033CC}
+A:visited  {text-decoration: underline; color: #0033CC}
+A:active {text-decoration: underline; color: #0033CC }
+A:hover {text-decoration: underline;color: #FF0000;}
+</style>
+<script type="text/javascript">
+function isMobile(){
+Agent = window.navigator.userAgent;
+if (Agent.indexOf("iPhone")>=1 || Agent.indexOf("iPad")>=1 || Agent.indexOf("iPod")>=1 || Agent.indexOf("Android")>=1){
+return true;
+}else{
+return false;	
+}
+
+}
+function d_onresize(){
+if (window.navigator.userAgent.indexOf("MSIE")>=1){
+document.getElementById('winchm_template_container').style.pixelWidth = document.body.offsetWidth - 3;
+document.getElementById('winchm_template_container').style.pixelHeight = document.body.offsetHeight - document.getElementById('winchm_template_top').offsetHeight - 4;
+}
+document.getElementById('winchm_template_container').style.top = document.getElementById('winchm_template_top').offsetHeight + 'px';
+}
+
+function d_onbeforeprint(){
+document.getElementById('winchm_template_container').style.width = 'auto';
+document.getElementById('winchm_template_container').style.height = 'auto';
+}
+
+function d_onafterprint(){
+d_onresize();
+}
+
+if(!isMobile()){
+
+window.onload = d_onresize;
+window.onresize = d_onresize;
+window.onbeforeprint = d_onbeforeprint;
+window.onafterprint = d_onafterprint;
+
+document.write("<style>\n");
+document.write("body {overflow: hidden;}\n");
+document.write("#winchm_template_container {position: absolute;overflow: auto;top : 0px;right: 0px;bottom: 0px;left: 0px;}\n");
+document.write("</style>\n");
+}
+
+</script>
+</head>
+    <body><script language="JavaScript" type="text/JavaScript">
+function syn(){
+if(parent.nav.tree){
+ if(parent.nav.tree.loaded){
+  parent.nav.tree.selectNode(17099);
+ }else{
+  setTimeout("syn()",500);
+}
+  }else{
+  setTimeout("syn()",500);
+  }}
+if(parent!=self){
+  setTimeout("syn()",100);
+}else{
+  parent.location.href = "../index.htm?page=XtremeSuiteControls~Resizer_members.html";
+}
+originalOnload = window.onload;
+if(originalOnload==null){
+window.onload = function(){parent.contentLoaded = true;};
+}else{
+window.onload = function(){originalOnload();parent.contentLoaded = true;};
+}
+</script> 
+
+
+<div id="winchm_template_top">
+	<div id="winchm_template_button"><A href="XtremeSuiteControls~Resizer.html" title="Previous topic"><img id="winchm_template_prev" alt="Previous topic" src="template2/btn_prev_n.gif" border="0"></a><A href="XtremeSuiteControls~Resizer~AboutBox.html" title="Next topic"><img id="winchm_template_next" alt="Next topic" src="template2/btn_next_n.gif" border="0"></a></div>
+	<div id="winchm_template_navigation">Help &gt; 
+<A href="welcome_screen.htm">Codejock ActiveX Controls v15.3</A> &gt; <A href="XtremeSuiteControls_P.html">Xtreme Suite Controls</A> &gt; Objects &gt; <A href="XtremeSuiteControls~Resizer.html">Resizer Control</A> &gt; </div>
+	<div id="winchm_template_title">Members</div>
+</div>
+<div id="winchm_template_container">
+	<div id="winchm_template_content"><div class=popupbubble id=dxseealsomenu><p id=dxseealsocontent><a href="#Bookmark17097">Resizer Overview</a>
+</p><!--DXMETADATA end --> 
+        </div>
+        <div id=pagetop>
+            <div id=projectnamebanner>
+                <table class=projectnametable cellspacing=0>
+                    <tbody>
+                        <tr>
+                            <!--DXMETADATA start type="Literal" condition="childitems:itemtype=seealso" value="<td class='button'><a href='' id='seealsobutton' onclick='showSeeAlsoBox()'><img alt='See Also' border='0' src='axImages/seealso.gif' width=14 height=14></a></td>" --><td class='button'><a href='' id='seealsobutton' onclick='showSeeAlsoBox()'><img alt='See Also' border='0' src='axImages/seealso.gif' width=14 height=14></a></td><!--DXMETADATA end -->
+                            <td>
+                                <!--DXMETADATA start type="Phrase" Name="Product_Header" -->Xtreme Suite Controls ActiveX Control v15.3<!--DXMETADATA end --> 
+                            </td>
+                            <td align=right>
+                                <!--DXMETADATA start type="Variable" name="FeedbackLink" format="" --><!--DXMETADATA end -->
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id=pagetitlebanner>
+                <h1 class=dxh1>
+                <!--DXMETADATA start type="PageItemTitle" -->Resizer Control<!--DXMETADATA end --> 
+                <!--DXMETADATA start type="Phrase" name="Members" -->Members<!--DXMETADATA end --></h1>
+            </div>
+        </div>
+        <div id=pagebody valign="bottom">
+            <!--DXMETADATA start type="FilteredItemList" scrap="MEMBER_LIST" namespace="method" source="Item" filter="scope=public" format="<h4 class=dxh4>$$Public$$ $$Methods$$</h4>%%filtereditemlist%%" --><h4 class=dxh4>Public Methods</h4><TABLE CLASS="FilteredItemListTable" CellSpacing="0">
+<TR><TD CLASS=LinkCell WIDTH="30%"><IMG align="left" alt="Public Method" SRC="aximages/PublicMethod.gif">&nbsp;<A HREF="#Bookmark17101">AboutBox</A></TD><TD CLASS="DescriptionCell" WIDTH="70%">Displays a dialog box that specifies the current version of the control</TD></TR>
+<TR><TD CLASS=LinkCell WIDTH="30%"><IMG align="left" alt="Public Method" SRC="aximages/PublicMethod.gif">&nbsp;<A HREF="#Bookmark17102">AddControl</A></TD><TD CLASS="DescriptionCell" WIDTH="70%">Adds a control to be handled by the resizer.&nbsp; Controls handled by the resizer can get resized automatically when the resizer is resized.</TD></TR>
+</TABLE><!--DXMETADATA end --> 
+            <!--DXMETADATA start type="FilteredItemList" scrap="MEMBER_LIST" namespace="method" source="Item" filter="scope=friend" format="<h4 class=dxh4>$$Friend$$ $$Methods$$</h4>%%filtereditemlist%%" --><!--DXMETADATA end --> 
+            <!--DXMETADATA start type="FilteredItemList" scrap="MEMBER_LIST" namespace="method" source="Item" filter="scope=private" format="<h4 class=dxh4>$$Private$$ $$Methods$$</h4>%%filtereditemlist%%" --><!--DXMETADATA end --> 
+            <!--DXMETADATA start type="FilteredItemList" scrap="MEMBER_LIST" namespace="property" source="Item" filter="scope=public" format="<h4 class=dxh4>$$Public$$ $$Properties$$</h4>%%filtereditemlist%%" --><h4 class=dxh4>Public Properties</h4><TABLE CLASS="FilteredItemListTable" CellSpacing="0">
+<TR><TD CLASS=LinkCell WIDTH="30%"><IMG align="left" alt="Public Property" SRC="aximages/PublicProperty.gif">&nbsp;<A HREF="#Bookmark17104">AutoSize</A></TD><TD CLASS="DescriptionCell" WIDTH="70%">Gets or sets whether the resizer control will auto-size to the size of it's container.</TD></TR>
+<TR><TD CLASS=LinkCell WIDTH="30%"><IMG align="left" alt="Public Property" SRC="aximages/PublicProperty.gif">&nbsp;<A HREF="#Bookmark17105">BackColor</A></TD><TD CLASS="DescriptionCell" WIDTH="70%">Gets or sets the background color of the control.</TD></TR>
+<TR><TD CLASS=LinkCell WIDTH="30%"><IMG align="left" alt="Public Property" SRC="aximages/PublicProperty.gif">&nbsp;<A HREF="#Bookmark17106">BorderStyle</A></TD><TD CLASS="DescriptionCell" WIDTH="70%">Get or sets the border style of the resizer control.</TD></TR>
+<TR><TD CLASS=LinkCell WIDTH="30%"><IMG align="left" alt="Public Property" SRC="aximages/PublicProperty.gif">&nbsp;<A HREF="#Bookmark17107">ClientMaxHeight</A></TD><TD CLASS="DescriptionCell" WIDTH="70%">Gets or set the maximum height of the resizer control.</TD></TR>
+<TR><TD CLASS=LinkCell WIDTH="30%"><IMG align="left" alt="Public Property" SRC="aximages/PublicProperty.gif">&nbsp;<A HREF="#Bookmark17108">ClientMaxWidth</A></TD><TD CLASS="DescriptionCell" WIDTH="70%">Gets or set the maximum width of the resizer control.</TD></TR>
+<TR><TD CLASS=LinkCell WIDTH="30%"><IMG align="left" alt="Public Property" SRC="aximages/PublicProperty.gif">&nbsp;<A HREF="#Bookmark17109">ClientMinHeight</A></TD><TD CLASS="DescriptionCell" WIDTH="70%">Gets or set the minimum height of the resizer control.</TD></TR>
+<TR><TD CLASS=LinkCell WIDTH="30%"><IMG align="left" alt="Public Property" SRC="aximages/PublicProperty.gif">&nbsp;<A HREF="#Bookmark17110">ClientMinWidth</A></TD><TD CLASS="DescriptionCell" WIDTH="70%">Gets or set the minimum width&nbsp;of the resizer control.</TD></TR>
+<TR><TD CLASS=LinkCell WIDTH="30%"><IMG align="left" alt="Public Property" SRC="aximages/PublicProperty.gif">&nbsp;<A HREF="#Bookmark17111">HScrollLargeChange</A></TD><TD CLASS="DescriptionCell" WIDTH="70%">Gets or sets the amount the resizer is scrolled horizontally when the scroll bar is clicked above or below the gripper (not on the scroll buttons).</TD></TR>
+<TR><TD CLASS=LinkCell WIDTH="30%"><IMG align="left" alt="Public Property" SRC="aximages/PublicProperty.gif">&nbsp;<A HREF="#Bookmark17112">HScrollMaximum</A></TD><TD CLASS="DescriptionCell" WIDTH="70%">Gets or sets the maximum size the contents of the resizer can be scrolled horizontally.</TD></TR>
+<TR><TD CLASS=LinkCell WIDTH="30%"><IMG align="left" alt="Public Property" SRC="aximages/PublicProperty.gif">&nbsp;<A HREF="#Bookmark17113">HScrollPosition</A></TD><TD CLASS="DescriptionCell" WIDTH="70%">Gets or sets the position of the horizontal scroll bar gripper.</TD></TR>
+<TR><TD CLASS=LinkCell WIDTH="30%"><IMG align="left" alt="Public Property" SRC="aximages/PublicProperty.gif">&nbsp;<A HREF="#Bookmark17114">HScrollSmallChange</A></TD><TD CLASS="DescriptionCell" WIDTH="70%">Gets or sets the amount the resizer is scrolled horizontally when the scroll bar buttons are clicked.</TD></TR>
+<TR><TD CLASS=LinkCell WIDTH="30%"><IMG align="left" alt="Public Property" SRC="aximages/PublicProperty.gif">&nbsp;<A HREF="#Bookmark17115">hWnd</A></TD><TD CLASS="DescriptionCell" WIDTH="70%">Gets the window handle that the control is bound to.</TD></TR>
+<TR><TD CLASS=LinkCell WIDTH="30%"><IMG align="left" alt="Public Property" SRC="aximages/PublicProperty.gif">&nbsp;<A HREF="#Bookmark17116">MouseIcon</A></TD><TD CLASS="DescriptionCell" WIDTH="70%">Gets or sets the cursor that is displayed when the mouse pointer is over the control.</TD></TR>
+<TR><TD CLASS=LinkCell WIDTH="30%"><IMG align="left" alt="Public Property" SRC="aximages/PublicProperty.gif">&nbsp;<A HREF="#Bookmark17117">ShowSizeIcon</A></TD><TD CLASS="DescriptionCell" WIDTH="70%">Gets or sets whether a resizer icon will be displayed in the bottom right corner of the resizer control.</TD></TR>
+<TR><TD CLASS=LinkCell WIDTH="30%"><IMG align="left" alt="Public Property" SRC="aximages/PublicProperty.gif">&nbsp;<A HREF="#Bookmark17118">VScrollLargeChange</A></TD><TD CLASS="DescriptionCell" WIDTH="70%">Gets or sets the amount the resizer is scrolled vertically when the scroll bar is clicked above or below the gripper (not on the scroll buttons).</TD></TR>
+<TR><TD CLASS=LinkCell WIDTH="30%"><IMG align="left" alt="Public Property" SRC="aximages/PublicProperty.gif">&nbsp;<A HREF="#Bookmark17119">VScrollMaximum</A></TD><TD CLASS="DescriptionCell" WIDTH="70%">Gets or sets the maximum size the contents of the resizer can be scrolled vertically.</TD></TR>
+<TR><TD CLASS=LinkCell WIDTH="30%"><IMG align="left" alt="Public Property" SRC="aximages/PublicProperty.gif">&nbsp;<A HREF="#Bookmark17120">VScrollPosition</A></TD><TD CLASS="DescriptionCell" WIDTH="70%">Gets or sets the position of the&nbsp;vertical scroll bar gripper.</TD></TR>
+<TR><TD CLASS=LinkCell WIDTH="30%"><IMG align="left" alt="Public Property" SRC="aximages/PublicProperty.gif">&nbsp;<A HREF="#Bookmark17121">VScrollSmallChange</A></TD><TD CLASS="DescriptionCell" WIDTH="70%">Gets or sets the amount the resizer is scrolled vertically when the scroll bar buttons are clicked.</TD></TR>
+</TABLE><!--DXMETADATA end --> 
+            <!--DXMETADATA start type="FilteredItemList" scrap="MEMBER_LIST" namespace="property" source="Item" filter="scope=friend" format="<h4 class=dxh4>$$Friend$$ $$Properties$$</h4>%%filtereditemlist%%" --><!--DXMETADATA end --> 
+            <!--DXMETADATA start type="FilteredItemList" scrap="MEMBER_LIST" namespace="property" source="Item" filter="scope=private" format="<h4 class=dxh4>$$Private$$ $$Properties$$</h4>%%filtereditemlist%%" --><!--DXMETADATA end --> 
+            <!--DXMETADATA start type="FilteredItemList" scrap="MEMBER_LIST" namespace="event" source="Item" filter="" format="<h4 class=dxh4>$$Events$$</h4>%%filtereditemlist%%" --><h4 class=dxh4>Events</h4><TABLE CLASS="FilteredItemListTable" CellSpacing="0">
+<TR><TD CLASS=LinkCell WIDTH="30%"><IMG align="left" alt="Public Event" SRC="aximages/PublicEvent.gif">&nbsp;<A HREF="#Bookmark17123">DblClick</A></TD><TD CLASS="DescriptionCell" WIDTH="70%">Occurs when the user presses and releases a mouse button and then presses and releases it again over the resizer control.</TD></TR>
+<TR><TD CLASS=LinkCell WIDTH="30%"><IMG align="left" alt="Public Event" SRC="aximages/PublicEvent.gif">&nbsp;<A HREF="#Bookmark17124">HScroll</A></TD><TD CLASS="DescriptionCell" WIDTH="70%">Occurs when the user clicks the horizontal scroll bar of the control.</TD></TR>
+<TR><TD CLASS=LinkCell WIDTH="30%"><IMG align="left" alt="Public Event" SRC="aximages/PublicEvent.gif">&nbsp;<A HREF="#Bookmark17125">MouseDown</A></TD><TD CLASS="DescriptionCell" WIDTH="70%">Occurs when the user presses&nbsp;a mouse button.</TD></TR>
+<TR><TD CLASS=LinkCell WIDTH="30%"><IMG align="left" alt="Public Event" SRC="aximages/PublicEvent.gif">&nbsp;<A HREF="#Bookmark17126">MouseMove</A></TD><TD CLASS="DescriptionCell" WIDTH="70%">Occurs when the user moves the mouse.</TD></TR>
+<TR><TD CLASS=LinkCell WIDTH="30%"><IMG align="left" alt="Public Event" SRC="aximages/PublicEvent.gif">&nbsp;<A HREF="#Bookmark17127">MouseUp</A></TD><TD CLASS="DescriptionCell" WIDTH="70%">Occurs when the user&nbsp;releases&nbsp;a mouse button.</TD></TR>
+<TR><TD CLASS=LinkCell WIDTH="30%"><IMG align="left" alt="Public Event" SRC="aximages/PublicEvent.gif">&nbsp;<A HREF="#Bookmark17128">MouseWheel</A></TD><TD CLASS="DescriptionCell" WIDTH="70%">Occurs when the mouse wheel moves while the resizer or controls inside the resizer control has focus.</TD></TR>
+<TR><TD CLASS=LinkCell WIDTH="30%"><IMG align="left" alt="Public Event" SRC="aximages/PublicEvent.gif">&nbsp;<A HREF="#Bookmark17129">VScroll</A></TD><TD CLASS="DescriptionCell" WIDTH="70%">Occurs when the user clicks the vertical scroll bar of the control.</TD></TR>
+</TABLE><!--DXMETADATA end --> 
+            <!--DXMETADATA start type="FilteredItemList" scrap="MENU_LINK" namespace="seealso" source="Item" filter="type=members" NoHeader="True" NoFooter="True" format="<h4 class=dxh4>$$See_Also$$</h4><p id=dxseealsocontent>%%filtereditemlist%%</p>" --><h4 class=dxh4>See Also</h4><p id=dxseealsocontent><a href="#Bookmark17097">Resizer Overview</a>
+</p><!--DXMETADATA end --><!--DXMETADATA start type="Variable" name="CopyrightNotice" format="><!--DXMETADATA end --></div></div>	
+	<div id="winchm_template_footer">Copyright &copy; 2018. All rights 
+reserved. (To change the copyright info, just edit it in template.)</div>
+</div>
+
+</body>
+</html>
+

@@ -1,0 +1,481 @@
+﻿
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- saved from url=(0014)about:internet -->
+<html>
+    <head>
+        <meta content="Innovasys Document! X (http://www.innovasys.com)" name=GENERATOR>
+        <!--DXMETADATA start type="MetaCharset" --><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"><!--DXMETADATA end-->
+        <!--DXMETADATA start type="PageItemTitle" format="<title>EnableDragDrop Method (XtremeReportControl)</title>" --><title>EnableDragDrop Method</title><!--DXMETADATA end-->
+        <link href="stylesheets/axstylesheet.css" type=text/css rel=stylesheet>
+        <script src="script/ax.js" type=text/javascript>
+    </script>
+
+    
+
+
+<style>
+html,div { margin: 0; padding: 0;}
+
+body {
+	padding: 0px;
+	margin: 0px;
+	overflow: auto;
+	height: 100%;
+}
+
+#winchm_template_button{
+	float: right;
+	width: 93px;
+	top: 7px;
+	position: relative;
+	text-align: right;
+	right: 5px;
+	height: auto;
+}
+
+#winchm_template_top{
+	padding: 0px;
+	margin: 0px;
+	border-bottom: 1px solid #9B9B9B;
+	background-color: #B1CEFE;
+}
+
+#winchm_template_navigation{
+	margin: 0px;
+	padding-top: 7px;
+	padding-left: 7px;
+	padding-bottom: 3px;
+	padding-right: 0px;
+	font-size: 8.5pt;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	color: #585858;
+}
+
+#winchm_template_title{
+	margin: 0px;
+	padding-top: 4px;
+	padding-left: 7px;
+	padding-bottom: 7px;
+	padding-right: 0px;
+	font-size: 18px; 
+	font-family: Verdana, Geneva, sans-serif;
+	color: #363636;
+}
+
+#winchm_template_content{
+	margin-top: 20px;
+	margin-left: 15px;
+	margin-bottom: 20px;
+	margin-right: 15px;
+	width: auto  !important;
+	width: 100%;
+}
+
+#winchm_template_footer{
+	border-width: 1px;
+	border-color: #B1CEFE;
+	border-top-style: solid;
+	margin-top: 15px;
+	margin-left: 15px;
+	margin-bottom: 20px;
+	margin-right: 15px;
+	padding-top: 7px;
+	padding-left: 0px;
+	padding-bottom: 0px;
+	padding-right: 0px;
+	font-family: arial, helvetica, sans-serif;
+	font-size: 8.5pt;
+	color: #696969;
+	width: auto;
+	text-align: left;
+}
+
+
+#winchm_template_container{
+	margin: 0px;
+	padding: 0px;
+	position: static;
+	padding-bottom: 3px;
+	overflow: auto;
+	background-color: #FFFFFF;
+}
+
+
+@media print
+{
+#winchm_template_container{
+	position: static;	
+	margin: 0px;
+	padding: 5px;
+	
+	width: auto;
+	height: auto;
+	overflow: auto;
+}
+#winchm_template_button{
+visibility:hidden;
+}
+}
+
+#winchm_template_navigation A:link	{text-decoration: none; color:#004080}
+#winchm_template_navigation A:visited  {text-decoration: none; color: #004080}
+#winchm_template_navigation A:active {text-decoration: none; color: #004080 }
+#winchm_template_navigation A:hover {text-decoration: none;color: #0080FF}
+
+A:link	{text-decoration: underline; color:#0033CC}
+A:visited  {text-decoration: underline; color: #0033CC}
+A:active {text-decoration: underline; color: #0033CC }
+A:hover {text-decoration: underline;color: #FF0000;}
+</style>
+<script type="text/javascript">
+function isMobile(){
+Agent = window.navigator.userAgent;
+if (Agent.indexOf("iPhone")>=1 || Agent.indexOf("iPad")>=1 || Agent.indexOf("iPod")>=1 || Agent.indexOf("Android")>=1){
+return true;
+}else{
+return false;	
+}
+
+}
+function d_onresize(){
+if (window.navigator.userAgent.indexOf("MSIE")>=1){
+document.getElementById('winchm_template_container').style.pixelWidth = document.body.offsetWidth - 3;
+document.getElementById('winchm_template_container').style.pixelHeight = document.body.offsetHeight - document.getElementById('winchm_template_top').offsetHeight - 4;
+}
+document.getElementById('winchm_template_container').style.top = document.getElementById('winchm_template_top').offsetHeight + 'px';
+}
+
+function d_onbeforeprint(){
+document.getElementById('winchm_template_container').style.width = 'auto';
+document.getElementById('winchm_template_container').style.height = 'auto';
+}
+
+function d_onafterprint(){
+d_onresize();
+}
+
+if(!isMobile()){
+
+window.onload = d_onresize;
+window.onresize = d_onresize;
+window.onbeforeprint = d_onbeforeprint;
+window.onafterprint = d_onafterprint;
+
+document.write("<style>\n");
+document.write("body {overflow: hidden;}\n");
+document.write("#winchm_template_container {position: absolute;overflow: auto;top : 0px;right: 0px;bottom: 0px;left: 0px;}\n");
+document.write("</style>\n");
+}
+
+</script>
+</head>
+    <body><script language="JavaScript" type="text/JavaScript">
+function syn(){
+if(parent.nav.tree){
+ if(parent.nav.tree.loaded){
+  parent.nav.tree.selectNode(14729);
+ }else{
+  setTimeout("syn()",500);
+}
+  }else{
+  setTimeout("syn()",500);
+  }}
+if(parent!=self){
+  setTimeout("syn()",100);
+}else{
+  parent.location.href = "../index.htm?page=XtremeReportControl~TrackControl~EnableDragDrop.html";
+}
+originalOnload = window.onload;
+if(originalOnload==null){
+window.onload = function(){parent.contentLoaded = true;};
+}else{
+window.onload = function(){originalOnload();parent.contentLoaded = true;};
+}
+</script> 
+
+
+<div id="winchm_template_top">
+	<div id="winchm_template_button"><A href="XtremeReportControl~ReportControl~EnableDragDrop.html" title="Previous topic"><img id="winchm_template_prev" alt="Previous topic" src="template2/btn_prev_n.gif" border="0"></a><A href="XtremeReportControl~ReportControl~EnableToolTips.html" title="Next topic"><img id="winchm_template_next" alt="Next topic" src="template2/btn_next_n.gif" border="0"></a></div>
+	<div id="winchm_template_navigation">Help &gt; 
+<A href="welcome_screen.htm">Codejock ActiveX Controls v15.3</A> &gt; <A href="XtremeReportControl_P.html">Xtreme Report Control</A> &gt; Methods &gt; </div>
+	<div id="winchm_template_title">EnableDragDrop Method (XtremeReportControl)</div>
+</div>
+<div id="winchm_template_container">
+	<div id="winchm_template_content"><div class=popupbubble id=dxseealsomenu><p id=dxseealsocontent><a href="#Bookmark14241">TrackControl Control</a>
+&nbsp;|&nbsp;<a href="#Bookmark13531">CreateRecords Method</a>
+&nbsp;|&nbsp;<a href="#Bookmark13532">CreateRecordsFromDropArray Method</a>
+&nbsp;|&nbsp;<a href="#Bookmark13536">DragRecords Method</a>
+&nbsp;|&nbsp;<a href="#Bookmark13691">BeginDrag Event</a>
+&nbsp;|&nbsp;<a href="XtremeReportControl~ReportControl~DropRecords_EV.html">DropRecords Event</a>
+&nbsp;|&nbsp;<a href="#Bookmark15743">XTPReportDragDrop Enumeration</a>
+</p><!--DXMETADATA end --> 
+        </div>
+        <!--DXMETADATA start type="FilteredItemList" scrap="PARAMETERS_BUBBLES" namespace="parameter" source="Item" -->
+<div id="ClipboardString_box" class="popupbubble">
+<DL><DT class="popupbubble"><I>ClipboardString</I></DT>
+<DD class="popupbubble"><p>A unique string used to identify the format of the items copied to the clipboard, for example, "ReportSample:frmDragDrop".&nbsp; This string must be used for all Report Controls that will receive objects of this type.</p></DD></DL>
+</div>
+<div id="dragDrop_box" class="popupbubble">
+<DL><DT class="popupbubble"><I>dragDrop</I></DT>
+<DD class="popupbubble"><p>Specifies the type of drop operations&nbsp;Report Control&nbsp;will&nbsp;support. The table above&nbsp;lists the values for <EM>dragDrop</EM> with a description of each.</p></DD></DL>
+</div>
+<!--DXMETADATA end --> 
+        <div id=pagetop>
+            <div id=projectnamebanner>
+                <table class=projectnametable cellspacing=0>
+                    <tbody>
+                        <tr>
+                            <!--DXMETADATA start type="Literal" condition="childitems:itemtype=seealso" value="<td class='button'><a href='' id='seealsobutton' onclick='showSeeAlsoBox()'><img alt='See Also' border='0' src='axImages/seealso.gif' width=14 height=14></a></td>" --><td class='button'><a href='' id='seealsobutton' onclick='showSeeAlsoBox()'><img alt='See Also' border='0' src='axImages/seealso.gif' width=14 height=14></a></td><!--DXMETADATA end -->
+                            <td>
+                                <!--DXMETADATA start type="Phrase" Name="Product_Header" -->Xtreme Report Control ActiveX Control v15.3<!--DXMETADATA end --> 
+                            </td>
+                            <td align=right>
+                                <!--DXMETADATA start type="Variable" name="FeedbackLink" format="" --><!--DXMETADATA end -->
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id=pagetitlebanner>
+                <h1 class=dxh1>
+                <!--DXMETADATA start type="PageItemTitle" -->EnableDragDrop Method<!--DXMETADATA end --></h1>
+            </div>
+        </div>
+        <div id=pagebody valign="bottom">
+            <!--DXMETADATA start type="IsNew" format="<script>document.all.pagebody.className = 'newTopic'</script>" --><!--DXMETADATA end --> 
+            <!--DXMETADATA start type="Description" source="Item" format="<h4 class=dxh4>$$Description$$</h4><p>%%description%%</p>" --><!--DXMETADATA end --> 
+            <!--DXMETADATA start type="Syntax" lang="VB" format="<div Class=LanguageSpecific Name=Syntax_VB><h4 class=dxh4>$$Syntax$$</h4><p>%%Syntax%%</p></div>" --><div Class=LanguageSpecific Name=Syntax_VB><h4 class=dxh4>Syntax</h4><p><PRE CLASS="syntax" LANG="VB"><strong>Public Function EnableDragDrop</strong>( _
+&nbsp;&nbsp;&nbsp;<strong>ByVal </strong><i><a class="parameter" id="ClipboardString" href="#" onclick="javascript:showParamBox();">ClipboardString</a></i></strong> <strong>As</strong> <b>String</b>, _
+&nbsp;&nbsp;&nbsp;<strong>ByVal </strong><i><a class="parameter" id="dragDrop" href="#" onclick="javascript:showParamBox();">dragDrop</a></i></strong> <strong>As</strong> <a href="#Bookmark15743">XTPReportDragDrop</a> _
+)<strong> As <b>Integer</b></strong></PRE></p></div><!--DXMETADATA end --> 
+            <!--DXMETADATA start type="FilteredItemList" scrap="PARAMETERS_LIST" namespace="parameter" source="Item" filter="" format="<h4 class=dxh4>$$ParameterList$$</h4>%%filtereditemlist%%" --><h4 class=dxh4>Parameters</h4><DL>
+<DT><I>ClipboardString</I></DT>
+<DD><p>A unique string used to identify the format of the items copied to the clipboard, for example, "ReportSample:frmDragDrop".&nbsp; This string must be used for all Report Controls that will receive objects of this type.</p></DD>
+<DT><I>dragDrop</I></DT>
+<DD><TABLE CLASS="FilteredItemListTable" CellSpacing="0"><TR VALIGN="top"><TH>Value</TH><TH>Description</TH></TR>
+<TR><TD CLASS="MemberNameCell"><strong>xtpReportAllowDrop</strong></TD><TD CLASS="DescriptionCell">Allow all drop operations.&nbsp; This allows items to be dropped into the Report Control.</TD></TR>
+<TR><TD CLASS="MemberNameCell"><strong>xtpReportAllowDragCopy</strong></TD><TD CLASS="DescriptionCell">Allow copy operation.&nbsp; Please see <STRONG>Note&nbsp;1</STRONG> in Remarks section of <A href="#Bookmark15743">XTPReportDragDrop</A>.</TD></TR>
+<TR><TD CLASS="MemberNameCell"><strong>xtpReportAllowDragMove</strong></TD><TD CLASS="DescriptionCell">Allow move operation.&nbsp; Please see <STRONG>Note&nbsp;2</STRONG> in Remarks section of <A href="#Bookmark15743">XTPReportDragDrop</A>.</TD></TR>
+<TR><TD CLASS="MemberNameCell"><strong>xtpReportAllowDrag</strong></TD><TD CLASS="DescriptionCell">Allow all drag operations.&nbsp; This is a combination of both <STRONG>xtpReportAllowDragCopy</STRONG> and <STRONG>xtpReportAllowDragMove</STRONG>.</TD></TR>
+<TR><TD CLASS="MemberNameCell"><strong>xtpReportDontDropAsText</strong></TD><TD CLASS="DescriptionCell">Do not drag record as plain text.</TD></TR>
+</TABLE><p>Specifies the type of drop operations&nbsp;Report Control&nbsp;will&nbsp;support. The table above&nbsp;lists the values for <EM>dragDrop</EM> with a description of each.</p></DD>
+</DL><!--DXMETADATA end --> 
+            <!--DXMETADATA start type="TaggedComment" source="Item" id="##RETURNS" format="<h4 class=dxh4>$$Return_Type$$</h4><p>%%comment%%</p>" --><h4 class=dxh4>Return Type</h4><p>Returns an integer value that is used to&nbsp;indicate whether&nbsp;an item in the <B>DataObject</B> object&nbsp;matches&nbsp;the specified <A class=parameter id=ClipboardString onclick=javascript:showParamBox(event); href="#"><EM>ClipboardString</EM></A></STRONG>&nbsp;format.&nbsp; The <STRONG>DataObject</STRONG>&nbsp;is a parameter in <STRONG>OLEDrag</STRONG> events for controls that contains the data on the clipboard.</STRONG></p><!--DXMETADATA end --> 
+            <!--DXMETADATA start type="TaggedComment" source="Item" id="##REMARKS" format="<h4 class=dxh4>$$Remarks$$</h4><p>%%comment%%</p>" --><h4 class=dxh4>Remarks</h4><p><P>To enable Drag and Drop in a Report Control the <STRONG>EnableDragDrop</STRONG>&nbsp;method must be used. <STRONG>EnableDragDrop</STRONG>&nbsp;does two things, first it&nbsp;sets a clipboard string that will be used to indicate the type of data that is copied to the clipboard.&nbsp; Second, it sets the drag and drop effects that are allowed when dragging items to\from the report control.&nbsp; The available effects are stored in the&nbsp;<A href="#Bookmark15743">XTPReportDragDrop</A>&nbsp;enumeration.&nbsp; If dragging items to\from one or more Report Control's, the same clipboard string must be used for all Report Control's when calling <STRONG>EnableDragDrop</STRONG>.</P>
+<P>&nbsp;</P>
+<P><STRONG>Notes:&nbsp;</STRONG></P>
+<P><A href="#Bookmark13531">CreateRecords</A>&nbsp;is primarily used to create an empty&nbsp;<A href="#Bookmark14113">ReportRecords</A>&nbsp;collection in Drag and Drop operations.&nbsp; The new <A href="#Bookmark14113">ReportRecords</A>&nbsp;collection is used to create a collection of <A href="#Bookmark14014">ReportRecord</A>&nbsp;objects to be dropped into the Report Control&nbsp;or to retrieve records that have been dragged out of the Report Control.</P>
+<P>&nbsp;</P>
+<P>The <A href="#Bookmark13532">CreateRecordsFromDropArray</A>&nbsp;method is used when retrieving records that have been dragged from the Report Control.&nbsp; <A href="#Bookmark13532">CreateRecordsFromDropArray</A>&nbsp;accepts the <STRONG>ByteArray</STRONG>&nbsp;returned from the <STRONG>Data.GetData </STRONG>parameter from any control's <STRONG>OLEDragDrop</STRONG> event and populates a <A href="#Bookmark14113">ReportRecords</A>&nbsp;collection created by <A href="#Bookmark13531">CreateRecords</A><STRONG> </STRONG>with the records stored on the clipboard.</P>
+<P>&nbsp;</P>
+<P>The&nbsp;<A href="#Bookmark13536">DragRecords</A>&nbsp;method is used to prepare records to be dropped into the Report Control.&nbsp; <A href="#Bookmark13536">DragRecords</A>&nbsp;accepts a <A href="#Bookmark14113">ReportRecords</A>&nbsp;collection created by <A href="#Bookmark13531">CreateRecords</A>.&nbsp; Any records that have been prepared using&nbsp;<A href="#Bookmark13536">DragRecords</A>&nbsp;will be added to the Report when the items are dropped into the Report Control.&nbsp; Typically <A href="#Bookmark13536">DragRecords</A>&nbsp;would be used in the <STRONG>MouseMove </STRONG>event of the control from which items are being dragged.&nbsp; The Report Control will automatically add the new records to the report once they have been dropped.</P>
+<P>&nbsp;</P>
+<P>The <A href="#Bookmark13691">BeginDrag</A>&nbsp;event occurs when records are being dragged from the Report Control, and provides a <A href="#Bookmark14113">ReportRecords</A>&nbsp;collection containing all of the selected records when the drag operation started.&nbsp; This gives the opportunity to modify the <A href="#Bookmark14113">ReportRecords</A>&nbsp;collection before they are actually added to the clipboard.</P>
+<P>&nbsp;</P>
+<P>The <A href="XtremeReportControl~ReportControl~DropRecords_EV.html">DropRecords</A>&nbsp;event occurs when records are dropped into a Report Control, and provides a <A href="#Bookmark14113">ReportRecords</A>&nbsp;collection containing all of the&nbsp;records that will be dropped into the Report Control.&nbsp; This gives the opportunity to modify the <A href="#Bookmark14113">ReportRecords</A>&nbsp;collection before they are actually added to the Report Control.</P></p><!--DXMETADATA end --> 
+            <!--DXMETADATA start type="sourcecode" format="<h4 class=dxh4>$$Source_Code$$</h4><table border=0 cellpadding=0 cellspacing=0 class=sourcecode><tr><td nowrap>%%sourcecode%%</td></tr></table>" --><!--DXMETADATA end --> 
+            <!--DXMETADATA start type="TaggedComment" source="Item" id="##EXAMPLEINTRO" format="<h4 class=dxh4>$$Example$$</h4><p>%%comment%%</p>" --><!--DXMETADATA end --> 
+            <!--DXMETADATA start type="FilteredItemList" scrap="INLINE_EXAMPLE" namespace="Example" source="Item" filter="type=inline" NoHeader="True" NoFooter="True" format="<h4 class=dxh4>$$Example$$</h4>,format= %%%%filtereditemlist%%" --><h4 class=dxh4>Example</h4><DIV Class=LanguageSpecific Name=Example_VB><p><SPAN class="lang">[Drag and Drop Sample (Visual Basic)]</SPAN>&nbsp;This sample illustrate how to implement drag and drop support in the Report Control.  This sample is the complete code for a form that contain a single ListBox control and a single Report Control.  The name of the ListBox is 'lstItems' and the name of the Report control is 'wdnReport'.</p><DIV Class=LanguageSpecific Name=Code_VB><TABLE Class="CodeContainerTable" CellPadding="0" CellSpacing="0" Border="0"><TR><TD NOWRAP><CODE Class="VB"><font class='keyword'>Option</font> <font class='keyword'>Explicit</font><BR/>
+<BR/>
+<font class='comment'>'An integer value that will be used to indicate whether an item in the DataObject object matches the</font><BR/>
+<font class='comment'>'specified ClipboardString(Parameter in EnableDrageDrop) format.  The DataObject is a parameter in OLEDrag events for controls</font><BR/>
+<font class='comment'>'that contains the data on the clipboard.</font><BR/>
+<font class='keyword'>Dim</font> cfRecords <font class='keyword'>As</font> <font class='keyword'>Integer</font><BR/>
+<BR/>
+<font class='keyword'>Private</font> <font class='keyword'>Sub</font> Form_Load()<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='comment'>'Adds 3 items to the List Control</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;lstItems.AddItem <font class='string'>&quot;Item 1&quot;</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;lstItems.AddItem <font class='string'>&quot;Item 2&quot;</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;lstItems.AddItem <font class='string'>&quot;Item 3&quot;</font><BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='comment'>'Do not allow columns to be removed from the Report Control</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;wndReport.AllowColumnRemove = <font class='keyword'>False</font><BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='comment'>'Add a column named "Items" to the Report Control</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;wndReport.Columns.Add 0, <font class='string'>&quot;Items&quot;</font>, 50, <font class='keyword'>True</font><BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Dim</font> Str <font class='keyword'>As</font> <font class='keyword'>String</font>, i <font class='keyword'>As</font> <font class='keyword'>Long</font><BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='comment'>'Add 4 records\rows to the Report Control</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>For</font> i = 4 <font class='keyword'>To</font> 8<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Dim</font> Record <font class='keyword'>As</font> ReportRecord<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Dim</font> Item <font class='keyword'>As</font> ReportRecordItem<BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Set</font> Record = wndReport.Records.Add<BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Str = <font class='string'>&quot;Item &quot;</font> & <font class='keyword'>CStr</font>(i)<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Set</font> Item = Record.AddItem(Str)<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Next</font> i<BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='comment'>'Adds the records the Report Control</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;wndReport.Populate<BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='comment'>'To enable Drag and Drop in a Report Control the EnableDragDrop method must be used. EnableDragDrop</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='comment'>'does two things, first it sets a clipboard string that will be used to indicate the type of data</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='comment'>'that is copied to the clipboard.  Second, it sets the drag and drop effects that are allowed when</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='comment'>'dragging items to\from the report control.  The available effects are stored in the XTPReportDragDrop</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='comment'>'enumeration.  If dragging items to\from one or more Report Control's, the same clipboard string must</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='comment'>'be used for all Report Control's when calling EnableDragDrop.</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='comment'>'</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='comment'>'Below, the clipboard string is "ReportSample:frmDragDrop" and we are allowing all drag and drop operations</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;cfRecords = wndReport.EnableDragDrop(<font class='string'>&quot;ReportSample:frmDragDrop&quot;</font>, xtpReportAllowDrag <font class='keyword'>Or</font> xtpReportAllowDrop)<BR/>
+<font class='keyword'>End</font> <font class='keyword'>Sub</font><BR/>
+<BR/>
+<font class='keyword'>Sub</font> ClearListSelection()<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Dim</font> i <font class='keyword'>As</font> <font class='keyword'>Long</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>For</font> i = 0 <font class='keyword'>To</font> lstItems.ListCount - 1<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lstItems.Selected(i) = <font class='keyword'>False</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Next</font><BR/>
+<font class='keyword'>End</font> <font class='keyword'>Sub</font><BR/>
+<BR/>
+<font class='comment'>'The Mouse_Mouve event will be used to prepare records to be dropped into the report.</font><BR/>
+<font class='keyword'>Private</font> <font class='keyword'>Sub</font> lstItems_MouseMove(Button <font class='keyword'>As</font> <font class='keyword'>Integer</font>, Shift <font class='keyword'>As</font> <font class='keyword'>Integer</font>, X <font class='keyword'>As</font> <font class='keyword'>Single</font>, Y <font class='keyword'>As</font> <font class='keyword'>Single</font>)<BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='comment'>'If the left mouse button is pressed while in the List Control</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>If</font> (Button <font class='keyword'>And</font> vbLeftButton) <font class='keyword'>Then</font><BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Dim</font> Records <font class='keyword'>As</font> ReportRecords<BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='comment'>'CreateRecords is primarily used to create an empty ReportRecords collection in Drag and Drop</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='comment'>'operations.  The new ReportRecords collection is used to create a collection of ReportRecord</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='comment'>'objects to be dropped into the Report Control or to retrieve records that have been dragged</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='comment'>'out of the Report Control.</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='comment'>'</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='comment'>'Below, a records collection is created that will contain a record for each item that</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='comment'>'is currently selected in the list control</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Set</font> Records = wndReport.CreateRecords<BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Dim</font> i <font class='keyword'>As</font> <font class='keyword'>Long</font><BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='comment'>'Loop through all items in the List Control</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>For</font> i = 0 <font class='keyword'>To</font> lstItems.ListCount - 1<BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='comment'>'If the list item is selected, then add it to then create a record for it</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='comment'>'in the records colleciton</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>If</font> lstItems.Selected(i) <font class='keyword'>Then</font><BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Dim</font> Record <font class='keyword'>As</font> ReportRecord<BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='comment'>'Add a new record to the records collection</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Set</font> Record = Records.Add<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Record.AddItem lstItems.List(i)<BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Debug.<font class='keyword'>Print</font> <font class='string'>&quot;Added &quot;</font> & i<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>End</font> <font class='keyword'>If</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Next</font><BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='comment'>'The DragRecords method is used to prepare records to be dropped into the Report Control.</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='comment'>'DragRecords accepts a ReportRecords collection created by CreateRecords.  Any records that</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='comment'>'have been prepared using DragRecords will be added to the Report when the items are dropped</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='comment'>'into the Report Control.  Typically DragRecords would be used in the MouseMove event of the</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='comment'>'control from which items are being dragged.  The Report Control will automatically add the</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='comment'>'new records to the report once they have been dropped.</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='comment'>'</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='comment'>'Below, the Records collection is filled with a record that corresponds to each item that is</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='comment'>'currently selected in the List Control.  If the items are dropped into the Report Control, then</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='comment'>'all records contained in the Records collection will be added to the report.</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='comment'>'</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='comment'>'Now Data.GetFormat(cfRecords) will return True as some Records have been added to the clipboard</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wndReport.DragRecords Records<BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>End</font> <font class='keyword'>If</font><BR/>
+<font class='keyword'>End</font> <font class='keyword'>Sub</font><BR/>
+<BR/>
+<font class='comment'>'The OLEDragDrop event will be used to add items to the List Control that have been dragged from the Report Control</font><BR/>
+<font class='keyword'>Private</font> <font class='keyword'>Sub</font> lstItems_OLEDragDrop(Data <font class='keyword'>As</font> DataObject, Effect <font class='keyword'>As</font> <font class='keyword'>Long</font>, Button <font class='keyword'>As</font> <font class='keyword'>Integer</font>, Shift <font class='keyword'>As</font> <font class='keyword'>Integer</font>, X <font class='keyword'>As</font> <font class='keyword'>Single</font>, Y <font class='keyword'>As</font> <font class='keyword'>Single</font>)<BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='comment'>'If the format of the data on the clipboard is of type "ReportSample:frmDragDrop" as set with EnableDragDrop</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>If</font> Data.GetFormat(cfRecords) <font class='keyword'>Then</font><BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='comment'>'Create a ByteArray</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Dim</font> byteData() <font class='keyword'>As</font> <font class='keyword'>Byte</font><BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='comment'>'Retrieve the Records collection from the clipboard, the data is stored as a ByteArray</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;byteData = Data.GetData(cfRecords)<BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Dim</font> Records <font class='keyword'>As</font> ReportRecords<BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='comment'>'The CreateRecordsFromDropArray method is used when retrieving records that have been dragged</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='comment'>'from the Report Control.  CreateRecordsFromDropArray accepts the ByteArray returned from the</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='comment'>'Data.GetData parameter from any control's OLEDragDrop event and populates a ReportRecords</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='comment'>'collection created by CreateRecords.</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='comment'>'</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='comment'>'Below, the Records collection is populated by the records that were copied to the clipboard</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Set</font> Records = wndReport.CreateRecordsFromDropArray(byteData)<BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='comment'>'If there were some records on the clipboard</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>If</font> (<font class='keyword'>Not</font> Records <font class='keyword'>Is</font> <font class='keyword'>Nothing</font>) <font class='keyword'>Then</font><BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='comment'>'Unselect all items in the list control</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ClearListSelection<BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Dim</font> i <font class='keyword'>As</font> <font class='keyword'>Long</font><BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='comment'>'Add a list item for each record that was on the clipboard</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>For</font> i = 0 <font class='keyword'>To</font> Records.Count - 1<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lstItems.AddItem Records(i).Item(0).Value<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;lstItems.Selected(lstItems.ListCount - 1) = <font class='keyword'>True</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Next</font><BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>End</font> <font class='keyword'>If</font><BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='comment'>'If the ctrl key was pressed when the items were dropped, then the drag operation was a Copy</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='comment'>'Else, a Move operation is performed</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>If</font> ((Shift <font class='keyword'>And</font> 2) = 0) <font class='keyword'>Then</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Effect = vbDropEffectMove<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Else</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Effect = vbDropEffectCopy<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>End</font> <font class='keyword'>If</font><BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>End</font> <font class='keyword'>If</font><BR/>
+<BR/>
+<font class='keyword'>End</font> <font class='keyword'>Sub</font><BR/>
+<BR/>
+<font class='comment'>'The OLEDragOver event is used to detect when items are dragged over the list control</font><BR/>
+<font class='keyword'>Private</font> <font class='keyword'>Sub</font> lstItems_OLEDragOver(Data <font class='keyword'>As</font> DataObject, Effect <font class='keyword'>As</font> <font class='keyword'>Long</font>, Button <font class='keyword'>As</font> <font class='keyword'>Integer</font>, Shift <font class='keyword'>As</font> <font class='keyword'>Integer</font>, X <font class='keyword'>As</font> <font class='keyword'>Single</font>, Y <font class='keyword'>As</font> <font class='keyword'>Single</font>, State <font class='keyword'>As</font> <font class='keyword'>Integer</font>)<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;Effect = 0<BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='comment'>'If the format of the data on the clipboard is of type "ReportSample:frmDragDrop" as set with EnableDragDrop</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>If</font> Data.GetFormat(cfRecords) <font class='keyword'>Then</font><BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='comment'>'If the ctrl key is pressed when items are dragged over the list control, then the drag operation is Copy</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='comment'>'Else, a Move operation is performed</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>If</font> ((Shift <font class='keyword'>And</font> 2) = 0) <font class='keyword'>Then</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Effect = vbDropEffectMove<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Else</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Effect = vbDropEffectCopy<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>End</font> <font class='keyword'>If</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>End</font> <font class='keyword'>If</font><BR/>
+<font class='keyword'>End</font> <font class='keyword'>Sub</font><BR/>
+<BR/>
+<font class='comment'>'The BeginDrag event occurs when records are being dragged from the Report Control, and provides a</font><BR/>
+<font class='comment'>'ReportRecords collection containing all of the selected records when the drag operation started.</font><BR/>
+<font class='keyword'>Private</font> <font class='keyword'>Sub</font> wndReport_BeginDrag(<font class='keyword'>ByVal</font> Records <font class='keyword'>As</font> XtremeReportControl.IReportRecords)<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;Debug.<font class='keyword'>Print</font> <font class='string'>&quot;Begin Drag. Records.Count = &quot;</font> & Records.Count<BR/>
+<font class='keyword'>End</font> <font class='keyword'>Sub</font><BR/>
+<BR/>
+<font class='comment'>'The DropRecords event occurs when records are dropped into a Report Control, and provides a</font><BR/>
+<font class='comment'>'ReportRecords collection containing all of the records that will be dropped into the Report Control.</font><BR/>
+<font class='comment'>'This gives the opportunity to modify the ReportRecords collection before they are actually added</font><BR/>
+<font class='comment'>'to the Report Control.</font><BR/>
+<font class='keyword'>Private</font> <font class='keyword'>Sub</font> wndReport_DropRecords(<font class='keyword'>ByVal</font> Records <font class='keyword'>As</font> XtremeReportControl.IReportRecords)<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;Debug.<font class='keyword'>Print</font> <font class='string'>&quot;Drop Records. Records.Count = &quot;</font> & Records.Count<BR/>
+<font class='keyword'>End</font> <font class='keyword'>Sub</font><BR/>
+</CODE></TD></TR></TABLE></DIV></DIV>
+<!--DXMETADATA end --> 
+            <!--DXMETADATA start type="FilteredItemList" scrap="MENU_LINK" namespace="seealso" source="Item" filter="" NoHeader="True" NoFooter="True" format="<h4 class=dxh4>$$See_Also$$</h4><p id=dxseealsocontent>%%filtereditemlist%%</p>" --><h4 class=dxh4>See Also</h4><p id=dxseealsocontent><a href="#Bookmark14241">TrackControl Control</a>
+&nbsp;|&nbsp;<a href="#Bookmark13531">CreateRecords Method</a>
+&nbsp;|&nbsp;<a href="#Bookmark13532">CreateRecordsFromDropArray Method</a>
+&nbsp;|&nbsp;<a href="#Bookmark13536">DragRecords Method</a>
+&nbsp;|&nbsp;<a href="#Bookmark13691">BeginDrag Event</a>
+&nbsp;|&nbsp;<a href="XtremeReportControl~ReportControl~DropRecords_EV.html">DropRecords Event</a>
+&nbsp;|&nbsp;<a href="#Bookmark15743">XTPReportDragDrop Enumeration</a>
+</p><!--DXMETADATA end --><!--DXMETADATA start type="FilteredItemList" scrap="MENU_LINK" namespace="example" source="Item" filter="type=linked" NoHeader="True" NoFooter="True" format="><!--DXMETADATA end --><!--DXMETADATA start type="Variable" name="CopyrightNotice" format="><!--DXMETADATA end --></div></div>	
+	<div id="winchm_template_footer">Copyright &copy; 2018. All rights 
+reserved. (To change the copyright info, just edit it in template.)</div>
+</div>
+
+</body>
+</html>
+

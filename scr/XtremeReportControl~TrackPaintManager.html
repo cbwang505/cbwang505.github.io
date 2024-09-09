@@ -1,0 +1,302 @@
+﻿
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- saved from url=(0014)about:internet -->
+<html>
+    <head>
+        <meta content="Innovasys Document! X (http://www.innovasys.com)" name=GENERATOR>
+        <!--DXMETADATA start type="MetaCharset" --><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"><!--DXMETADATA end-->
+        <!--DXMETADATA start type="PageItemTitle" format="<title>Overview</title>" --><title>TrackPaintManager Object</title><!--DXMETADATA end-->
+        <link href="stylesheets/axstylesheet.css" type=text/css rel=stylesheet>
+        <script src="script/ax.js" type=text/javascript>
+    </script>
+
+    
+
+
+<style>
+html,div { margin: 0; padding: 0;}
+
+body {
+	padding: 0px;
+	margin: 0px;
+	overflow: auto;
+	height: 100%;
+}
+
+#winchm_template_button{
+	float: right;
+	width: 93px;
+	top: 7px;
+	position: relative;
+	text-align: right;
+	right: 5px;
+	height: auto;
+}
+
+#winchm_template_top{
+	padding: 0px;
+	margin: 0px;
+	border-bottom: 1px solid #9B9B9B;
+	background-color: #B1CEFE;
+}
+
+#winchm_template_navigation{
+	margin: 0px;
+	padding-top: 7px;
+	padding-left: 7px;
+	padding-bottom: 3px;
+	padding-right: 0px;
+	font-size: 8.5pt;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	color: #585858;
+}
+
+#winchm_template_title{
+	margin: 0px;
+	padding-top: 4px;
+	padding-left: 7px;
+	padding-bottom: 7px;
+	padding-right: 0px;
+	font-size: 18px; 
+	font-family: Verdana, Geneva, sans-serif;
+	color: #363636;
+}
+
+#winchm_template_content{
+	margin-top: 20px;
+	margin-left: 15px;
+	margin-bottom: 20px;
+	margin-right: 15px;
+	width: auto  !important;
+	width: 100%;
+}
+
+#winchm_template_footer{
+	border-width: 1px;
+	border-color: #B1CEFE;
+	border-top-style: solid;
+	margin-top: 15px;
+	margin-left: 15px;
+	margin-bottom: 20px;
+	margin-right: 15px;
+	padding-top: 7px;
+	padding-left: 0px;
+	padding-bottom: 0px;
+	padding-right: 0px;
+	font-family: arial, helvetica, sans-serif;
+	font-size: 8.5pt;
+	color: #696969;
+	width: auto;
+	text-align: left;
+}
+
+
+#winchm_template_container{
+	margin: 0px;
+	padding: 0px;
+	position: static;
+	padding-bottom: 3px;
+	overflow: auto;
+	background-color: #FFFFFF;
+}
+
+
+@media print
+{
+#winchm_template_container{
+	position: static;	
+	margin: 0px;
+	padding: 5px;
+	
+	width: auto;
+	height: auto;
+	overflow: auto;
+}
+#winchm_template_button{
+visibility:hidden;
+}
+}
+
+#winchm_template_navigation A:link	{text-decoration: none; color:#004080}
+#winchm_template_navigation A:visited  {text-decoration: none; color: #004080}
+#winchm_template_navigation A:active {text-decoration: none; color: #004080 }
+#winchm_template_navigation A:hover {text-decoration: none;color: #0080FF}
+
+A:link	{text-decoration: underline; color:#0033CC}
+A:visited  {text-decoration: underline; color: #0033CC}
+A:active {text-decoration: underline; color: #0033CC }
+A:hover {text-decoration: underline;color: #FF0000;}
+</style>
+<script type="text/javascript">
+function isMobile(){
+Agent = window.navigator.userAgent;
+if (Agent.indexOf("iPhone")>=1 || Agent.indexOf("iPad")>=1 || Agent.indexOf("iPod")>=1 || Agent.indexOf("Android")>=1){
+return true;
+}else{
+return false;	
+}
+
+}
+function d_onresize(){
+if (window.navigator.userAgent.indexOf("MSIE")>=1){
+document.getElementById('winchm_template_container').style.pixelWidth = document.body.offsetWidth - 3;
+document.getElementById('winchm_template_container').style.pixelHeight = document.body.offsetHeight - document.getElementById('winchm_template_top').offsetHeight - 4;
+}
+document.getElementById('winchm_template_container').style.top = document.getElementById('winchm_template_top').offsetHeight + 'px';
+}
+
+function d_onbeforeprint(){
+document.getElementById('winchm_template_container').style.width = 'auto';
+document.getElementById('winchm_template_container').style.height = 'auto';
+}
+
+function d_onafterprint(){
+d_onresize();
+}
+
+if(!isMobile()){
+
+window.onload = d_onresize;
+window.onresize = d_onresize;
+window.onbeforeprint = d_onbeforeprint;
+window.onafterprint = d_onafterprint;
+
+document.write("<style>\n");
+document.write("body {overflow: hidden;}\n");
+document.write("#winchm_template_container {position: absolute;overflow: auto;top : 0px;right: 0px;bottom: 0px;left: 0px;}\n");
+document.write("</style>\n");
+}
+
+</script>
+</head>
+    <body><script language="JavaScript" type="text/JavaScript">
+function syn(){
+if(parent.nav.tree){
+ if(parent.nav.tree.loaded){
+  parent.nav.tree.selectNode(14501);
+ }else{
+  setTimeout("syn()",500);
+}
+  }else{
+  setTimeout("syn()",500);
+  }}
+if(parent!=self){
+  setTimeout("syn()",100);
+}else{
+  parent.location.href = "../index.htm?page=XtremeReportControl~TrackPaintManager.html";
+}
+originalOnload = window.onload;
+if(originalOnload==null){
+window.onload = function(){parent.contentLoaded = true;};
+}else{
+window.onload = function(){originalOnload();parent.contentLoaded = true;};
+}
+</script> 
+
+
+<div id="winchm_template_top">
+	<div id="winchm_template_button"><A href="XtremeReportControl~TrackPaintManager.html" title="Previous topic"><img id="winchm_template_prev" alt="Previous topic" src="template2/btn_prev_n.gif" border="0"></a><A href="XtremeReportControl~TrackPaintManager_members.html" title="Next topic"><img id="winchm_template_next" alt="Next topic" src="template2/btn_next_n.gif" border="0"></a></div>
+	<div id="winchm_template_navigation">Help &gt; 
+<A href="welcome_screen.htm">Codejock ActiveX Controls v15.3</A> &gt; <A href="XtremeReportControl_P.html">Xtreme Report Control</A> &gt; Objects &gt; <A href="XtremeReportControl~TrackPaintManager.html">TrackPaintManager Object</A> &gt; </div>
+	<div id="winchm_template_title">Overview</div>
+</div>
+<div id="winchm_template_container">
+	<div id="winchm_template_content"><div class=popupbubble id=dxseealsomenu><p id=dxseealsocontent><a href="#Bookmark14502">TrackPaintManager Members</a>
+&nbsp;|&nbsp;<a href="#Bookmark14508">AlternativeBackgroundColor Property</a>
+&nbsp;|&nbsp;<a href="#Bookmark14571">Marker Property</a>
+&nbsp;|&nbsp;<a href="#Bookmark14583">ScrollBarDark Property</a>
+&nbsp;|&nbsp;<a href="#Bookmark14584">ScrollBarLight Property</a>
+&nbsp;|&nbsp;<a href="#Bookmark14585">SelectedArea Property</a>
+&nbsp;|&nbsp;<a href="#Bookmark14602">TimeHeaderDark Property</a>
+&nbsp;|&nbsp;<a href="#Bookmark14604">TimeHeaderDivider Property</a>
+&nbsp;|&nbsp;<a href="#Bookmark14603">TimeHeaderDarkDark Property</a>
+&nbsp;|&nbsp;<a href="#Bookmark14607">TimeSliderBackground Property</a>
+&nbsp;|&nbsp;<a href="#Bookmark14608">TrackHeader Property</a>
+&nbsp;|&nbsp;<a href="#Bookmark14609">TrackTimeArea Property</a>
+&nbsp;|&nbsp;<a href="#Bookmark14620">WorkArea Property</a>
+</p><!--DXMETADATA end --> 
+        </div>
+        <div id=pagetop>
+            <div id=projectnamebanner>
+                <table class=projectnametable cellspacing=0>
+                    <tbody>
+                        <tr>
+                            <!--DXMETADATA start type="Literal" condition="childitems:itemtype=seealso" value="<td class='button'><a href='' id='seealsobutton' onclick='showSeeAlsoBox()'><img alt='See Also' border='0' src='axImages/seealso.gif' width=14 height=14></a></td>" --><td class='button'><a href='' id='seealsobutton' onclick='showSeeAlsoBox()'><img alt='See Also' border='0' src='axImages/seealso.gif' width=14 height=14></a></td><!--DXMETADATA end -->
+                            <td>
+                                <!--DXMETADATA start type="Phrase" Name="Product_Header" -->Xtreme Report Control ActiveX Control v15.3<!--DXMETADATA end --> 
+                            </td>
+                            <td align=right>
+                                <!--DXMETADATA start type="Variable" name="FeedbackLink" format="" --><!--DXMETADATA end -->
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id=pagetitlebanner>
+                <h1 class=dxh1>
+                <!--DXMETADATA start type="PageItemTitle" -->TrackPaintManager Object<!--DXMETADATA end --></h1>
+            </div>
+        </div>
+        <div id=pagebody valign="bottom">
+            <!--DXMETADATA start type="IsNew" format="<script>document.all.pagebody.className = 'newTopic'</script>" --><!--DXMETADATA end --> 
+            <!--DXMETADATA start type="Description" source="Item" format="<h4 class=dxh4>$$Description$$</h4><p>%%description%%</p>" --><h4 class=dxh4>Description</h4><p>Handles most of the drawing activities of the <A href="#Bookmark14241">TrackControl</A>.</p><!--DXMETADATA end --> 
+            <!--DXMETADATA start type="Scrap" name="_MEMBERS_LINK" format="<p>%%scrap%%</p>" --><p>For a list of all members defined in this module, see <a href="#Bookmark14502">TrackPaintManager members</a>.</p><!--DXMETADATA end --> 
+            <!--DXMETADATA start type="Diagram" source="item" format="<h4 class=dxh4>$$OBJECT_MODEL$$</h4><p>%%Diagram%%</p>" --><h4 class=dxh4>Object Model</h4><p><TABLE CELLSPACING=0 CELLPADDING=0 BORDER=0><TR><TD NOWRAP>
+<a href="#Bookmark14500"><img src="cDiagramImages/XtremeReportControl~TrackPaintManager~190.gif" border=0></a><br><img src="cDiagramImages/parchild.gif" border=0><a href="#Bookmark13367"><img src="cDiagramImages/XtremeReportControl~Glyphs_(ImageManagerIcons)~190.gif" border=0></a><img src="cDiagramImages/paracros.gif" border=0><a href="#Bookmark13353"><img src="cDiagramImages/XtremeReportControl~GetImage_(ImageManagerIcon)~190.gif" border=0></a>
+</TD></TABLE>
+</p><!--DXMETADATA end --> 
+            <!--DXMETADATA start type="TaggedComment" source="Item" id="##MODULE_REMARKS" format="<h4 class=dxh4>$$Remarks$$</h4><p>%%comment%%</p>" --><h4 class=dxh4>Remarks</h4><p><P><FONT color=#000000>The&nbsp;<STRONG>TrackPaintManager</STRONG> object stores&nbsp;</FONT><FONT color=#000000>all settings needed to change the look and feel of the <A href="#Bookmark14241">TrackControl</A>.&nbsp;&nbsp;You can&nbsp;set the&nbsp;fonts, colors, and styles for the different objects in the <A href="#Bookmark14241">TrackControl</A>.&nbsp;</FONT></P>
+<P><FONT color=#000000>You can use this object to provide several different "skins" for your <A href="#Bookmark14241">TrackControl</A>.</FONT></P>
+<P></P>
+<P>The&nbsp;<STRONG>TrackPaintManager</STRONG> object stores the settings for things such as:</P>
+<UL>
+<LI>Caption, Normal Text, and Preview Text fonts</LI>
+<LI>Grid Lines Styles</LI>
+<LI>Shade Group Headings</LI>
+<LI>Shade sorted columns</LI>
+<LI>Column Styles</LI>
+<LI>Text displayed in the "Group By" box when empty</LI>
+<LI>Text displayed when there are no items to show in the ReportControl</LI>
+<LI>Set maximum number of preview lines when in preview mode</LI>
+<LI>Set the indentation of preview lines when in preview mode</LI></UL>
+<P>&nbsp;</P>
+<P><STRONG>Track Control Specific</STRONG> Settings</P>
+<LI><A href="#Bookmark14508">AlternativeBackgroundColor</A> is the color used for alternating rows when <A href="#Bookmark14613">UseAlternativeBackground</A>&nbsp;is true.&nbsp; Handy for alternating row color.</LI>
+<LI><A href="#Bookmark14571">Marker</A>&nbsp;sets the color used to draw <A href="#Bookmark14484">Markers</A> in the Time Line.</LI>
+<LI><A href="#Bookmark14583">ScrollBarDark</A>&nbsp;dark color in a color gradient&nbsp;used to draw the&nbsp;<A href="#Bookmark14417">WorkArea</A> and <A href="#Bookmark14406">TimeLine</A> scroll bars.</LI>
+<LI><A href="#Bookmark14584">ScrollBarLight</A>&nbsp;light color in a color gradient&nbsp;used to draw the&nbsp;<A href="#Bookmark14417">WorkArea</A> and <A href="#Bookmark14406">TimeLine</A> scroll bars.</LI>
+<LI><A href="#Bookmark14585">SelectedArea</A>&nbsp;color used to draw the&nbsp;"Selected Area".&nbsp; This is the color of the selection rectangle that is drawn when the mouse is clicked and dragged to select multiple blocks and keys.</LI>
+<LI><A href="#Bookmark14602">TimeHeaderDark</A>&nbsp;color used to draw the&nbsp;<A href="#Bookmark14406">TimeLine</A>&nbsp;header area.&nbsp; This is the area visible under the WorkArea slider and TimeLine Text.</LI>
+<LI><A href="#Bookmark14604">TimeHeaderDivider</A>&nbsp;color used to draw the&nbsp;<A href="#Bookmark14406">TimeLine</A>&nbsp;header divider.&nbsp; This is the divider between the TimeLine header and the aread above and normal report columns if they are added.</LI>
+<LI><A href="#Bookmark14603">TimeHeaderDarkDark</A>&nbsp;color used to draw the&nbsp;<A href="#Bookmark14406">TimeLine</A>&nbsp;header area shadow.&nbsp; This is the line that can be seen around the edges of the TimeLine header.</LI>
+<LI><A href="#Bookmark14607">TimeSliderBackground</A>&nbsp;color used to draw the&nbsp;<A href="#Bookmark14406">TimeLine</A>&nbsp;scrollbar\slider background area.&nbsp; This is only the area behind the TimeLine slider bar.</LI>
+<LI><A href="#Bookmark14608">TrackHeader</A>&nbsp;color used to draw the&nbsp;<A href="#Bookmark14406">TimeLine</A>&nbsp;track area.&nbsp; This is the area that is drawn above&nbsp;report columns (to the left\right of track area)&nbsp;if columns are added.</LI>
+<LI><A href="#Bookmark14609">TrackTimeArea</A>&nbsp;color used to draw the background of&nbsp;<A href="#Bookmark14406">TimeLine</A>&nbsp;header area behind the time text.</LI>
+<LI><A href="#Bookmark14620">WorkArea</A>&nbsp;color used to draw the&nbsp;"Selected Area" for the&nbsp;<A href="#Bookmark14417">WorkArea</A>.</LI></p><!--DXMETADATA end --> 
+            <!--DXMETADATA start type="FilteredItemList" scrap="ITEM_LIST_WITH_HEADER" namespace="implemented interface" source="Item" filter="" format="<h4 class=dxh4>$$Interfaces$$</h4>%%filtereditemlist%%" --><!--DXMETADATA end --> 
+            <!--DXMETADATA start type="TaggedComment" source="Item" id="##MODULE_EXAMPLEINTRO" format="<h4 class=dxh4>$$Example$$</h4><p>%%comment%%</p>" --><h4 class=dxh4>Example</h4><p><P>&nbsp;&nbsp;&nbsp; TrackControl.PaintManager.VerticalGridStyle = xtpGridSolid<BR>&nbsp;&nbsp;&nbsp; TrackControl.PaintManager.HorizontalGridStyle = xtpGridSolid<BR>&nbsp;&nbsp;&nbsp; <BR>&nbsp;&nbsp;&nbsp; TrackControl.PaintManager.HeaderRowsDividerStyle = xtpReportFixedRowsDividerBold<BR>&nbsp;&nbsp;&nbsp; TrackControl.PaintManager.FooterRowsDividerStyle = xtpReportFixedRowsDividerBold<BR>&nbsp;&nbsp;&nbsp; TrackControl.PaintManager.HeaderRowsDividerColor = RGB(0, 255, 0)<BR>&nbsp;&nbsp;&nbsp; TrackControl.PaintManager.FooterRowsDividerColor = RGB(0, 0, 255)<BR>&nbsp;&nbsp;&nbsp; <BR>&nbsp;&nbsp;&nbsp; TrackControl.PaintManager.ColumnWidthWYSIWYG = True<BR>&nbsp;&nbsp;&nbsp; <BR>&nbsp;&nbsp;&nbsp; TrackControl.PaintManager.DrawGridForEmptySpace = True<BR>&nbsp;&nbsp;&nbsp; <BR>&nbsp;&nbsp;&nbsp; TrackControl.PaintManager.BackColor = RGB(166, 166, 166)<BR>&nbsp;&nbsp;&nbsp; TrackControl.PaintManager.UseAlternativeBackground = True<BR>&nbsp;&nbsp;&nbsp; TrackControl.PaintManager.AlternativeBackgroundColor = RGB(160, 160, 160)<BR>&nbsp;&nbsp;&nbsp; TrackControl.PaintManager.HighlightBackColor = RGB(145, 145, 145)<BR>&nbsp;&nbsp;&nbsp; TrackControl.PaintManager.SelectedRowBackColor = RGB(145, 145, 145)<BR>&nbsp;&nbsp;&nbsp; TrackControl.PaintManager.GroupForeColor = RGB(255, 255, 255)<BR>&nbsp;&nbsp;&nbsp; <BR>&nbsp;&nbsp;&nbsp; TrackControl.PaintManager.GridLineColor = RGB(193, 193, 193)<BR>&nbsp;&nbsp;&nbsp; <BR>&nbsp;&nbsp;&nbsp; TrackControl.PaintManager.ColumnStyle = xtpColumnResource<BR>&nbsp;&nbsp;&nbsp; TrackControl.PaintManager.ColumnOffice2007CustomThemeBaseColor = RGB(122, 122, 122)<BR>&nbsp;&nbsp;&nbsp; <BR>&nbsp;&nbsp;&nbsp; TrackControl.PaintManager.ColumnPushedGradientColorDark = RGB(169, 169, 169)<BR>&nbsp;&nbsp;&nbsp; TrackControl.PaintManager.ColumnPushedGradientColorLight = RGB(193, 193, 193)<BR>&nbsp;&nbsp;&nbsp; TrackControl.PaintManager.ColumnHotGradientColorLight = RGB(193, 193, 193)<BR>&nbsp;&nbsp;&nbsp; TrackControl.PaintManager.ColumnHotGradientColorDark = RGB(169, 169, 169)<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <BR>&nbsp;&nbsp;&nbsp; TrackControl.PaintManager.CaptionBackGradientColorDark = RGB(169, 169, 169)<BR>&nbsp;&nbsp;&nbsp; TrackControl.PaintManager.CaptionBackGradientColorLight = RGB(193, 193, 193)<BR>&nbsp;&nbsp;&nbsp; <BR>&nbsp;&nbsp;&nbsp; TrackControl.PaintManager.ColumnShadowGradient = RGB(122, 122, 122)<BR>&nbsp;&nbsp;&nbsp; <BR>&nbsp;&nbsp;&nbsp; TrackControl.PaintManager.FreezeColsDividerColor = RGB(122, 122, 122)<BR>&nbsp;&nbsp;&nbsp; TrackControl.PaintManager.FreezeColsDividerStyle = xtpReportFreezeColsDividerBold<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <BR>&nbsp;&nbsp;&nbsp; TrackControl.PaintManager.GroupBoxBackColor = RGB(166, 166, 166)<BR>&nbsp;&nbsp;&nbsp; TrackControl.PaintManager.GroupByNoItemsTextColor = 0<BR>&nbsp;&nbsp;&nbsp; TrackControl.PaintManager.GroupShadeBackColor = RGB(166, 166, 166)<BR>&nbsp;&nbsp;&nbsp; <BR>&nbsp;&nbsp;&nbsp; TrackControl.PaintManager.ShadeSortColumn = False<BR>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <BR>&nbsp;&nbsp;&nbsp; TrackControl.PaintManager.WorkArea = RGB(175, 175, 175)<BR>&nbsp;&nbsp;&nbsp; <BR>&nbsp;&nbsp;&nbsp; TrackControl.PaintManager.TrackHeader = RGB(166, 166, 166)<BR>&nbsp;&nbsp;&nbsp; TrackControl.PaintManager.TrackTimeArea = RGB(166, 166, 166)<BR>&nbsp;&nbsp;&nbsp; <BR>&nbsp;&nbsp;&nbsp; TrackControl.PaintManager.TimeHeaderDarkDark = RGB(70, 70, 70)<BR>&nbsp;&nbsp;&nbsp; TrackControl.PaintManager.TimeHeaderDark = RGB(122, 122, 122)<BR>&nbsp;&nbsp;&nbsp; TrackControl.PaintManager.TimeSliderBackground = RGB(96, 96, 96)<BR>&nbsp;&nbsp;&nbsp; <BR>&nbsp;&nbsp;&nbsp; TrackControl.PaintManager.TimeHeaderDivider = RGB(146, 146, 146)</P>
+<P>&nbsp;&nbsp;&nbsp; TrackControl.PaintManager.ScrollBarLight = RGB(210, 210, 210)<BR>&nbsp;&nbsp;&nbsp; TrackControl.PaintManager.ScrollBarDark = RGB(190, 190, 190)</P>
+<P>&nbsp;&nbsp;&nbsp; TrackControl.PaintManager.Marker = RGB(217, 217, 217)<BR>&nbsp;&nbsp;&nbsp; TrackControl.PaintManager.SelectedArea = RGB(70, 70, 70)<BR>&nbsp;&nbsp;&nbsp; <BR>&nbsp;&nbsp;&nbsp; TrackControl.ToolTipContext.Style = xtpToolTipResource</P></p><!--DXMETADATA end --> 
+            <!--DXMETADATA start type="FilteredItemList" scrap="INLINE_EXAMPLE" namespace="Example" source="Item" filter="type=inline" NoHeader="True" NoFooter="True" format="<h4 class=dxh4>$$Example$$</h4>,format= %%%%filtereditemlist%%" --><!--DXMETADATA end --> 
+            <!--DXMETADATA start type="FilteredItemList" scrap="MENU_LINK" namespace="seealso" source="Item" filter="" NoHeader="True" NoFooter="True" format="<h4 class=dxh4>$$See_Also$$</h4><p id=dxseealsocontent>%%filtereditemlist%%</p>" --><h4 class=dxh4>See Also</h4><p id=dxseealsocontent><a href="#Bookmark14502">TrackPaintManager Members</a>
+&nbsp;|&nbsp;<a href="#Bookmark14508">AlternativeBackgroundColor Property</a>
+&nbsp;|&nbsp;<a href="#Bookmark14571">Marker Property</a>
+&nbsp;|&nbsp;<a href="#Bookmark14583">ScrollBarDark Property</a>
+&nbsp;|&nbsp;<a href="#Bookmark14584">ScrollBarLight Property</a>
+&nbsp;|&nbsp;<a href="#Bookmark14585">SelectedArea Property</a>
+&nbsp;|&nbsp;<a href="#Bookmark14602">TimeHeaderDark Property</a>
+&nbsp;|&nbsp;<a href="#Bookmark14604">TimeHeaderDivider Property</a>
+&nbsp;|&nbsp;<a href="#Bookmark14603">TimeHeaderDarkDark Property</a>
+&nbsp;|&nbsp;<a href="#Bookmark14607">TimeSliderBackground Property</a>
+&nbsp;|&nbsp;<a href="#Bookmark14608">TrackHeader Property</a>
+&nbsp;|&nbsp;<a href="#Bookmark14609">TrackTimeArea Property</a>
+&nbsp;|&nbsp;<a href="#Bookmark14620">WorkArea Property</a>
+</p><!--DXMETADATA end --><!--DXMETADATA start type="FilteredItemList" scrap="MENU_LINK" namespace="example" source="Item" filter="type=linked" NoHeader="True" NoFooter="True" format="><!--DXMETADATA end --><!--DXMETADATA start type="Variable" name="CopyrightNotice" format="><!--DXMETADATA end --></div></div>	
+	<div id="winchm_template_footer">Copyright &copy; 2018. All rights 
+reserved. (To change the copyright info, just edit it in template.)</div>
+</div>
+
+</body>
+</html>
+

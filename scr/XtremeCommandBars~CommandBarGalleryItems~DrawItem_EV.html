@@ -1,0 +1,599 @@
+﻿
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!-- saved from url=(0014)about:internet -->
+<html>
+    <head>
+        <meta content="Innovasys Document! X (http://www.innovasys.com)" name=GENERATOR>
+        <!--DXMETADATA start type="MetaCharset" --><META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8"><!--DXMETADATA end-->
+        <!--DXMETADATA start type="PageItemTitle" format="<title>DrawItem Event (XtremeCommandBars)</title>" --><title>DrawItem Event</title><!--DXMETADATA end-->
+        <link href="stylesheets/axstylesheet.css" type=text/css rel=stylesheet>
+        <script src="script/ax.js" type=text/javascript>
+    </script>
+
+    
+
+
+<style>
+html,div { margin: 0; padding: 0;}
+
+body {
+	padding: 0px;
+	margin: 0px;
+	overflow: auto;
+	height: 100%;
+}
+
+#winchm_template_button{
+	float: right;
+	width: 93px;
+	top: 7px;
+	position: relative;
+	text-align: right;
+	right: 5px;
+	height: auto;
+}
+
+#winchm_template_top{
+	padding: 0px;
+	margin: 0px;
+	border-bottom: 1px solid #9B9B9B;
+	background-color: #B1CEFE;
+}
+
+#winchm_template_navigation{
+	margin: 0px;
+	padding-top: 7px;
+	padding-left: 7px;
+	padding-bottom: 3px;
+	padding-right: 0px;
+	font-size: 8.5pt;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	color: #585858;
+}
+
+#winchm_template_title{
+	margin: 0px;
+	padding-top: 4px;
+	padding-left: 7px;
+	padding-bottom: 7px;
+	padding-right: 0px;
+	font-size: 18px; 
+	font-family: Verdana, Geneva, sans-serif;
+	color: #363636;
+}
+
+#winchm_template_content{
+	margin-top: 20px;
+	margin-left: 15px;
+	margin-bottom: 20px;
+	margin-right: 15px;
+	width: auto  !important;
+	width: 100%;
+}
+
+#winchm_template_footer{
+	border-width: 1px;
+	border-color: #B1CEFE;
+	border-top-style: solid;
+	margin-top: 15px;
+	margin-left: 15px;
+	margin-bottom: 20px;
+	margin-right: 15px;
+	padding-top: 7px;
+	padding-left: 0px;
+	padding-bottom: 0px;
+	padding-right: 0px;
+	font-family: arial, helvetica, sans-serif;
+	font-size: 8.5pt;
+	color: #696969;
+	width: auto;
+	text-align: left;
+}
+
+
+#winchm_template_container{
+	margin: 0px;
+	padding: 0px;
+	position: static;
+	padding-bottom: 3px;
+	overflow: auto;
+	background-color: #FFFFFF;
+}
+
+
+@media print
+{
+#winchm_template_container{
+	position: static;	
+	margin: 0px;
+	padding: 5px;
+	
+	width: auto;
+	height: auto;
+	overflow: auto;
+}
+#winchm_template_button{
+visibility:hidden;
+}
+}
+
+#winchm_template_navigation A:link	{text-decoration: none; color:#004080}
+#winchm_template_navigation A:visited  {text-decoration: none; color: #004080}
+#winchm_template_navigation A:active {text-decoration: none; color: #004080 }
+#winchm_template_navigation A:hover {text-decoration: none;color: #0080FF}
+
+A:link	{text-decoration: underline; color:#0033CC}
+A:visited  {text-decoration: underline; color: #0033CC}
+A:active {text-decoration: underline; color: #0033CC }
+A:hover {text-decoration: underline;color: #FF0000;}
+</style>
+<script type="text/javascript">
+function isMobile(){
+Agent = window.navigator.userAgent;
+if (Agent.indexOf("iPhone")>=1 || Agent.indexOf("iPad")>=1 || Agent.indexOf("iPod")>=1 || Agent.indexOf("Android")>=1){
+return true;
+}else{
+return false;	
+}
+
+}
+function d_onresize(){
+if (window.navigator.userAgent.indexOf("MSIE")>=1){
+document.getElementById('winchm_template_container').style.pixelWidth = document.body.offsetWidth - 3;
+document.getElementById('winchm_template_container').style.pixelHeight = document.body.offsetHeight - document.getElementById('winchm_template_top').offsetHeight - 4;
+}
+document.getElementById('winchm_template_container').style.top = document.getElementById('winchm_template_top').offsetHeight + 'px';
+}
+
+function d_onbeforeprint(){
+document.getElementById('winchm_template_container').style.width = 'auto';
+document.getElementById('winchm_template_container').style.height = 'auto';
+}
+
+function d_onafterprint(){
+d_onresize();
+}
+
+if(!isMobile()){
+
+window.onload = d_onresize;
+window.onresize = d_onresize;
+window.onbeforeprint = d_onbeforeprint;
+window.onafterprint = d_onafterprint;
+
+document.write("<style>\n");
+document.write("body {overflow: hidden;}\n");
+document.write("#winchm_template_container {position: absolute;overflow: auto;top : 0px;right: 0px;bottom: 0px;left: 0px;}\n");
+document.write("</style>\n");
+}
+
+</script>
+</head>
+    <body><script language="JavaScript" type="text/JavaScript">
+function syn(){
+if(parent.nav.tree){
+ if(parent.nav.tree.loaded){
+  parent.nav.tree.selectNode(7454);
+ }else{
+  setTimeout("syn()",500);
+}
+  }else{
+  setTimeout("syn()",500);
+  }}
+if(parent!=self){
+  setTimeout("syn()",100);
+}else{
+  parent.location.href = "../index.htm?page=XtremeCommandBars~CommandBarGalleryItems~DrawItem_EV.html";
+}
+originalOnload = window.onload;
+if(originalOnload==null){
+window.onload = function(){parent.contentLoaded = true;};
+}else{
+window.onload = function(){originalOnload();parent.contentLoaded = true;};
+}
+</script> 
+
+
+<div id="winchm_template_top">
+	<div id="winchm_template_button"><A href="XtremeCommandBars~CommandBarsFrame~CustomizationResetToolBar_EV.html" title="Previous topic"><img id="winchm_template_prev" alt="Previous topic" src="template2/btn_prev_n.gif" border="0"></a><A href="XtremeCommandBars~BackstageButton~DropDown_EV.html" title="Next topic"><img id="winchm_template_next" alt="Next topic" src="template2/btn_next_n.gif" border="0"></a></div>
+	<div id="winchm_template_navigation">Help &gt; 
+<A href="welcome_screen.htm">Codejock ActiveX Controls v15.3</A> &gt; <A href="XtremeCommandBars_P.html">Xtreme Command Bars</A> &gt; Events &gt; </div>
+	<div id="winchm_template_title">DrawItem Event (XtremeCommandBars)</div>
+</div>
+<div id="winchm_template_container">
+	<div id="winchm_template_content"><div class=popupbubble id=dxseealsomenu><p id=dxseealsocontent><a href="#Bookmark4482">CommandBarGalleryItems Collection</a>
+&nbsp;|&nbsp;<a href="#Bookmark5240">DrawRectangle Method</a>
+&nbsp;|&nbsp;<a href="#Bookmark5242">GetRectangleTextColor Method</a>
+</p><!--DXMETADATA end --> 
+        </div>
+        <!--DXMETADATA start type="FilteredItemList" scrap="PARAMETERS_BUBBLES" namespace="parameter" source="Item" -->
+<div id="hDC_box" class="popupbubble">
+<DL><DT class="popupbubble"><I>hDC</I></DT>
+<DD class="popupbubble">Reference to the device context on which you will draw.</DD></DL>
+</div>
+<div id="Gallery_box" class="popupbubble">
+<DL><DT class="popupbubble"><I>Gallery</I></DT>
+<DD class="popupbubble">Reference to the parent <A href="#Bookmark4422">CommandBarGallery</A>&nbsp;of the item.</DD></DL>
+</div>
+<div id="Item_box" class="popupbubble">
+<DL><DT class="popupbubble"><I>Item</I></DT>
+<DD class="popupbubble">Reference to the <A href="#Bookmark4467">CommandBarGalleryItem</A>&nbsp;to be drawn.</DD></DL>
+</div>
+<div id="x_box" class="popupbubble">
+<DL><DT class="popupbubble"><I>x</I></DT>
+<DD class="popupbubble">Left coordinate of the item to be drawn.&nbsp; Combine with&nbsp;<STRONG>y</STRONG> to get the top left corner of the item to be drawn.</DD></DL>
+</div>
+<div id="y_box" class="popupbubble">
+<DL><DT class="popupbubble"><I>y</I></DT>
+<DD class="popupbubble">Top coordinate of the item to be drawn.&nbsp; Combine with <STRONG>x</STRONG> to get the top left corner of the item to be drawn.</DD></DL>
+</div>
+<div id="cx_box" class="popupbubble">
+<DL><DT class="popupbubble"><I>cx</I></DT>
+<DD class="popupbubble">Right coordinate of the item to be drawn.&nbsp; Combine with <STRONG>cy</STRONG> to get the bottom right corner of the item to be drawn.</DD></DL>
+</div>
+<div id="cy_box" class="popupbubble">
+<DL><DT class="popupbubble"><I>cy</I></DT>
+<DD class="popupbubble">Bottom coordinate of the item to be drawn.&nbsp; Combine with <STRONG>cx</STRONG> to get the bottom right corner of the item to be drawn.</DD></DL>
+</div>
+<div id="Enabled_box" class="popupbubble">
+<DL><DT class="popupbubble"><I>Enabled</I></DT>
+<DD class="popupbubble">Will be <STRONG>True</STRONG> if the item about to be drawn is currently enabled.</DD></DL>
+</div>
+<div id="Selected_box" class="popupbubble">
+<DL><DT class="popupbubble"><I>Selected</I></DT>
+<DD class="popupbubble">Will be <STRONG>True</STRONG> if the item about to be drawn is currently selected.</DD></DL>
+</div>
+<div id="Pressed_box" class="popupbubble">
+<DL><DT class="popupbubble"><I>Pressed</I></DT>
+<DD class="popupbubble">Will be <STRONG>True</STRONG> if the item about to be drawn is currently pressed.</DD></DL>
+</div>
+<div id="Checked_box" class="popupbubble">
+<DL><DT class="popupbubble"><I>Checked</I></DT>
+<DD class="popupbubble">Will be <STRONG>True</STRONG> if the item about to be drawn is currently checked.</DD></DL>
+</div>
+<div id="Handled_box" class="popupbubble">
+<DL><DT class="popupbubble"><I>Handled</I></DT>
+<DD class="popupbubble"><P>Set to <STRONG>True</STRONG> to tell the commandbars that you manually "handled"\drew the item.</P>
+<P>Set to <STRONG>False</STRONG> to allow the commandbars to draw the item.</P></DD></DL>
+</div>
+<!--DXMETADATA end --> 
+        <div id=pagetop>
+            <div id=projectnamebanner>
+                <table class=projectnametable cellspacing=0>
+                    <tbody>
+                        <tr>
+                            <!--DXMETADATA start type="Literal" condition="childitems:itemtype=seealso" value="<td class='button'><a href='' id='seealsobutton' onclick='showSeeAlsoBox()'><img alt='See Also' border='0' src='axImages/seealso.gif' width=14 height=14></a></td>" --><td class='button'><a href='' id='seealsobutton' onclick='showSeeAlsoBox()'><img alt='See Also' border='0' src='axImages/seealso.gif' width=14 height=14></a></td><!--DXMETADATA end -->
+                            <td>
+                                <!--DXMETADATA start type="Phrase" Name="Product_Header" -->Xtreme Command Bars ActiveX Control v15.3<!--DXMETADATA end --> 
+                            </td>
+                            <td align=right>
+                                <!--DXMETADATA start type="Variable" name="FeedbackLink" format="" --><!--DXMETADATA end --> 
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div id=pagetitlebanner>
+                <h1 class=dxh1>
+                <!--DXMETADATA start type="PageItemTitle" -->DrawItem Event<!--DXMETADATA end --></h1>
+            </div>
+        </div>
+        <div id=pagebody valign="bottom">
+            <!--DXMETADATA start type="IsNew" format="<script>document.all.pagebody.className = 'newTopic'</script>" --><!--DXMETADATA end --> 
+            <!--DXMETADATA start type="Description" source="Item" format="<h4 class=dxh4>$$Description$$</h4><p>%%description%%</p>" --><h4 class=dxh4>Description</h4><p>Occurs when a <A href="#Bookmark4467">CommandBarGalleryItem</A>&nbsp;is about to be drawn.&nbsp; This allows you to override the drawing of items in a gallery.</p><!--DXMETADATA end --> 
+            <!--DXMETADATA start type="Syntax" lang="VB" format="<div Class=LanguageSpecific Name=Syntax_VB><h4 class=dxh4>$$Syntax$$</h4><p>%%Syntax%%</p></div>" --><div Class=LanguageSpecific Name=Syntax_VB><h4 class=dxh4>Syntax</h4><p><PRE CLASS="syntax" LANG="VB"><strong>Public Event DrawItem</strong>( _
+&nbsp;&nbsp;&nbsp;<strong>ByVal </strong><i><a class="parameter" id="hDC" href="#" onclick="javascript:showParamBox();">hDC</a></i></strong> <strong>As</strong> <b>Integer</b>, _
+&nbsp;&nbsp;&nbsp;<strong>ByVal </strong><i><a class="parameter" id="Gallery" href="#" onclick="javascript:showParamBox();">Gallery</a></i></strong> <strong>As</strong> <a href="#Bookmark4422">CommandBarGallery</a>, _
+&nbsp;&nbsp;&nbsp;<strong>ByVal </strong><i><a class="parameter" id="Item" href="#" onclick="javascript:showParamBox();">Item</a></i></strong> <strong>As</strong> <a href="#Bookmark4467">CommandBarGalleryItem</a>, _
+&nbsp;&nbsp;&nbsp;<strong>ByVal </strong><i><a class="parameter" id="x" href="#" onclick="javascript:showParamBox();">x</a></i></strong> <strong>As</strong> <b>Integer</b>, _
+&nbsp;&nbsp;&nbsp;<strong>ByVal </strong><i><a class="parameter" id="y" href="#" onclick="javascript:showParamBox();">y</a></i></strong> <strong>As</strong> <b>Integer</b>, _
+&nbsp;&nbsp;&nbsp;<strong>ByVal </strong><i><a class="parameter" id="cx" href="#" onclick="javascript:showParamBox();">cx</a></i></strong> <strong>As</strong> <b>Integer</b>, _
+&nbsp;&nbsp;&nbsp;<strong>ByVal </strong><i><a class="parameter" id="cy" href="#" onclick="javascript:showParamBox();">cy</a></i></strong> <strong>As</strong> <b>Integer</b>, _
+&nbsp;&nbsp;&nbsp;<strong>ByVal </strong><i><a class="parameter" id="Enabled" href="#" onclick="javascript:showParamBox();">Enabled</a></i></strong> <strong>As</strong> <b>Boolean</b>, _
+&nbsp;&nbsp;&nbsp;<strong>ByVal </strong><i><a class="parameter" id="Selected" href="#" onclick="javascript:showParamBox();">Selected</a></i></strong> <strong>As</strong> <b>Boolean</b>, _
+&nbsp;&nbsp;&nbsp;<strong>ByVal </strong><i><a class="parameter" id="Pressed" href="#" onclick="javascript:showParamBox();">Pressed</a></i></strong> <strong>As</strong> <b>Boolean</b>, _
+&nbsp;&nbsp;&nbsp;<strong>ByVal </strong><i><a class="parameter" id="Checked" href="#" onclick="javascript:showParamBox();">Checked</a></i></strong> <strong>As</strong> <b>Boolean</b>, _
+&nbsp;&nbsp;&nbsp;<strong>ByRef </strong><i><a class="parameter" id="Handled" href="#" onclick="javascript:showParamBox();">Handled</a></i></strong> <strong>As</strong> <b>Variant</b> _
+)</PRE></p></div><!--DXMETADATA end --> 
+            <!--DXMETADATA start type="FilteredItemList" scrap="PARAMETERS_LIST" namespace="parameter" source="Item" filter="" format="<h4 class=dxh4>$$ParameterList$$</h4>%%filtereditemlist%%" --><h4 class=dxh4>Parameters</h4><DL>
+<DT><I>hDC</I></DT>
+<DD>Reference to the device context on which you will draw.</DD>
+<DT><I>Gallery</I></DT>
+<DD>Reference to the parent <A href="#Bookmark4422">CommandBarGallery</A>&nbsp;of the item.</DD>
+<DT><I>Item</I></DT>
+<DD>Reference to the <A href="#Bookmark4467">CommandBarGalleryItem</A>&nbsp;to be drawn.</DD>
+<DT><I>x</I></DT>
+<DD>Left coordinate of the item to be drawn.&nbsp; Combine with&nbsp;<STRONG>y</STRONG> to get the top left corner of the item to be drawn.</DD>
+<DT><I>y</I></DT>
+<DD>Top coordinate of the item to be drawn.&nbsp; Combine with <STRONG>x</STRONG> to get the top left corner of the item to be drawn.</DD>
+<DT><I>cx</I></DT>
+<DD>Right coordinate of the item to be drawn.&nbsp; Combine with <STRONG>cy</STRONG> to get the bottom right corner of the item to be drawn.</DD>
+<DT><I>cy</I></DT>
+<DD>Bottom coordinate of the item to be drawn.&nbsp; Combine with <STRONG>cx</STRONG> to get the bottom right corner of the item to be drawn.</DD>
+<DT><I>Enabled</I></DT>
+<DD>Will be <STRONG>True</STRONG> if the item about to be drawn is currently enabled.</DD>
+<DT><I>Selected</I></DT>
+<DD>Will be <STRONG>True</STRONG> if the item about to be drawn is currently selected.</DD>
+<DT><I>Pressed</I></DT>
+<DD>Will be <STRONG>True</STRONG> if the item about to be drawn is currently pressed.</DD>
+<DT><I>Checked</I></DT>
+<DD>Will be <STRONG>True</STRONG> if the item about to be drawn is currently checked.</DD>
+<DT><I>Handled</I></DT>
+<DD><P>Set to <STRONG>True</STRONG> to tell the commandbars that you manually "handled"\drew the item.</P>
+<P>Set to <STRONG>False</STRONG> to allow the commandbars to draw the item.</P></DD>
+</DL><!--DXMETADATA end --> 
+            <!--DXMETADATA start type="TaggedComment" source="Item" id="##REMARKS" format="<h4 class=dxh4>$$Remarks$$</h4><p>%%comment%%</p>" --><h4 class=dxh4>Remarks</h4><p><P>The&nbsp;<STRONG>DrawItem</STRONG> event is called before each <A href="#Bookmark4467">CommandBarGalleryItem</A>&nbsp;in a <A href="#Bookmark4422">CommandBarGallery</A>&nbsp;is drawn.&nbsp; </P>
+<P>&nbsp;</P>
+<P>The <STRONG>DrawItem</STRONG> event is used to override the standard drawing functionality of the <A href="#Bookmark4467">CommandBarGalleryItem</A>(s)&nbsp;in a <A href="#Bookmark4422">CommandBarGallery</A>.&nbsp; This can be very useful to draw custom gallery items.</P>
+<P>&nbsp;</P>
+<P>The <A href="#Bookmark5240">DrawRectangle</A>&nbsp;method allows you to manually draw a button.&nbsp; This can be useful when using the parameters of the <STRONG>DrawItem</STRONG> event.&nbsp; Typically you would first use <A href="#Bookmark5240">DrawRectangle</A>&nbsp;to draw the item so that you have the correct background color, then you would draw over this with your custom item.</P>
+<P>&nbsp;</P>
+<P>The illustration below shows a galley control that is used as a color selector.&nbsp; The color squares in the gallery are all custom drawn in the <STRONG>DrawItem</STRONG> event.&nbsp; Also note the custom highlighting around the items, this is also custom drawn as the default highlighting will cover the entire item.&nbsp; See the sample below to see how to re-create this color selector gallery.&nbsp; The complete code to add the color selector gallery is included.&nbsp; Simply create a blank project, add a Commandbars control to the SDI form, then cut and paste the code below.</P>
+<P>&nbsp;</P>
+<P><IMG src="Pictures/gallerycustomdraw.gif" border=0></P></p><!--DXMETADATA end --> 
+            <!--DXMETADATA start type="TaggedComment" source="Item" id="##EXAMPLEINTRO" format="<h4 class=dxh4>$$Example$$</h4><p>%%comment%%</p>" --><!--DXMETADATA end --> 
+            <!--DXMETADATA start type="FilteredItemList" scrap="INLINE_EXAMPLE" namespace="Example" source="Item" filter="type=inline" NoHeader="True" NoFooter="True" format="<h4 class=dxh4>$$Example$$</h4>,format= %%%%filtereditemlist%%" --><h4 class=dxh4>Example</h4><DIV Class=LanguageSpecific Name=Example_VB><p><SPAN class="lang">[Drawing Custom Gallery Items. (Visual Basic)]</SPAN>&nbsp;This sample illustrates how to override the default drawing of gallery items.  And how to manually draw custom gallery items.
+
+This code can be cut and paste into a new project and is ready to run.  </p><DIV Class=LanguageSpecific Name=Code_VB><TABLE Class="CodeContainerTable" CellPadding="0" CellSpacing="0" Border="0"><TR><TD NOWRAP><CODE Class="VB"><font class='comment'>'***************************************************</font><BR/>
+<font class='comment'>' Place this code in the general section</font><BR/>
+<font class='comment'>'***************************************************</font><BR/>
+<font class='keyword'>Private</font> <font class='keyword'>Type</font> RECT<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;Left <font class='keyword'>As</font> <font class='keyword'>Long</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;Top <font class='keyword'>As</font> <font class='keyword'>Long</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;Right <font class='keyword'>As</font> <font class='keyword'>Long</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;Bottom <font class='keyword'>As</font> <font class='keyword'>Long</font><BR/>
+<font class='keyword'>End</font> <font class='keyword'>Type</font><BR/>
+<BR/>
+<font class='keyword'>Private</font> <font class='keyword'>Declare</font> <font class='keyword'>Function</font> FillRect <font class='keyword'>Lib</font> <font class='string'>&quot;user32&quot;</font> (<font class='keyword'>ByVal</font> hdc <font class='keyword'>As</font> <font class='keyword'>Long</font>, lpRect <font class='keyword'>As</font> RECT, <font class='keyword'>ByVal</font> hBrush <font class='keyword'>As</font> <font class='keyword'>Long</font>) <font class='keyword'>As</font> <font class='keyword'>Long</font><BR/>
+<font class='keyword'>Private</font> <font class='keyword'>Declare</font> <font class='keyword'>Function</font> DeleteObject <font class='keyword'>Lib</font> <font class='string'>&quot;gdi32&quot;</font> (<font class='keyword'>ByVal</font> hObject <font class='keyword'>As</font> <font class='keyword'>Long</font>) <font class='keyword'>As</font> <font class='keyword'>Long</font><BR/>
+<font class='keyword'>Private</font> <font class='keyword'>Declare</font> <font class='keyword'>Function</font> SetRect <font class='keyword'>Lib</font> <font class='string'>&quot;user32&quot;</font> (lpRect <font class='keyword'>As</font> RECT, <font class='keyword'>ByVal</font> X1 <font class='keyword'>As</font> <font class='keyword'>Long</font>, <font class='keyword'>ByVal</font> Y1 <font class='keyword'>As</font> <font class='keyword'>Long</font>, <font class='keyword'>ByVal</font> X2 <font class='keyword'>As</font> <font class='keyword'>Long</font>, <font class='keyword'>ByVal</font> Y2 <font class='keyword'>As</font> <font class='keyword'>Long</font>) <font class='keyword'>As</font> <font class='keyword'>Long</font><BR/>
+<font class='keyword'>Private</font> <font class='keyword'>Declare</font> <font class='keyword'>Function</font> CreateSolidBrush <font class='keyword'>Lib</font> <font class='string'>&quot;gdi32&quot;</font> (<font class='keyword'>ByVal</font> crColor <font class='keyword'>As</font> <font class='keyword'>Long</font>) <font class='keyword'>As</font> <font class='keyword'>Long</font><BR/>
+<BR/>
+<font class='keyword'>Dim</font> hBrush <font class='keyword'>As</font> <font class='keyword'>Long</font><BR/>
+<font class='keyword'>Dim</font> R <font class='keyword'>As</font> RECT<BR/>
+<BR/>
+<font class='comment'>'Add some gallery items collections with events</font><BR/>
+<font class='comment'>'to allow the DrawItem event to be called when the items</font><BR/>
+<font class='comment'>'in the gallery are to be drawn</font><BR/>
+<font class='keyword'>Dim</font> <font class='keyword'>WithEvents</font> GalleryColorItems <font class='keyword'>As</font> CommandBarGalleryItems<BR/>
+<font class='keyword'>Dim</font> <font class='keyword'>WithEvents</font> GalleryLargeColorItems <font class='keyword'>As</font> CommandBarGalleryItems<BR/>
+<BR/>
+<font class='keyword'>Const</font> ID_GALLERY_COLORS = 2010<BR/>
+<font class='keyword'>Const</font> ID_GALLERY_COLORS_POPUP = 2011<BR/>
+<font class='keyword'>Const</font> ID_GALLERY_LARGE_COLORS_POPUP = 2011<BR/>
+<BR/>
+<font class='keyword'>Const</font> ID_GROUP_FONT = 2015<BR/>
+<font class='keyword'>Const</font> ID_TEXT_COLOR = 2016<BR/>
+<BR/>
+<font class='comment'>'***************************************************</font><BR/>
+<font class='comment'>' Place this code where you create your commandbars\ribbon bar</font><BR/>
+<font class='comment'>' This code is using a ribbon bar</font><BR/>
+<font class='comment'>'***************************************************</font><BR/>
+<font class='keyword'>Private</font> <font class='keyword'>Sub</font> Form_Load()<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Dim</font> RibbonBar <font class='keyword'>As</font> RibbonBar<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Set</font> RibbonBar = CommandBars.AddRibbonBar(<font class='string'>&quot;The Ribbon&quot;</font>)<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;RibbonBar.EnableDocking xtpFlagStretched<BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Dim</font> ControlFont <font class='keyword'>As</font> CommandBarPopup, Control <font class='keyword'>As</font> CommandBarControl<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Dim</font> TabWrite <font class='keyword'>As</font> RibbonTab<BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Set</font> TabWrite = RibbonBar.InsertTab(0, <font class='string'>&quot;Writ&e&quot;</font>)<BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Set</font> GroupFont = TabWrite.Groups.AddGroup(<font class='string'>&quot;&Font&quot;</font>, ID_GROUP_FONT)<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;GroupFont.ControlsGrouping = <font class='keyword'>True</font><BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Set</font> Control = GroupFont.Add(xtpControlPopup, ID_TEXT_COLOR, <font class='string'>&quot;Color&quot;</font>)<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;Control.BeginGroup = <font class='keyword'>True</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;Control.Style = xtpButtonIcon<BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Dim</font> GalleryColorsPopupBar <font class='keyword'>As</font> CommandBar<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Set</font> GalleryColorsPopupBar = CommandBars.Add(<font class='string'>&quot;Colors&quot;</font>, xtpBarPopup)<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Set</font> GalleryColorItems = CreateColorsGallery<BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Control.CommandBar = GalleryColorsPopupBar<BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Dim</font> GalleryColors <font class='keyword'>As</font> CommandBarGallery<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Set</font> GalleryColors = GalleryColorsPopupBar.Controls.Add(xtpControlGallery, ID_GALLERY_COLORS_POPUP, <font class='string'>&quot;Colors&quot;</font>)<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GalleryColors.Width = 170<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GalleryColors.Height = 80<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GalleryColors.ShowScrollBar = <font class='keyword'>False</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Set</font> GalleryColors.Items = GalleryColorItems<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GalleryColors.Items.ItemHeight = 17<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GalleryColors.Items.ItemWidth = 17<BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Set</font> GalleryLargeColorItems = CreateLargeColorsGallery<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Dim</font> GalleryLargeColors <font class='keyword'>As</font> CommandBarGallery<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Set</font> GalleryLargeColors = GalleryColorsPopupBar.Controls.Add(xtpControlGallery, ID_GALLERY_LARGE_COLORS_POPUP, <font class='string'>&quot;Large Colors&quot;</font>)<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GalleryLargeColors.Width = 170<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GalleryLargeColors.Height = 70<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GalleryLargeColors.ShowScrollBar = <font class='keyword'>False</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Set</font> GalleryLargeColors.Items = GalleryLargeColorItems<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GalleryLargeColors.Items.ItemHeight = 32<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GalleryLargeColors.Items.ItemWidth = 32<BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;GalleryColorsPopupBar.EnableAnimation = <font class='keyword'>True</font><BR/>
+<font class='keyword'>End</font> <font class='keyword'>Sub</font><BR/>
+<BR/>
+<font class='comment'>'***************************************************</font><BR/>
+<font class='comment'>' Helper functions to create some "blank" callery items</font><BR/>
+<font class='comment'>' these items are used as place holders so we know where</font><BR/>
+<font class='comment'>' to draw the items in the DrawItem event.</font><BR/>
+<font class='comment'>'***************************************************</font><BR/>
+<BR/>
+<font class='keyword'>Private</font> <font class='keyword'>Function</font> CreateColorsGallery() <font class='keyword'>As</font> CommandBarGalleryItems<BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Dim</font> Gallery <font class='keyword'>As</font> CommandBarGalleryItems<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Set</font> Gallery = CommandBars.CreateGalleryItems(ID_GALLERY_COLORS)<BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Dim</font> GalleryItem <font class='keyword'>As</font> CommandBarGalleryItem<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Set</font> GalleryItem = Gallery.AddLabel(<font class='string'>&quot;Theme Colors&quot;</font>)<BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Set</font> GalleryItem = Gallery.AddItem(6200, <font class='string'>&quot;&quot;</font>)<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;GalleryItem.Tag = vbWhite<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Set</font> GalleryItem = Gallery.AddItem(6201, <font class='string'>&quot;&quot;</font>)<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;GalleryItem.Tag = vbBlack<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Set</font> GalleryItem = Gallery.AddItem(6202, <font class='string'>&quot;&quot;</font>)<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;GalleryItem.Tag = RGB(31, 73, 125)<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Set</font> GalleryItem = Gallery.AddItem(6203, <font class='string'>&quot;&quot;</font>)<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;GalleryItem.Tag = RGB(238, 236, 225)<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Set</font> GalleryItem = Gallery.AddItem(6204, <font class='string'>&quot;&quot;</font>)<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;GalleryItem.Tag = RGB(79, 129, 189)<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Set</font> GalleryItem = Gallery.AddItem(6205, <font class='string'>&quot;&quot;</font>)<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;GalleryItem.Tag = RGB(192, 80, 77)<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Set</font> GalleryItem = Gallery.AddItem(6206, <font class='string'>&quot;&quot;</font>)<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;GalleryItem.Tag = RGB(155, 187, 89)<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Set</font> GalleryItem = Gallery.AddItem(6207, <font class='string'>&quot;&quot;</font>)<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;GalleryItem.Tag = RGB(128, 100, 162)<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Set</font> GalleryItem = Gallery.AddItem(6208, <font class='string'>&quot;&quot;</font>)<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;GalleryItem.Tag = RGB(75, 172, 198)<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Set</font> GalleryItem = Gallery.AddItem(6209, <font class='string'>&quot;&quot;</font>)<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;GalleryItem.Tag = RGB(247, 150, 70)<BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Set</font> GalleryItem = Gallery.AddLabel(<font class='string'>&quot;Standard Colors&quot;</font>)<BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Set</font> GalleryItem = Gallery.AddItem(6400, <font class='string'>&quot;&quot;</font>)<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;GalleryItem.Tag = RGB(192, 0, 0)<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Set</font> GalleryItem = Gallery.AddItem(6401, <font class='string'>&quot;&quot;</font>)<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;GalleryItem.Tag = vbRed<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Set</font> GalleryItem = Gallery.AddItem(6402, <font class='string'>&quot;&quot;</font>)<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;GalleryItem.Tag = RGB(255, 192, 0)<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Set</font> GalleryItem = Gallery.AddItem(6403, <font class='string'>&quot;&quot;</font>)<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;GalleryItem.Tag = vbYellow<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Set</font> GalleryItem = Gallery.AddItem(6404, <font class='string'>&quot;&quot;</font>)<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;GalleryItem.Tag = RGB(146, 208, 80)<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Set</font> GalleryItem = Gallery.AddItem(6405, <font class='string'>&quot;&quot;</font>)<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;GalleryItem.Tag = RGB(0, 176, 80)<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Set</font> GalleryItem = Gallery.AddItem(6406, <font class='string'>&quot;&quot;</font>)<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;GalleryItem.Tag = RGB(0, 176, 240)<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Set</font> GalleryItem = Gallery.AddItem(6407, <font class='string'>&quot;&quot;</font>)<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;GalleryItem.Tag = RGB(0, 112, 192)<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Set</font> GalleryItem = Gallery.AddItem(6408, <font class='string'>&quot;&quot;</font>)<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;GalleryItem.Tag = RGB(0, 32, 96)<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Set</font> GalleryItem = Gallery.AddItem(6409, <font class='string'>&quot;&quot;</font>)<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;GalleryItem.Tag = RGB(112, 48, 160)<BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Set</font> CreateColorsGallery = Gallery<BR/>
+<BR/>
+<font class='keyword'>End</font> <font class='keyword'>Function</font><BR/>
+<BR/>
+<font class='keyword'>Private</font> <font class='keyword'>Function</font> CreateLargeColorsGallery() <font class='keyword'>As</font> CommandBarGalleryItems<BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Dim</font> Gallery <font class='keyword'>As</font> CommandBarGalleryItems<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Dim</font> GalleryItem <font class='keyword'>As</font> CommandBarGalleryItem<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Set</font> Gallery = CommandBars.CreateGalleryItems(ID_GALLERY_LARGE_COLORS_POPUP)<BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Set</font> GalleryItem = Gallery.AddItem(6423, <font class='string'>&quot;&quot;</font>)<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;GalleryItem.Tag = vbYellow<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Set</font> GalleryItem = Gallery.AddItem(6420, <font class='string'>&quot;&quot;</font>)<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;GalleryItem.Tag = vbGreen<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Set</font> GalleryItem = Gallery.AddItem(6421, <font class='string'>&quot;&quot;</font>)<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;GalleryItem.Tag = vbCyan<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Set</font> GalleryItem = Gallery.AddItem(6422, <font class='string'>&quot;&quot;</font>)<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;GalleryItem.Tag = vbMagenta<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Set</font> GalleryItem = Gallery.AddItem(6424, <font class='string'>&quot;&quot;</font>)<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;GalleryItem.Tag = vbBlue<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Set</font> GalleryItem = Gallery.AddItem(6425, <font class='string'>&quot;&quot;</font>)<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;GalleryItem.Tag = vbRed<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Set</font> GalleryItem = Gallery.AddItem(6426, <font class='string'>&quot;&quot;</font>)<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;GalleryItem.Tag = RGB(0, 0, 128)<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Set</font> GalleryItem = Gallery.AddItem(6427, <font class='string'>&quot;&quot;</font>)<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;GalleryItem.Tag = RGB(0, 128, 128)<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Set</font> GalleryItem = Gallery.AddItem(6428, <font class='string'>&quot;&quot;</font>)<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;GalleryItem.Tag = RGB(0, 128, 0)<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Set</font> GalleryItem = Gallery.AddItem(6429, <font class='string'>&quot;&quot;</font>)<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;GalleryItem.Tag = RGB(128, 0, 128)<BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Set</font> CreateLargeColorsGallery = Gallery<BR/>
+<BR/>
+<font class='keyword'>End</font> <font class='keyword'>Function</font><BR/>
+<BR/>
+<font class='comment'>'***************************************************</font><BR/>
+<font class='comment'>' Event handlers for the color galleries</font><BR/>
+<font class='comment'>'***************************************************</font><BR/>
+<BR/>
+<font class='keyword'>Private</font> <font class='keyword'>Sub</font> GalleryColorItems_DrawItem(<font class='keyword'>ByVal</font> hdc <font class='keyword'>As</font> stdole.OLE_HANDLE, <font class='keyword'>ByVal</font> Gallery <font class='keyword'>As</font> XtremeCommandBars.ICommandBarGallery, <font class='keyword'>ByVal</font> Item <font class='keyword'>As</font> XtremeCommandBars.ICommandBarGalleryItem, <font class='keyword'>ByVal</font> x <font class='keyword'>As</font> <font class='keyword'>Long</font>, <font class='keyword'>ByVal</font> y <font class='keyword'>As</font> <font class='keyword'>Long</font>, <font class='keyword'>ByVal</font> cx <font class='keyword'>As</font> <font class='keyword'>Long</font>, <font class='keyword'>ByVal</font> cy <font class='keyword'>As</font> <font class='keyword'>Long</font>, <font class='keyword'>ByVal</font> Enabled <font class='keyword'>As</font> <font class='keyword'>Boolean</font>, <font class='keyword'>ByVal</font> Selected <font class='keyword'>As</font> <font class='keyword'>Boolean</font>, <font class='keyword'>ByVal</font> Pressed <font class='keyword'>As</font> <font class='keyword'>Boolean</font>, <font class='keyword'>ByVal</font> Checked <font class='keyword'>As</font> <font class='keyword'>Boolean</font>, Handled <font class='keyword'>As</font> <font class='keyword'>Variant</font>)<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='comment'>'Do not cutom draw label items,</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='comment'>'allow the commandbars to handle the drawing of labels</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>If</font> Item.Label <font class='keyword'>Then</font> <font class='keyword'>Exit</font> <font class='keyword'>Sub</font><BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='comment'>'Helper function used to perform custom drawing of the color items</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;DrawColorItems hdc, Item, x, y, cx, cy, Enabled, Selected, Pressed, Checked<BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='comment'>'Set Handled to True to tell the commandbars the</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='comment'>'the item has been manually drawn</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='comment'>'</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='comment'>'Set to False to allow the commandbars to draw the item</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;Handled = <font class='keyword'>True</font><BR/>
+<font class='keyword'>End</font> <font class='keyword'>Sub</font><BR/>
+<BR/>
+<BR/>
+<font class='keyword'>Private</font> <font class='keyword'>Sub</font> GalleryLargeColorItems_DrawItem(<font class='keyword'>ByVal</font> hdc <font class='keyword'>As</font> stdole.OLE_HANDLE, <font class='keyword'>ByVal</font> Gallery <font class='keyword'>As</font> XtremeCommandBars.ICommandBarGallery, <font class='keyword'>ByVal</font> Item <font class='keyword'>As</font> XtremeCommandBars.ICommandBarGalleryItem, <font class='keyword'>ByVal</font> x <font class='keyword'>As</font> <font class='keyword'>Long</font>, <font class='keyword'>ByVal</font> y <font class='keyword'>As</font> <font class='keyword'>Long</font>, <font class='keyword'>ByVal</font> cx <font class='keyword'>As</font> <font class='keyword'>Long</font>, <font class='keyword'>ByVal</font> cy <font class='keyword'>As</font> <font class='keyword'>Long</font>, <font class='keyword'>ByVal</font> Enabled <font class='keyword'>As</font> <font class='keyword'>Boolean</font>, <font class='keyword'>ByVal</font> Selected <font class='keyword'>As</font> <font class='keyword'>Boolean</font>, <font class='keyword'>ByVal</font> Pressed <font class='keyword'>As</font> <font class='keyword'>Boolean</font>, <font class='keyword'>ByVal</font> Checked <font class='keyword'>As</font> <font class='keyword'>Boolean</font>, Handled <font class='keyword'>As</font> <font class='keyword'>Variant</font>)<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='comment'>'Do not cutom draw label items,</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='comment'>'allow the commandbars to handle the drawing of labels</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>If</font> Item.Label <font class='keyword'>Then</font> <font class='keyword'>Exit</font> <font class='keyword'>Sub</font><BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='comment'>'Helper function used to perform custom drawing of the color items</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;DrawColorItems hdc, Item, x, y, cx, cy, Enabled, Selected, Pressed, Checked<BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='comment'>'Set Handled to True to tell the commandbars the</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='comment'>'the item has been manually drawn</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='comment'>'</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='comment'>'Set to False to allow the commandbars to draw the item</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;Handled = <font class='keyword'>True</font><BR/>
+<font class='keyword'>End</font> <font class='keyword'>Sub</font><BR/>
+<BR/>
+<font class='comment'>'***************************************************</font><BR/>
+<font class='comment'>' Helper function to draw the color items</font><BR/>
+<font class='comment'>'***************************************************</font><BR/>
+<BR/>
+<font class='keyword'>Private</font> <font class='keyword'>Sub</font> DrawColorItems(<font class='keyword'>ByVal</font> hdc <font class='keyword'>As</font> stdole.OLE_HANDLE, <font class='keyword'>ByVal</font> Item <font class='keyword'>As</font> XtremeCommandBars.ICommandBarGalleryItem, <font class='keyword'>ByVal</font> x <font class='keyword'>As</font> <font class='keyword'>Long</font>, <font class='keyword'>ByVal</font> y <font class='keyword'>As</font> <font class='keyword'>Long</font>, <font class='keyword'>ByVal</font> cx <font class='keyword'>As</font> <font class='keyword'>Long</font>, <font class='keyword'>ByVal</font> cy <font class='keyword'>As</font> <font class='keyword'>Long</font>, <font class='keyword'>ByVal</font> Enabled <font class='keyword'>As</font> <font class='keyword'>Boolean</font>, <font class='keyword'>ByVal</font> Selected <font class='keyword'>As</font> <font class='keyword'>Boolean</font>, <font class='keyword'>ByVal</font> Pressed <font class='keyword'>As</font> <font class='keyword'>Boolean</font>, <font class='keyword'>ByVal</font> Checked <font class='keyword'>As</font> <font class='keyword'>Boolean</font>)<BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='comment'>'Draw a rectangle, this will fill in the background with the</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='comment'>'correct background color for the buttons</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;CommandBars.PaintManager.DrawRectangle hdc, x, y, cx, cy, <font class='keyword'>False</font>, Pressed, Enabled, Checked, <font class='keyword'>False</font>, xtpBarTypeNormal, xtpBarComboBoxGalleryPopup<BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='comment'>'If the item is selected, then draw the focus rectangle</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='comment'>'around the item</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>If</font> Selected <font class='keyword'>Then</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hBrush = CreateSolidBrush(RGB(242, 148, 54))<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SetRect R, x + 2, y + 2, x + cx - 2, y + cy - 3<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FillRect hdc, R, hBrush<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DeleteObject hBrush<BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hBrush = CreateSolidBrush(RGB(255, 226, 148))<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SetRect R, x + 3, y + 3, x + cx - 3, y + cy - 4<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FillRect hdc, R, hBrush<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DeleteObject hBrush<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Else</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;hBrush = CreateSolidBrush(RGB(197, 197, 197))<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SetRect R, x + 2, y + 2, x + cx - 2, y + cy - 3<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FillRect hdc, R, hBrush<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DeleteObject hBrush<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>End</font> <font class='keyword'>If</font><BR/>
+<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='comment'>'Draws the actual color of the color items</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;hBrush = CreateSolidBrush(Item.Tag)<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>If</font> Selected <font class='keyword'>Then</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SetRect R, x + 4, y + 4, x + cx - 4, y + cy - 5<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>Else</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SetRect R, x + 3, y + 3, x + cx - 3, y + cy - 4<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;<font class='keyword'>End</font> <font class='keyword'>If</font><BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;FillRect hdc, R, hBrush<BR/>
+&nbsp;&nbsp;&nbsp;&nbsp;DeleteObject hBrush<BR/>
+<BR/>
+<font class='keyword'>End</font> <font class='keyword'>Sub</font><BR/>
+<BR/>
+</CODE></TD></TR></TABLE></DIV></DIV>
+<!--DXMETADATA end --> 
+            <!--DXMETADATA start type="FilteredItemList" scrap="MENU_LINK" namespace="seealso" source="Item" filter="" NoHeader="True" NoFooter="True" format="<h4 class=dxh4>$$See_Also$$</h4><p id=dxseealsocontent>%%filtereditemlist%%</p>" --><h4 class=dxh4>See Also</h4><p id=dxseealsocontent><a href="#Bookmark4482">CommandBarGalleryItems Collection</a>
+&nbsp;|&nbsp;<a href="#Bookmark5240">DrawRectangle Method</a>
+&nbsp;|&nbsp;<a href="#Bookmark5242">GetRectangleTextColor Method</a>
+</p><!--DXMETADATA end --><!--DXMETADATA start type="FilteredItemList" scrap="MENU_LINK" namespace="example" source="Item" filter="type=linked" NoHeader="True" NoFooter="True" format="><!--DXMETADATA end --><!--DXMETADATA start type="Variable" name="CopyrightNotice" format="><!--DXMETADATA end --></div></div>	
+	<div id="winchm_template_footer">Copyright &copy; 2018. All rights 
+reserved. (To change the copyright info, just edit it in template.)</div>
+</div>
+
+</body>
+</html>
+
